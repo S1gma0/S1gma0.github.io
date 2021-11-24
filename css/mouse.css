@@ -6,7 +6,7 @@
 .cursor-f {
     top: 0;
     left: 0;
-    background-image: url("../image/website/mouse.svg");
+    background-image: url("../img/mouse.svg");
     background-size: cover;
     opacity: 0.7;
 }
