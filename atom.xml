@@ -6,7 +6,7 @@
   <link href="https://s1gma0.github.io/atom.xml" rel="self"/>
   
   <link href="https://s1gma0.github.io/"/>
-  <updated>2021-11-25T13:05:33.175Z</updated>
+  <updated>2021-11-25T15:20:17.422Z</updated>
   <id>https://s1gma0.github.io/</id>
   
   <author>
@@ -17,11 +17,32 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>jade6_setup_methord</title>
-    <link href="https://s1gma0.github.io/2021/11/25/jade6%E5%AE%89%E8%A3%85%E6%96%B9%E6%B3%95/"/>
-    <id>https://s1gma0.github.io/2021/11/25/jade6%E5%AE%89%E8%A3%85%E6%96%B9%E6%B3%95/</id>
+    <title>jade6安装及PDF导入（SUCCESS）</title>
+    <link href="https://s1gma0.github.io/2021/11/25/jade6%E5%AE%89%E8%A3%85%E5%8F%8APDF%E5%AF%BC%E5%85%A5/"/>
+    <id>https://s1gma0.github.io/2021/11/25/jade6%E5%AE%89%E8%A3%85%E5%8F%8APDF%E5%AF%BC%E5%85%A5/</id>
+    <published>2021-11-25T14:44:28.000Z</published>
+    <updated>2021-11-25T15:20:17.422Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="一、安装"><a href="#一、安装" class="headerlink" title="一、安装"></a>一、安装</h1><p>注意更改安装路径，其余直接下一步，至安装结束。</p><h1 id="二、注册XOC组件"><a href="#二、注册XOC组件" class="headerlink" title="二、注册XOC组件"></a>二、注册XOC组件</h1><p>组件名称</p><p>comdlg32.ocx</p><p>MSCOMCT2.OCX</p><p>MSCOMCTL.OCX</p><p>THREED32.OCX</p><p>将几个组件和批处理文件移动到C:\Windows\SysWOW64中，以管理员身份运行批处理文件。</p><h1 id="三、导入PDF卡片"><a href="#三、导入PDF卡片" class="headerlink" title="三、导入PDF卡片"></a>三、导入PDF卡片</h1><p>打开软件，到PDF选项然后点击Set up，点击第一行最右边的手指，选择pdf2.dat文件，然后</p><p>点击select all，接着点击create，等待create结束。</p><h1 id="PS"><a href="#PS" class="headerlink" title="PS:"></a>PS:</h1><p>Onedrive上有下载程序以及组件的压缩包。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;一、安装&quot;&gt;&lt;a href=&quot;#一、安装&quot; class=&quot;headerlink&quot; title=&quot;一、安装&quot;&gt;&lt;/a&gt;一、安装&lt;/h1&gt;&lt;p&gt;注意更改安装路径，其余直接下一步，至安装结束。&lt;/p&gt;
+&lt;h1 id=&quot;二、注册XOC组件&quot;&gt;&lt;a href=&quot;#二、注册X</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>jade安装（注册表导入失败）无法使用</title>
+    <link href="https://s1gma0.github.io/2021/11/25/jade6%E5%AE%89%E8%A3%85%E6%96%B9%E6%B3%95_fail/"/>
+    <id>https://s1gma0.github.io/2021/11/25/jade6%E5%AE%89%E8%A3%85%E6%96%B9%E6%B3%95_fail/</id>
     <published>2021-11-24T16:09:37.000Z</published>
-    <updated>2021-11-25T13:05:33.175Z</updated>
+    <updated>2021-11-25T14:45:34.310Z</updated>
     
     <content type="html"><![CDATA[<h1 id="Jade-6安装方法"><a href="#Jade-6安装方法" class="headerlink" title="Jade 6安装方法"></a>Jade 6安装方法</h1><h2 id="更改兼容性"><a href="#更改兼容性" class="headerlink" title="更改兼容性"></a>更改兼容性</h2><p>点击exe先进行下载，然后找到jade6.exe将兼容性改为Windows 7。</p><h2 id="安装缺失控件"><a href="#安装缺失控件" class="headerlink" title="安装缺失控件"></a>安装缺失控件</h2><p>comdlg32.ocx</p><p>MSCOMCT2.OCX</p><p>MSCOMCTL.OCX</p><p>THREED32.OCX</p><p>将这几个控件和批处理程序移动到*<em>C:\Windows\SysWOW64*</em></p><p>然后运行一下批处理程序，即可。</p><h2 id="PS："><a href="#PS：" class="headerlink" title="PS："></a>PS：</h2><p>文件在Onedrive上有备份。</p><p>安装后由于注册表导入的用户名一直出错，导致pdf卡片无法导入，放弃该版本下载，改用其他下载。</p>]]></content>
     
