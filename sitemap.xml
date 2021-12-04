@@ -4,56 +4,70 @@
   <url>
     <loc>https://s1gma0.github.io/2021/12/02/Hexo%E9%83%A8%E7%BD%B2%E6%97%B6Error-Spawn-failed%E7%9A%84%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/</loc>
     
-    <lastmod>2021-12-02</lastmod>
+    <lastmod>2021-12-04</lastmod>
     
   </url>
   
   <url>
     <loc>https://s1gma0.github.io/2021/12/02/SQL%E6%B3%A8%E5%85%A5/</loc>
     
-    <lastmod>2021-12-02</lastmod>
+    <lastmod>2021-12-04</lastmod>
     
   </url>
   
   <url>
     <loc>https://s1gma0.github.io/2021/11/25/jade6%E5%AE%89%E8%A3%85%E5%8F%8APDF%E5%AF%BC%E5%85%A5/</loc>
     
-    <lastmod>2021-11-25</lastmod>
+    <lastmod>2021-12-04</lastmod>
     
   </url>
   
   <url>
     <loc>https://s1gma0.github.io/2021/11/25/jade6%E5%AE%89%E8%A3%85%E6%96%B9%E6%B3%95_fail/</loc>
     
-    <lastmod>2021-11-25</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://s1gma0.github.io/link/index.html</loc>
-    
-    <lastmod>2021-11-23</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://s1gma0.github.io/2021/11/22/first-to/</loc>
-    
-    <lastmod>2021-11-21</lastmod>
+    <lastmod>2021-12-04</lastmod>
     
   </url>
   
   <url>
     <loc>https://s1gma0.github.io/2021/10/26/2021XJU-CTF%E6%96%B0%E7%94%9F%E8%B5%9BWP/</loc>
     
-    <lastmod>2021-10-26</lastmod>
+    <lastmod>2021-12-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://s1gma0.github.io/tags/index.html</loc>
+    
+    <lastmod>2021-12-04</lastmod>
     
   </url>
   
   <url>
     <loc>https://s1gma0.github.io/2021/10/26/hello-world/</loc>
     
-    <lastmod>2021-10-25</lastmod>
+    <lastmod>2021-12-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://s1gma0.github.io/categories/index.html</loc>
+    
+    <lastmod>2021-12-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://s1gma0.github.io/2021/11/22/first-to/</loc>
+    
+    <lastmod>2021-12-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://s1gma0.github.io/link/index.html</loc>
+    
+    <lastmod>2021-12-04</lastmod>
     
   </url>
   
@@ -66,6 +80,55 @@
   </url>
 
   
+  <url>
+    <loc>https://s1gma0.github.io/tag/jade-6/</loc>
+    <lastmod>2021-12-04</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://s1gma0.github.io/tag/error/</loc>
+    <lastmod>2021-12-04</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://s1gma0.github.io/tag/SQL/</loc>
+    <lastmod>2021-12-04</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://s1gma0.github.io/tag/WriteUp/</loc>
+    <lastmod>2021-12-04</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
 
+  
+  <url>
+    <loc>https://s1gma0.github.io/category/nothing/</loc>
+    <lastmod>2021-12-04</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://s1gma0.github.io/category/Hexo/</loc>
+    <lastmod>2021-12-04</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://s1gma0.github.io/category/CTF/</loc>
+    <lastmod>2021-12-04</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
   
 </urlset>
