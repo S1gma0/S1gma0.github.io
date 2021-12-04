@@ -81,7 +81,7 @@
 
   
   <url>
-    <loc>https://s1gma0.github.io/tag/jade-6/</loc>
+    <loc>https://s1gma0.github.io/tag/WriteUp/</loc>
     <lastmod>2021-12-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -102,20 +102,13 @@
   </url>
   
   <url>
-    <loc>https://s1gma0.github.io/tag/WriteUp/</loc>
+    <loc>https://s1gma0.github.io/tag/jade-6/</loc>
     <lastmod>2021-12-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
 
-  
-  <url>
-    <loc>https://s1gma0.github.io/category/nothing/</loc>
-    <lastmod>2021-12-04</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
   
   <url>
     <loc>https://s1gma0.github.io/category/Hexo/</loc>
@@ -126,6 +119,13 @@
   
   <url>
     <loc>https://s1gma0.github.io/category/CTF/</loc>
+    <lastmod>2021-12-04</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://s1gma0.github.io/category/nothing/</loc>
     <lastmod>2021-12-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
