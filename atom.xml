@@ -6,7 +6,7 @@
   <link href="https://s1gma0.github.io/atom.xml" rel="self"/>
   
   <link href="https://s1gma0.github.io/"/>
-  <updated>2021-12-05T03:26:43.221Z</updated>
+  <updated>2021-12-05T03:52:18.039Z</updated>
   <id>https://s1gma0.github.io/</id>
   
   <author>
@@ -15,6 +15,23 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>知识杂记</title>
+    <link href="https://s1gma0.github.io/2021/12/05/%E7%9F%A5%E8%AF%86%E6%9D%82%E8%AE%B0/"/>
+    <id>https://s1gma0.github.io/2021/12/05/%E7%9F%A5%E8%AF%86%E6%9D%82%E8%AE%B0/</id>
+    <published>2021-12-05T03:49:47.000Z</published>
+    <updated>2021-12-05T03:52:18.039Z</updated>
+    
+    
+    
+    
+    <category term="CTF" scheme="https://s1gma0.github.io/category/CTF/"/>
+    
+    
+    <category term="CTF" scheme="https://s1gma0.github.io/tag/CTF/"/>
+    
+  </entry>
   
   <entry>
     <title>XSSplatform</title>
