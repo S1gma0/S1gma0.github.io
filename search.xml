@@ -4,6 +4,66 @@
   
     
     <entry>
+      <title>get&amp;post请求</title>
+      <link href="/2021/12/05/get-post%E8%AF%B7%E6%B1%82WP/"/>
+      <url>/2021/12/05/get-post%E8%AF%B7%E6%B1%82WP/</url>
+      
+        <content type="html"><![CDATA[<p>CTFHub_Write_Up</p><p>Web前置技能——HTTP协议——请求方式</p><h1 id="一、题意"><a href="#一、题意" class="headerlink" title="一、题意"></a>一、题意</h1><p>点击所给链接，下列代码显示在页面上</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">HTTP Method is GET</span><br><span class="line"></span><br><span class="line">Use CTF**B Method, I will give you flag.</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">Hint: If you got 「HTTP Method Not Allowed」 Error, you should request index.php.</span><br></pre></td></tr></table></figure><p>说明本题需要用GET方式请求index.php,而且要用CTF**B Method</p><h1 id="二、解题"><a href="#二、解题" class="headerlink" title="二、解题"></a>二、解题</h1><p>如果使用get方式的话，的不到flag，响应包如下</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">HTTP/1.1 200 OK</span><br><span class="line">Server: openresty/1.19.3.2</span><br><span class="line">Date: Sun, 05 Dec 2021 13:56:21 GMT</span><br><span class="line">Content-Type: text/html; charset=UTF-8</span><br><span class="line">Connection: close</span><br><span class="line">X-Powered-By: PHP/5.6.40</span><br><span class="line">Access-Control-Allow-Origin: *</span><br><span class="line">Access-Control-Allow-Headers: X-Requested-With</span><br><span class="line">Access-Control-Allow-Methods: *</span><br><span class="line">Content-Length: 297</span><br><span class="line"></span><br><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">    &lt;meta charset=&quot;UTF-8&quot;/&gt;</span><br><span class="line">    &lt;title&gt;CTFHub HTTP Method&lt;/title&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line"></span><br><span class="line">&lt;p&gt;HTTP Method is GET&lt;/p&gt;&lt;p&gt;Use CTF**B Method, I will give you flag.&lt;/p&gt;&lt;br/&gt;&lt;p&gt;Hint: If you got 「HTTP Method Not Allowed」 Error, you should request index.php.&lt;/p&gt;</span><br><span class="line"></span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure><p>那就将get方式改成CTFHUB方式，响应包如下</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">HTTP/1.1 200 OK</span><br><span class="line">Server: openresty/1.19.3.2</span><br><span class="line">Date: Sun, 05 Dec 2021 13:59:19 GMT</span><br><span class="line">Content-Type: text/html; charset=UTF-8</span><br><span class="line">Connection: close</span><br><span class="line">X-Powered-By: PHP/5.6.40</span><br><span class="line">Access-Control-Allow-Origin: *</span><br><span class="line">Access-Control-Allow-Headers: X-Requested-With</span><br><span class="line">Access-Control-Allow-Methods: *</span><br><span class="line">Content-Length: 172</span><br><span class="line"></span><br><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">    &lt;meta charset=&quot;UTF-8&quot;/&gt;</span><br><span class="line">    &lt;title&gt;CTFHub HTTP Method&lt;/title&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line"></span><br><span class="line">good job! ctfhub&#123;1f1619b5de362b0f7e6a3820&#125;</span><br><span class="line"></span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure><p>拿到flag。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> CTF </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Web </tag>
+            
+            <tag> HTTP协议 </tag>
+            
+            <tag> 请求方式，WriteUp </tag>
+            
+            <tag> CTFHub </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>get和post请求</title>
+      <link href="/2021/12/05/get%E5%92%8Cpost%E8%AF%B7%E6%B1%82/"/>
+      <url>/2021/12/05/get%E5%92%8Cpost%E8%AF%B7%E6%B1%82/</url>
+      
+        <content type="html"><![CDATA[<h1 id="一、get请求"><a href="#一、get请求" class="headerlink" title="一、get请求"></a>一、get请求</h1><h1 id="二、post请求"><a href="#二、post请求" class="headerlink" title="二、post请求"></a>二、post请求</h1>]]></content>
+      
+      
+      <categories>
+          
+          <category> CTF </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Web </tag>
+            
+            <tag> HTTP协议 </tag>
+            
+            <tag> 请求方式 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>知识杂记</title>
       <link href="/2021/12/05/%E7%9F%A5%E8%AF%86%E6%9D%82%E8%AE%B0/"/>
       <url>/2021/12/05/%E7%9F%A5%E8%AF%86%E6%9D%82%E8%AE%B0/</url>
@@ -72,9 +132,9 @@
       
         <tags>
             
-            <tag> WriteUp </tag>
-            
             <tag> Web </tag>
+            
+            <tag> WriteUp </tag>
             
             <tag> XSS </tag>
             
