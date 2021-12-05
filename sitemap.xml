@@ -2,6 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://s1gma0.github.io/2021/12/05/%E5%8F%8D%E5%B0%84%E5%9E%8BXSS/</loc>
+    
+    <lastmod>2021-12-05</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://s1gma0.github.io/2021/12/05/XSSplatform/</loc>
+    
+    <lastmod>2021-12-05</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://s1gma0.github.io/2021/11/25/jade6%E5%AE%89%E8%A3%85%E6%96%B9%E6%B3%95_fail/</loc>
+    
+    <lastmod>2021-12-05</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://s1gma0.github.io/2021/12/02/SQL%E6%B3%A8%E5%85%A5/</loc>
     
     <lastmod>2021-12-04</lastmod>
@@ -31,13 +52,6 @@
   
   <url>
     <loc>https://s1gma0.github.io/2021/11/25/jade6%E5%AE%89%E8%A3%85%E5%8F%8APDF%E5%AF%BC%E5%85%A5/</loc>
-    
-    <lastmod>2021-12-04</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://s1gma0.github.io/2021/11/25/jade6%E5%AE%89%E8%A3%85%E6%96%B9%E6%B3%95_fail/</loc>
     
     <lastmod>2021-12-04</lastmod>
     
@@ -102,13 +116,6 @@
   </url>
   
   <url>
-    <loc>https://s1gma0.github.io/tag/jade-6/</loc>
-    <lastmod>2021-12-05</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://s1gma0.github.io/tag/error/</loc>
     <lastmod>2021-12-05</lastmod>
     <changefreq>daily</changefreq>
@@ -124,6 +131,27 @@
   
   <url>
     <loc>https://s1gma0.github.io/tag/Web/</loc>
+    <lastmod>2021-12-05</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://s1gma0.github.io/tag/XSS/</loc>
+    <lastmod>2021-12-05</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://s1gma0.github.io/tag/jade-6/</loc>
+    <lastmod>2021-12-05</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://s1gma0.github.io/tag/CTFHub/</loc>
     <lastmod>2021-12-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
