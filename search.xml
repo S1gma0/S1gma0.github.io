@@ -132,13 +132,13 @@
       
         <tags>
             
-            <tag> WriteUp </tag>
-            
             <tag> Web </tag>
             
             <tag> XSS </tag>
             
             <tag> CTFHub </tag>
+            
+            <tag> WriteUp </tag>
             
         </tags>
       
@@ -188,9 +188,9 @@
       
         <tags>
             
-            <tag> SQL </tag>
-            
             <tag> Web </tag>
+            
+            <tag> SQL </tag>
             
         </tags>
       
