@@ -6,7 +6,7 @@
   <link href="https://s1gma0.github.io/atom.xml" rel="self"/>
   
   <link href="https://s1gma0.github.io/"/>
-  <updated>2021-12-09T10:59:10.485Z</updated>
+  <updated>2021-12-09T11:04:28.815Z</updated>
   <id>https://s1gma0.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://s1gma0.github.io/2021/12/05/wp&amp;get&amp;post/"/>
     <id>https://s1gma0.github.io/2021/12/05/wp&amp;get&amp;post/</id>
     <published>2021-12-05T13:40:13.000Z</published>
-    <updated>2021-12-09T10:59:10.485Z</updated>
+    <updated>2021-12-09T11:04:28.815Z</updated>
     
     <content type="html"><![CDATA[<p>CTFHub_Write_Up</p><p>Web前置技能——HTTP协议——请求方式</p><h1 id="题意"><a href="#题意" class="headerlink" title="题意"></a>题意</h1><p>点击所给链接，下列代码显示在页面上</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">HTTP Method is GET</span><br><span class="line"></span><br><span class="line">Use CTF**B Method, I will give you flag.</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">Hint: If you got 「HTTP Method Not Allowed」 Error, you should request index.php.</span><br></pre></td></tr></table></figure><p>说明本题需要用GET方式请求index.php,而且要用CTF**B Method</p><h1 id="解题"><a href="#解题" class="headerlink" title="解题"></a>解题</h1><p>如果使用get方式的话，的不到flag，响应包如下</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">HTTP/1.1 200 OK</span><br><span class="line">Server: openresty/1.19.3.2</span><br><span class="line">Date: Sun, 05 Dec 2021 13:56:21 GMT</span><br><span class="line">Content-Type: text/html; charset=UTF-8</span><br><span class="line">Connection: close</span><br><span class="line">X-Powered-By: PHP/5.6.40</span><br><span class="line">Access-Control-Allow-Origin: *</span><br><span class="line">Access-Control-Allow-Headers: X-Requested-With</span><br><span class="line">Access-Control-Allow-Methods: *</span><br><span class="line">Content-Length: 297</span><br><span class="line"></span><br><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">    &lt;meta charset=&quot;UTF-8&quot;/&gt;</span><br><span class="line">    &lt;title&gt;CTFHub HTTP Method&lt;/title&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line"></span><br><span class="line">&lt;p&gt;HTTP Method is GET&lt;/p&gt;&lt;p&gt;Use CTF**B Method, I will give you flag.&lt;/p&gt;&lt;br/&gt;&lt;p&gt;Hint: If you got 「HTTP Method Not Allowed」 Error, you should request index.php.&lt;/p&gt;</span><br><span class="line"></span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure><p>那就将get方式改成CTFHUB方式，响应包如下</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">HTTP/1.1 200 OK</span><br><span class="line">Server: openresty/1.19.3.2</span><br><span class="line">Date: Sun, 05 Dec 2021 13:59:19 GMT</span><br><span class="line">Content-Type: text/html; charset=UTF-8</span><br><span class="line">Connection: close</span><br><span class="line">X-Powered-By: PHP/5.6.40</span><br><span class="line">Access-Control-Allow-Origin: *</span><br><span class="line">Access-Control-Allow-Headers: X-Requested-With</span><br><span class="line">Access-Control-Allow-Methods: *</span><br><span class="line">Content-Length: 172</span><br><span class="line"></span><br><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">    &lt;meta charset=&quot;UTF-8&quot;/&gt;</span><br><span class="line">    &lt;title&gt;CTFHub HTTP Method&lt;/title&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line"></span><br><span class="line">good job! ctfhub&#123;1f1619b5de362b0f7e6a3820&#125;</span><br><span class="line"></span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure><p>拿到flag。</p>]]></content>
     
@@ -38,11 +38,13 @@
     <category term="CTF" scheme="https://s1gma0.github.io/category/CTF/"/>
     
     
+    <category term="WriteUp" scheme="https://s1gma0.github.io/tag/WriteUp/"/>
+    
     <category term="Web" scheme="https://s1gma0.github.io/tag/Web/"/>
     
     <category term="HTTP协议" scheme="https://s1gma0.github.io/tag/HTTP%E5%8D%8F%E8%AE%AE/"/>
     
-    <category term="请求方式，WriteUp" scheme="https://s1gma0.github.io/tag/%E8%AF%B7%E6%B1%82%E6%96%B9%E5%BC%8F%EF%BC%8CWriteUp/"/>
+    <category term="请求方式" scheme="https://s1gma0.github.io/tag/%E8%AF%B7%E6%B1%82%E6%96%B9%E5%BC%8F/"/>
     
     <category term="CTFHub" scheme="https://s1gma0.github.io/tag/CTFHub/"/>
     
@@ -82,9 +84,9 @@
     <link href="https://s1gma0.github.io/2021/12/05/%E7%9F%A5%E8%AF%86%E6%9D%82%E8%AE%B0/"/>
     <id>https://s1gma0.github.io/2021/12/05/%E7%9F%A5%E8%AF%86%E6%9D%82%E8%AE%B0/</id>
     <published>2021-12-05T03:49:47.000Z</published>
-    <updated>2021-12-06T13:57:43.160Z</updated>
+    <updated>2021-12-09T11:25:32.728Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="URI、URL、URN"><a href="#URI、URL、URN" class="headerlink" title="URI、URL、URN"></a>URI、URL、URN</h1><h2 id="URI"><a href="#URI" class="headerlink" title="URI"></a>URI</h2><p>URI(uniform resource identifier)，统一资源标识符，用来唯一的标识一个资源。<br>Web上可用的每种资源如HTML文档、图像、视频片段、程序等都是一个来URI来定位的<br>URI一般由三部组成：<br>①访问资源的命名机制<br>②存放资源的主机名<br>③资源自身的名称，由路径表示，着重强调于资源。</p><h2 id="URL"><a href="#URL" class="headerlink" title="URL"></a>URL</h2><p>URL(uniform resource locator)，统一资源定位器，它是一种具体的URI，即URL可以用来标识一个资源，而且还指明了如何locate这个资源。</p><p>采用URL可以用一种统一的格式来描述各种信息资源，包括文件、服务器的地址和目录等。URL一般由三部组成：<br>①协议(或称为服务方式)<br>②存有该资源的主机IP地址(有时也包括端口号)<br>③主机资源的具体地址。如目录和文件名等</p><p>例如<a href="https://s1gma0.github.io/category/CTF/index.php?boardID=5&amp;ID=24618&amp;page=1#anchor">https://s1gma0.github.io/category/CTF/index.php?boardID=5&amp;ID=24618&amp;page=1#anchor</a></p><p>一个完整的URL包括以下几个部分：<br>①<strong>协议</strong>：在internet中可以使用很多协议，http、https、file、mailto、ftp。该URL的使用的是”https“协议。</p><p>②<strong>域名</strong>：该URL的域名是s1gma0.github.io</p><p>③<strong>端口</strong>：跟在域名后面的是端口，域名和端口之间用”:“作为分隔符。端口不是一个URL必须要有的部分，如果省略端口，将采用默认端口。该URL省略了端口，采用了默认的端口。</p><p>④<strong>虚拟目录</strong>：在域名后的第一个”/“和最后一个”/“之间的部分是虚拟目录。虚拟目录也不是一个URL必须要有的部分。本URL的虚拟目录为/category/CTF/</p><p>⑤<strong>文件名</strong>：从域名后的最后一个“/”开始到“？”为止，是文件名部分，如果没有“?”,则是从域名后的最后一个“/”开始到“#”为止，是文件部分，如果没有“？”和“#”，那么从域名后的最后一个“/”开始到结束，都是文件名部分。本例中的文件名是“index.php”。文件名部分也不是一个URL必须的部分，如果省略该部分，则使用默认的文件名.</p><p>⑥<strong>锚</strong>：从“#”开始到最后，都是锚部分。该URL中的锚是“anchor”。锚部分也不是一个URL必须的部分</p><p>⑦<strong>参数</strong>：从“？”开始到“#”为止之间的部分为参数部分，又称搜索部分、查询部分。该URL中的参数部分为“boardID=5&amp;ID=24618&amp;page=1”。参数可以允许有多个参数，参数与参数之间用“&amp;”作为分隔符。</p><h2 id="URN"><a href="#URN" class="headerlink" title="URN"></a>URN</h2><p>URN(uniform resource name)，统一资源命名，是通过名字来标识资源。</p><h2 id="三者的区别"><a href="#三者的区别" class="headerlink" title="三者的区别"></a>三者的区别</h2><p>URI是以一种抽象的，高层次概念定义统一资源标识，而URL和URN则是具体的资源标识的方式。URL和URN都是一种URI。笼统地说，每个URL都是URI，但不一定每个 URI 都是 URL。这是因为 URI 还包括一个子类，即统一资源名称 (URN)，它命名资源但不指定如何定位资源。上面的 mailto、news 和 isbn URI都是 URN 的示例。</p><h1 id="URL常见协议"><a href="#URL常见协议" class="headerlink" title="URL常见协议"></a>URL常见协议</h1><p>http：超文本传输协议。</p><p>https：超文本传输安全协议。<br>file：本地文件传输协议，主要用于访问本地计算机中的文件。</p><p>mailto：一种电子邮件协议，主要用于发送邮件。</p><p>ftp：文本传输协议，主要用于在网络上进行文件传输。</p>]]></content>
+    <content type="html"><![CDATA[<h1 id="URI、URL、URN"><a href="#URI、URL、URN" class="headerlink" title="URI、URL、URN"></a>URI、URL、URN</h1><h2 id="URI"><a href="#URI" class="headerlink" title="URI"></a>URI</h2><p>URI(uniform resource identifier)，统一资源标识符，用来唯一的标识一个资源。<br>Web上可用的每种资源如HTML文档、图像、视频片段、程序等都是一个来URI来定位的<br>URI一般由三部组成：<br>①访问资源的命名机制<br>②存放资源的主机名<br>③资源自身的名称，由路径表示，着重强调于资源。</p><h2 id="URL"><a href="#URL" class="headerlink" title="URL"></a>URL</h2><p>URL(uniform resource locator)，统一资源定位器，它是一种具体的URI，即URL可以用来标识一个资源，而且还指明了如何locate这个资源。</p><p>采用URL可以用一种统一的格式来描述各种信息资源，包括文件、服务器的地址和目录等。URL一般由三部组成：<br>①协议(或称为服务方式)<br>②存有该资源的主机IP地址(有时也包括端口号)<br>③主机资源的具体地址。如目录和文件名等</p><p>例如<a href="https://s1gma0.github.io/category/CTF/index.php?boardID=5&amp;ID=24618&amp;page=1#anchor">https://s1gma0.github.io/category/CTF/index.php?boardID=5&amp;ID=24618&amp;page=1#anchor</a></p><p>一个完整的URL包括以下几个部分：<br>①<strong>协议</strong>：在internet中可以使用很多协议，http、https、file、mailto、ftp。该URL的使用的是”https“协议。</p><p>②<strong>域名</strong>：该URL的域名是s1gma0.github.io</p><p>③<strong>端口</strong>：跟在域名后面的是端口，域名和端口之间用”:“作为分隔符。端口不是一个URL必须要有的部分，如果省略端口，将采用默认端口。该URL省略了端口，采用了默认的端口。</p><p>④<strong>虚拟目录</strong>：在域名后的第一个”/“和最后一个”/“之间的部分是虚拟目录。虚拟目录也不是一个URL必须要有的部分。本URL的虚拟目录为/category/CTF/</p><p>⑤<strong>文件名</strong>：从域名后的最后一个“/”开始到“？”为止，是文件名部分，如果没有“?”,则是从域名后的最后一个“/”开始到“#”为止，是文件部分，如果没有“？”和“#”，那么从域名后的最后一个“/”开始到结束，都是文件名部分。本例中的文件名是“index.php”。文件名部分也不是一个URL必须的部分，如果省略该部分，则使用默认的文件名.</p><p>⑥<strong>锚</strong>：从“#”开始到最后，都是锚部分。该URL中的锚是“anchor”。锚部分也不是一个URL必须的部分</p><p>⑦<strong>参数</strong>：从“？”开始到“#”为止之间的部分为参数部分，又称搜索部分、查询部分。该URL中的参数部分为“boardID=5&amp;ID=24618&amp;page=1”。参数可以允许有多个参数，参数与参数之间用“&amp;”作为分隔符。</p><h2 id="URN"><a href="#URN" class="headerlink" title="URN"></a>URN</h2><p>URN(uniform resource name)，统一资源命名，是通过名字来标识资源。</p><h2 id="三者的区别"><a href="#三者的区别" class="headerlink" title="三者的区别"></a>三者的区别</h2><p>URI是以一种抽象的，高层次概念定义统一资源标识，而URL和URN则是具体的资源标识的方式。URL和URN都是一种URI。笼统地说，每个URL都是URI，但不一定每个 URI 都是 URL。这是因为 URI 还包括一个子类，即统一资源名称 (URN)，它命名资源但不指定如何定位资源。上面的 mailto、news 和 isbn URI都是 URN 的示例。</p><h1 id="URL常见协议"><a href="#URL常见协议" class="headerlink" title="URL常见协议"></a>URL常见协议</h1><p>http：超文本传输协议。</p><p>https：超文本传输安全协议。<br>file：本地文件传输协议，主要用于访问本地计算机中的文件。</p><p>mailto：一种电子邮件协议，主要用于发送邮件。</p><p>ftp：文本传输协议，主要用于在网络上进行文件传输。</p><h1 id="HTTP头注入（待补充）"><a href="#HTTP头注入（待补充）" class="headerlink" title="HTTP头注入（待补充）"></a>HTTP头注入（待补充）</h1><h2 id="X-Forwarded-For"><a href="#X-Forwarded-For" class="headerlink" title="X-Forwarded-For"></a>X-Forwarded-For</h2><p>X-Forwarded-For(XFF)，代表了HTTP的请求端真实的IP。它被认为是客户端通过HTTP代理或者负载均衡器连接到web服务端获取源ip地址的一个标准（通常一些网站的防注入功能会记录请求端真实IP地址并写入数据库或某文件[通过修改XXF头可以实现伪造IP]）。</p><p>XFF，是X-Forwarded-for的缩写，属于SQL注入的一种，该注入原理是通过修改X-Forwarded-for头对带入系统的dns进行sql注入，达到欺骗服务器执行恶意的SQL命令的效果，从而可以得到网站的数据库内容。</p><h2 id="Rerferer"><a href="#Rerferer" class="headerlink" title="Rerferer"></a>Rerferer</h2><p>Rerferer：浏览器向 WEB 服务器表明自己的页面来源。</p>]]></content>
     
     
       
@@ -149,11 +151,11 @@
     <category term="CTF" scheme="https://s1gma0.github.io/category/CTF/"/>
     
     
+    <category term="WriteUp" scheme="https://s1gma0.github.io/tag/WriteUp/"/>
+    
     <category term="Web" scheme="https://s1gma0.github.io/tag/Web/"/>
     
     <category term="XSS" scheme="https://s1gma0.github.io/tag/XSS/"/>
-    
-    <category term="WriteUp" scheme="https://s1gma0.github.io/tag/WriteUp/"/>
     
     <category term="CTFHub" scheme="https://s1gma0.github.io/tag/CTFHub/"/>
     
@@ -204,9 +206,9 @@
     <category term="CTF" scheme="https://s1gma0.github.io/category/CTF/"/>
     
     
-    <category term="SQL" scheme="https://s1gma0.github.io/tag/SQL/"/>
-    
     <category term="Web" scheme="https://s1gma0.github.io/tag/Web/"/>
+    
+    <category term="SQL" scheme="https://s1gma0.github.io/tag/SQL/"/>
     
   </entry>
   
