@@ -4,7 +4,7 @@
   
     
     <entry>
-      <title>wp&amp;get&amp;post</title>
+      <title>get&amp;post</title>
       <link href="/2021/12/05/wp&amp;get&amp;post/"/>
       <url>/2021/12/05/wp&amp;get&amp;post/</url>
       
@@ -132,13 +132,13 @@
       
         <tags>
             
-            <tag> WriteUp </tag>
-            
             <tag> Web </tag>
             
-            <tag> CTFHub </tag>
-            
             <tag> XSS </tag>
+            
+            <tag> WriteUp </tag>
+            
+            <tag> CTFHub </tag>
             
         </tags>
       
