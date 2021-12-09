@@ -53,14 +53,15 @@
     <link href="https://s1gma0.github.io/2021/12/05/get%E5%92%8Cpost%E8%AF%B7%E6%B1%82/"/>
     <id>https://s1gma0.github.io/2021/12/05/get%E5%92%8Cpost%E8%AF%B7%E6%B1%82/</id>
     <published>2021-12-05T12:46:39.000Z</published>
-    <updated>2021-12-05T17:07:17.048Z</updated>
+    <updated>2021-12-09T10:51:19.842Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="一、get请求"><a href="#一、get请求" class="headerlink" title="一、get请求"></a>一、get请求</h1><h1 id="二、post请求"><a href="#二、post请求" class="headerlink" title="二、post请求"></a>二、post请求</h1>]]></content>
+    <content type="html"><![CDATA[<h1 id="GET请求"><a href="#GET请求" class="headerlink" title="GET请求"></a>GET请求</h1><p>使用GET方式提交一个名为a，值为1的变量。</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">GET /?a=1 HTTP/1.1</span><br></pre></td></tr></table></figure><h1 id="POST请求"><a href="#POST请求" class="headerlink" title="POST请求"></a>POST请求</h1><p>使用POST方式提交一个名为b，值为2的变量。</p><p>将请求方式改为POST，然后将下列代码写在最后</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Content-Type: application/x-www-form-urlencoded</span><br></pre></td></tr></table></figure><p>然后<strong>空一行</strong>输入需要提交的变量</p><p>例如：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Content-Type: application/x-www-form-urlencoded</span><br><span class="line"></span><br><span class="line">b=2</span><br></pre></td></tr></table></figure>]]></content>
     
     
       
       
-    <summary type="html">&lt;h1 id=&quot;一、get请求&quot;&gt;&lt;a href=&quot;#一、get请求&quot; class=&quot;headerlink&quot; title=&quot;一、get请求&quot;&gt;&lt;/a&gt;一、get请求&lt;/h1&gt;&lt;h1 id=&quot;二、post请求&quot;&gt;&lt;a href=&quot;#二、post请求&quot; class=&quot;headerli</summary>
+    <summary type="html">&lt;h1 id=&quot;GET请求&quot;&gt;&lt;a href=&quot;#GET请求&quot; class=&quot;headerlink&quot; title=&quot;GET请求&quot;&gt;&lt;/a&gt;GET请求&lt;/h1&gt;&lt;p&gt;使用GET方式提交一个名为a，值为1的变量。&lt;/p&gt;
+&lt;figure class=&quot;highlight plaint</summary>
       
     
     
@@ -148,13 +149,13 @@
     <category term="CTF" scheme="https://s1gma0.github.io/category/CTF/"/>
     
     
+    <category term="WriteUp" scheme="https://s1gma0.github.io/tag/WriteUp/"/>
+    
     <category term="Web" scheme="https://s1gma0.github.io/tag/Web/"/>
     
     <category term="XSS" scheme="https://s1gma0.github.io/tag/XSS/"/>
     
     <category term="CTFHub" scheme="https://s1gma0.github.io/tag/CTFHub/"/>
-    
-    <category term="WriteUp" scheme="https://s1gma0.github.io/tag/WriteUp/"/>
     
   </entry>
   
@@ -203,9 +204,9 @@
     <category term="CTF" scheme="https://s1gma0.github.io/category/CTF/"/>
     
     
-    <category term="Web" scheme="https://s1gma0.github.io/tag/Web/"/>
-    
     <category term="SQL" scheme="https://s1gma0.github.io/tag/SQL/"/>
+    
+    <category term="Web" scheme="https://s1gma0.github.io/tag/Web/"/>
     
   </entry>
   
