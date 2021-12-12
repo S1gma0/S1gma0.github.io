@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>2021新疆省赛</title>
+      <link href="/2021/12/12/2021%E6%96%B0%E7%96%86%E7%9C%81%E8%B5%9B/"/>
+      <url>/2021/12/12/2021%E6%96%B0%E7%96%86%E7%9C%81%E8%B5%9B/</url>
+      
+        <content type="html"><![CDATA[<h1 id="MISC"><a href="#MISC" class="headerlink" title="MISC"></a>MISC</h1><p>第一题，签到题（流量分析）都做不出来。（痛苦.raw）</p><p>第二题是隐写，卡在了flag.txt,flag近在眼前，就是出不来。做出来了但只能做出来一点点。听说后来弄出来什么加密过的zip，然后解密。</p><p>第三题好像是流量取证，瞟一眼，没希望放弃了。</p><h1 id="Crypto"><a href="#Crypto" class="headerlink" title="Crypto"></a>Crypto</h1><p>第一个就是现代密码，用了没见过的玄学加密算法。</p><p>Crypto，放弃。</p><h1 id="Web"><a href="#Web" class="headerlink" title="Web"></a>Web</h1><p>第一题没给靶机，只给了一个压缩包，解压后有两个js文件，还有一个忘记了。</p><p>后面的题看一眼，放弃。开摆！</p><h1 id="Re"><a href="#Re" class="headerlink" title="Re"></a>Re</h1><p>玄学。摆。</p><h1 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h1><p>一道题都没做出来，我是FW。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> nothing </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Thoughts </tag>
+            
+            <tag> CTF </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>webshell</title>
       <link href="/2021/12/12/webshell/"/>
       <url>/2021/12/12/webshell/</url>
