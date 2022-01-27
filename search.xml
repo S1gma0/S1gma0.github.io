@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>HTML知识笔记</title>
+      <link href="/2022/01/27/HTML%E7%9F%A5%E8%AF%86%E7%AC%94%E8%AE%B0/"/>
+      <url>/2022/01/27/HTML%E7%9F%A5%E8%AF%86%E7%AC%94%E8%AE%B0/</url>
+      
+        <content type="html"><![CDATA[<h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><p>超文本标记语言（Hyper Text Markup Language，简称：HTML）是一种用于创建网页的标准标记语言。常与CSS、JavaScript一起被众多网站用于设计网页、网页应用程序以及移动应用程序的用户界面。</p><p>HTML是一种<strong>标记语言</strong>而非编程语言。HTML 使用标记标签来描述网页。HTML 文档包含了HTML 标签及文本内容，HTML文档也叫做 web 页面。</p><h1 id="基础部分"><a href="#基础部分" class="headerlink" title="基础部分"></a>基础部分</h1><p>示例</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">    &lt;meta charset=&quot;UTF-8&quot;&gt;&lt;!--定义文档的编码格式为UTF-8--&gt;</span><br><span class="line">    &lt;title&gt;learn&lt;/title&gt;&lt;!--定义文档的标题为learn--&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">    &lt;h1&gt;一&lt;/h1&gt;&lt;!--一级标题“一”--&gt;</span><br><span class="line">    &lt;h2&gt;二&lt;/h2&gt;&lt;!--二级标题“二”--&gt;</span><br><span class="line">    &lt;h2&gt;三&lt;/h2&gt;&lt;!--二级标题“三”--&gt;</span><br><span class="line">    &lt;h3&gt;四&lt;/h3&gt;&lt;!--三级标题“四”--&gt;</span><br><span class="line">    &lt;p&gt;段落，Loipsum dolor sit amet consectetur adipisicing elit&lt;/p&gt;</span><br><span class="line">    &lt;a href=&quot;https://cn.bing.com/&quot;&gt;这是一个bing的链接&lt;/a&gt;</span><br><span class="line">    &lt;img src=&quot;null.jpg&quot;&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;声明为HTML5文档</span><br><span class="line">&lt;html&gt;与&lt;/html&gt;之间是完整的HTML界面</span><br><span class="line">&lt;head&gt;与&lt;/head&gt;之间的是头部元素</span><br><span class="line">&lt;body&gt;与&lt;/body&gt;之间的是可见的页面内容</span><br></pre></td></tr></table></figure><p>![](C:\Users\Edward Lee\AppData\Roaming\Typora\typora-user-images\image-20220127152221216.png)</p><p>1.注释符号<!----></p><p>2.标题（h1到h6是从一级标题到六级标题）</p><p>3.段落</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;p&gt;XXX&lt;/p&gt;             &lt;!--XXX为所写的段落--&gt;</span><br></pre></td></tr></table></figure><p>4.链接</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;a href=&quot;XX&quot;&gt;VVV&lt;/a&gt;   &lt;!--XX是链接的地址，不会浏览器中显示出来。VVV是会在浏览器中显示出来--&gt;</span><br></pre></td></tr></table></figure><p>5.图像</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;img src=&quot;XXX&quot;&gt;        &lt;!--XXX是图像的地址--&gt;</span><br></pre></td></tr></table></figure><h1 id="元素"><a href="#元素" class="headerlink" title="元素"></a>元素</h1><h2 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h2><p>①HTML元素以开始标签起始，结束标签终止</p><p>②起始标签与结束标签之间的内容，即为元素的内容</p><p>③某些HTML元素具有空内容，空元素在开始标签中进行关闭（以开始标签的结束而结束）</p><p>④大多数HTML元素可以<strong>嵌套</strong>，即一个HTML元素可以包含其它的HTML元素。</p><p>⑤大多数HTML元素可拥有<strong>属性</strong>。</p><table><thead><tr><th align="center">开始标签</th><th align="center">元素内容</th><th align="center">结束标签</th></tr></thead><tbody><tr><td align="center"><p></td><td align="center">段落</td><td align="center"></p></td></tr><tr><td align="center">&lt;a href=”<a href="https://cn.bing.com/&quot;">https://cn.bing.com/&quot;</a></td><td align="center">链接</td><td align="center"></a></td></tr><tr><td align="center"><br></td><td align="center">换行</td><td align="center"></td></tr></tbody></table>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Hello World</title>
       <link href="/2021/12/18/hello-world/"/>
       <url>/2021/12/18/hello-world/</url>
@@ -60,9 +73,9 @@
       
         <tags>
             
-            <tag> Web </tag>
-            
             <tag> WriteUp </tag>
+            
+            <tag> Web </tag>
             
             <tag> adworld </tag>
             
@@ -91,9 +104,9 @@
       
         <tags>
             
-            <tag> Web </tag>
-            
             <tag> WriteUp </tag>
+            
+            <tag> Web </tag>
             
             <tag> adworld </tag>
             
@@ -124,9 +137,9 @@
       
         <tags>
             
-            <tag> Web </tag>
-            
             <tag> WriteUp </tag>
+            
+            <tag> Web </tag>
             
             <tag> HTTP协议 </tag>
             
@@ -238,9 +251,9 @@
       
         <tags>
             
-            <tag> Web </tag>
-            
             <tag> WriteUp </tag>
+            
+            <tag> Web </tag>
             
             <tag> XSS </tag>
             
