@@ -118,7 +118,7 @@
     <link href="https://s1gma0.github.io/2021/12/12/webshell/"/>
     <id>https://s1gma0.github.io/2021/12/12/webshell/</id>
     <published>2021-12-11T16:36:23.000Z</published>
-    <updated>2021-12-11T17:33:12.472Z</updated>
+    <updated>2022-01-31T06:41:56.468Z</updated>
     
     <content type="html"><![CDATA[<h1 id="题目及分析"><a href="#题目及分析" class="headerlink" title="题目及分析"></a>题目及分析</h1><p>小宁百度了php一句话,觉着很有意思,并且把它放在index.php里。</p><p>打开后出现</p><p><strong>你会使用webshell吗？</strong></p><p><strong><?php @eval($_POST['shell']);?></strong></p><p>这个明显是一句话木马。</p><p>eval()将括号里的字符串按照PHP代码来执行。</p><h1 id="目标"><a href="#目标" class="headerlink" title="目标"></a>目标</h1><p>了解一句话木马，学会使用webshell</p><h1 id="工具"><a href="#工具" class="headerlink" title="工具"></a>工具</h1><p>中国蚁剑或hackbar</p><h1 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h1><h2 id="中国蚁剑解决"><a href="#中国蚁剑解决" class="headerlink" title="中国蚁剑解决"></a>中国蚁剑解决</h2><p><strong>1.首先添加数据</strong></p><p>将URL地址粘贴进去，连接密码为shell，然后测试连接。不出意外的话，就能连接成功。连接成功后，点击添加。</p><p><strong>2.进入网站目录寻找flag</strong></p><p>在/var/www/html/中发现flag.txt，打开后得到cyberpeace{5d017cac216724ffba8b9c7f2ee1c366}</p><h2 id="hackbar解决"><a href="#hackbar解决" class="headerlink" title="hackbar解决"></a>hackbar解决</h2><p><strong>1.POST方式传递参数</strong></p><p>在hackbar中将shell=system(“ls”);使用post方式上传上去，然后服务器执行ls命令，将当前工作目录的内容列出。</p><p>flag.txt index.php被列出。</p><p><strong>2.打开flag.txt</strong></p><p>然后在hackbar中将shell=system(“cat flag.txt”);以post方式上传上去，得到cyberpeace{5d017cac216724ffba8b9c7f2ee1c366}</p>]]></content>
     
@@ -131,6 +131,8 @@
       
     
     
+    
+    <category term="CTF" scheme="https://s1gma0.github.io/category/CTF/"/>
     
     
     <category term="WriteUp" scheme="https://s1gma0.github.io/tag/WriteUp/"/>
