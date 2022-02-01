@@ -179,20 +179,6 @@
   </url>
   
   <url>
-    <loc>https://s1gma0.github.io/tag/Thoughts/</loc>
-    <lastmod>2022-02-01</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://s1gma0.github.io/tag/CTF/</loc>
-    <lastmod>2022-02-01</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://s1gma0.github.io/tag/HTML/</loc>
     <lastmod>2022-02-01</lastmod>
     <changefreq>daily</changefreq>
@@ -200,7 +186,7 @@
   </url>
   
   <url>
-    <loc>https://s1gma0.github.io/tag/error/</loc>
+    <loc>https://s1gma0.github.io/tag/SQL/</loc>
     <lastmod>2022-02-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -214,14 +200,14 @@
   </url>
   
   <url>
-    <loc>https://s1gma0.github.io/tag/XSS/</loc>
+    <loc>https://s1gma0.github.io/tag/Thoughts/</loc>
     <lastmod>2022-02-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://s1gma0.github.io/tag/JavaScript/</loc>
+    <loc>https://s1gma0.github.io/tag/CTF/</loc>
     <lastmod>2022-02-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -242,7 +228,21 @@
   </url>
   
   <url>
-    <loc>https://s1gma0.github.io/tag/SQL/</loc>
+    <loc>https://s1gma0.github.io/tag/XSS/</loc>
+    <lastmod>2022-02-01</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://s1gma0.github.io/tag/error/</loc>
+    <lastmod>2022-02-01</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://s1gma0.github.io/tag/JavaScript/</loc>
     <lastmod>2022-02-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -263,13 +263,6 @@
   </url>
   
   <url>
-    <loc>https://s1gma0.github.io/tag/webshell/</loc>
-    <lastmod>2022-02-01</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://s1gma0.github.io/tag/XFF/</loc>
     <lastmod>2022-02-01</lastmod>
     <changefreq>daily</changefreq>
@@ -278,6 +271,13 @@
   
   <url>
     <loc>https://s1gma0.github.io/tag/referer/</loc>
+    <lastmod>2022-02-01</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://s1gma0.github.io/tag/webshell/</loc>
     <lastmod>2022-02-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -300,14 +300,14 @@
   </url>
   
   <url>
-    <loc>https://s1gma0.github.io/category/nothing/</loc>
+    <loc>https://s1gma0.github.io/category/HTML/</loc>
     <lastmod>2022-02-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://s1gma0.github.io/category/HTML/</loc>
+    <loc>https://s1gma0.github.io/category/nothing/</loc>
     <lastmod>2022-02-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
