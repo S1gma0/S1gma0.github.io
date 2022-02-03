@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>plan</title>
+      <link href="/2022/02/03/plan/"/>
+      <url>/2022/02/03/plan/</url>
+      
+        <content type="html"><![CDATA[<p>ctfhub上的信息泄露、sql注入、文件上传、rce、ssrf共5类技能树，28号之前点亮。同时把攻防世界的web和misc入门题做完。有空的话，看看MISC。</p><p>PS：有些技能树之前点亮了一部分，攻防世界剩的题不多。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> CTF </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> CTF </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>JavaScript笔记</title>
       <link href="/2022/01/29/JavaScript%E7%AC%94%E8%AE%B0/"/>
       <url>/2022/01/29/JavaScript%E7%AC%94%E8%AE%B0/</url>
@@ -116,9 +141,9 @@
       
         <tags>
             
-            <tag> WriteUp </tag>
-            
             <tag> Web </tag>
+            
+            <tag> WriteUp </tag>
             
             <tag> adworld </tag>
             
@@ -147,9 +172,9 @@
       
         <tags>
             
-            <tag> WriteUp </tag>
-            
             <tag> Web </tag>
+            
+            <tag> WriteUp </tag>
             
             <tag> adworld </tag>
             
@@ -180,9 +205,9 @@
       
         <tags>
             
-            <tag> WriteUp </tag>
-            
             <tag> Web </tag>
+            
+            <tag> WriteUp </tag>
             
             <tag> HTTP协议 </tag>
             
@@ -294,11 +319,11 @@
       
         <tags>
             
-            <tag> WriteUp </tag>
-            
             <tag> Web </tag>
             
             <tag> XSS </tag>
+            
+            <tag> WriteUp </tag>
             
             <tag> CTFHub </tag>
             
@@ -350,9 +375,9 @@
       
         <tags>
             
-            <tag> SQL </tag>
-            
             <tag> Web </tag>
+            
+            <tag> SQL </tag>
             
         </tags>
       

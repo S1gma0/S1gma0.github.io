@@ -6,7 +6,7 @@
   <link href="https://s1gma0.github.io/atom.xml" rel="self"/>
   
   <link href="https://s1gma0.github.io/"/>
-  <updated>2022-02-01T09:53:18.587Z</updated>
+  <updated>2022-02-03T08:46:23.646Z</updated>
   <id>https://s1gma0.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>plan</title>
+    <link href="https://s1gma0.github.io/2022/02/03/plan/"/>
+    <id>https://s1gma0.github.io/2022/02/03/plan/</id>
+    <published>2022-02-03T07:13:23.000Z</published>
+    <updated>2022-02-03T08:46:23.646Z</updated>
+    
+    <content type="html"><![CDATA[<p>ctfhub上的信息泄露、sql注入、文件上传、rce、ssrf共5类技能树，28号之前点亮。同时把攻防世界的web和misc入门题做完。有空的话，看看MISC。</p><p>PS：有些技能树之前点亮了一部分，攻防世界剩的题不多。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;ctfhub上的信息泄露、sql注入、文件上传、rce、ssrf共5类技能树，28号之前点亮。同时把攻防世界的web和misc入门题做完。有空的话，看看MISC。&lt;/p&gt;
+&lt;p&gt;PS：有些技能树之前点亮了一部分，攻防世界剩的题不多。&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    <category term="CTF" scheme="https://s1gma0.github.io/category/CTF/"/>
+    
+    
+    <category term="CTF" scheme="https://s1gma0.github.io/tag/CTF/"/>
+    
+  </entry>
   
   <entry>
     <title>JavaScript笔记</title>
@@ -135,9 +161,9 @@
     <category term="CTF" scheme="https://s1gma0.github.io/category/CTF/"/>
     
     
-    <category term="WriteUp" scheme="https://s1gma0.github.io/tag/WriteUp/"/>
-    
     <category term="Web" scheme="https://s1gma0.github.io/tag/Web/"/>
+    
+    <category term="WriteUp" scheme="https://s1gma0.github.io/tag/WriteUp/"/>
     
     <category term="adworld" scheme="https://s1gma0.github.io/tag/adworld/"/>
     
@@ -166,9 +192,9 @@
     <category term="CTF" scheme="https://s1gma0.github.io/category/CTF/"/>
     
     
-    <category term="WriteUp" scheme="https://s1gma0.github.io/tag/WriteUp/"/>
-    
     <category term="Web" scheme="https://s1gma0.github.io/tag/Web/"/>
+    
+    <category term="WriteUp" scheme="https://s1gma0.github.io/tag/WriteUp/"/>
     
     <category term="adworld" scheme="https://s1gma0.github.io/tag/adworld/"/>
     
@@ -200,9 +226,9 @@
     <category term="CTF" scheme="https://s1gma0.github.io/category/CTF/"/>
     
     
-    <category term="WriteUp" scheme="https://s1gma0.github.io/tag/WriteUp/"/>
-    
     <category term="Web" scheme="https://s1gma0.github.io/tag/Web/"/>
+    
+    <category term="WriteUp" scheme="https://s1gma0.github.io/tag/WriteUp/"/>
     
     <category term="HTTP协议" scheme="https://s1gma0.github.io/tag/HTTP%E5%8D%8F%E8%AE%AE/"/>
     
@@ -313,11 +339,11 @@
     <category term="CTF" scheme="https://s1gma0.github.io/category/CTF/"/>
     
     
-    <category term="WriteUp" scheme="https://s1gma0.github.io/tag/WriteUp/"/>
-    
     <category term="Web" scheme="https://s1gma0.github.io/tag/Web/"/>
     
     <category term="XSS" scheme="https://s1gma0.github.io/tag/XSS/"/>
+    
+    <category term="WriteUp" scheme="https://s1gma0.github.io/tag/WriteUp/"/>
     
     <category term="CTFHub" scheme="https://s1gma0.github.io/tag/CTFHub/"/>
     
@@ -368,9 +394,9 @@
     <category term="CTF" scheme="https://s1gma0.github.io/category/CTF/"/>
     
     
-    <category term="SQL" scheme="https://s1gma0.github.io/tag/SQL/"/>
-    
     <category term="Web" scheme="https://s1gma0.github.io/tag/Web/"/>
+    
+    <category term="SQL" scheme="https://s1gma0.github.io/tag/SQL/"/>
     
   </entry>
   
