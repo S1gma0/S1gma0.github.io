@@ -30,13 +30,6 @@
   </url>
   
   <url>
-    <loc>https://s1gma0.github.io/2022/02/03/plan/</loc>
-    
-    <lastmod>2022-02-03</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://s1gma0.github.io/2021/12/05/%E7%9F%A5%E8%AF%86%E6%9D%82%E8%AE%B0/</loc>
     
     <lastmod>2022-02-01</lastmod>
@@ -221,14 +214,14 @@
   </url>
   
   <url>
-    <loc>https://s1gma0.github.io/tag/HTML/</loc>
+    <loc>https://s1gma0.github.io/tag/error/</loc>
     <lastmod>2023-04-17</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://s1gma0.github.io/tag/error/</loc>
+    <loc>https://s1gma0.github.io/tag/HTML/</loc>
     <lastmod>2023-04-17</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -335,14 +328,14 @@
   </url>
   
   <url>
-    <loc>https://s1gma0.github.io/category/HTML/</loc>
+    <loc>https://s1gma0.github.io/category/Hexo/</loc>
     <lastmod>2023-04-17</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://s1gma0.github.io/category/Hexo/</loc>
+    <loc>https://s1gma0.github.io/category/HTML/</loc>
     <lastmod>2023-04-17</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
