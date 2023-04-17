@@ -3,11 +3,11 @@
   <title>Sigma</title>
   
   <subtitle>blog</subtitle>
-  <link href="https://s1gma0.github.io/atom.xml" rel="self"/>
+  <link href="https://sigma.github.io/atom.xml" rel="self"/>
   
-  <link href="https://s1gma0.github.io/"/>
+  <link href="https://sigma.github.io/"/>
   <updated>2022-12-06T03:31:10.311Z</updated>
-  <id>https://s1gma0.github.io/</id>
+  <id>https://sigma.github.io/</id>
   
   <author>
     <name>Sigma</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>常用链接</title>
-    <link href="https://s1gma0.github.io/2022/12/04/%E5%B8%B8%E7%94%A8%E9%93%BE%E6%8E%A5/"/>
-    <id>https://s1gma0.github.io/2022/12/04/%E5%B8%B8%E7%94%A8%E9%93%BE%E6%8E%A5/</id>
+    <link href="https://sigma.github.io/2022/12/04/%E5%B8%B8%E7%94%A8%E9%93%BE%E6%8E%A5/"/>
+    <id>https://sigma.github.io/2022/12/04/%E5%B8%B8%E7%94%A8%E9%93%BE%E6%8E%A5/</id>
     <published>2022-12-04T02:03:57.000Z</published>
     <updated>2022-12-06T03:31:10.311Z</updated>
     
@@ -39,8 +39,8 @@
   
   <entry>
     <title>Red Dragonfly</title>
-    <link href="https://s1gma0.github.io/2022/04/14/Red-Dragonfly/"/>
-    <id>https://s1gma0.github.io/2022/04/14/Red-Dragonfly/</id>
+    <link href="https://sigma.github.io/2022/04/14/Red-Dragonfly/"/>
+    <id>https://sigma.github.io/2022/04/14/Red-Dragonfly/</id>
     <published>2022-04-14T13:18:38.000Z</published>
     <updated>2022-04-14T13:49:28.327Z</updated>
     
@@ -59,8 +59,8 @@
   
   <entry>
     <title>备份文件下载</title>
-    <link href="https://s1gma0.github.io/2022/02/10/%E5%A4%87%E4%BB%BD%E6%96%87%E4%BB%B6%E4%B8%8B%E8%BD%BD/"/>
-    <id>https://s1gma0.github.io/2022/02/10/%E5%A4%87%E4%BB%BD%E6%96%87%E4%BB%B6%E4%B8%8B%E8%BD%BD/</id>
+    <link href="https://sigma.github.io/2022/02/10/%E5%A4%87%E4%BB%BD%E6%96%87%E4%BB%B6%E4%B8%8B%E8%BD%BD/"/>
+    <id>https://sigma.github.io/2022/02/10/%E5%A4%87%E4%BB%BD%E6%96%87%E4%BB%B6%E4%B8%8B%E8%BD%BD/</id>
     <published>2022-02-10T05:53:24.000Z</published>
     <updated>2022-02-10T05:55:38.457Z</updated>
     
@@ -80,8 +80,8 @@
   
   <entry>
     <title>JavaScript笔记</title>
-    <link href="https://s1gma0.github.io/2022/01/29/JavaScript%E7%AC%94%E8%AE%B0/"/>
-    <id>https://s1gma0.github.io/2022/01/29/JavaScript%E7%AC%94%E8%AE%B0/</id>
+    <link href="https://sigma.github.io/2022/01/29/JavaScript%E7%AC%94%E8%AE%B0/"/>
+    <id>https://sigma.github.io/2022/01/29/JavaScript%E7%AC%94%E8%AE%B0/</id>
     <published>2022-01-29T11:37:43.000Z</published>
     <updated>2022-02-01T09:53:18.587Z</updated>
     
@@ -95,17 +95,17 @@
     
     
     
-    <category term="JavaScript" scheme="https://s1gma0.github.io/category/JavaScript/"/>
+    <category term="JavaScript" scheme="https://sigma.github.io/category/JavaScript/"/>
     
     
-    <category term="JavaScript" scheme="https://s1gma0.github.io/tag/JavaScript/"/>
+    <category term="JavaScript" scheme="https://sigma.github.io/tag/JavaScript/"/>
     
   </entry>
   
   <entry>
     <title>HTML笔记</title>
-    <link href="https://s1gma0.github.io/2022/01/27/HTML%E7%AC%94%E8%AE%B0/"/>
-    <id>https://s1gma0.github.io/2022/01/27/HTML%E7%AC%94%E8%AE%B0/</id>
+    <link href="https://sigma.github.io/2022/01/27/HTML%E7%AC%94%E8%AE%B0/"/>
+    <id>https://sigma.github.io/2022/01/27/HTML%E7%AC%94%E8%AE%B0/</id>
     <published>2022-01-27T06:23:38.000Z</published>
     <updated>2022-02-03T08:47:59.467Z</updated>
     
@@ -119,17 +119,17 @@
     
     
     
-    <category term="HTML" scheme="https://s1gma0.github.io/category/HTML/"/>
+    <category term="HTML" scheme="https://sigma.github.io/category/HTML/"/>
     
     
-    <category term="HTML" scheme="https://s1gma0.github.io/tag/HTML/"/>
+    <category term="HTML" scheme="https://sigma.github.io/tag/HTML/"/>
     
   </entry>
   
   <entry>
     <title>Hello World</title>
-    <link href="https://s1gma0.github.io/2021/12/18/hello-world/"/>
-    <id>https://s1gma0.github.io/2021/12/18/hello-world/</id>
+    <link href="https://sigma.github.io/2021/12/18/hello-world/"/>
+    <id>https://sigma.github.io/2021/12/18/hello-world/</id>
     <published>2021-12-18T15:54:13.108Z</published>
     <updated>2021-12-04T17:09:48.533Z</updated>
     
@@ -143,15 +143,15 @@
     
     
     
-    <category term="nothing" scheme="https://s1gma0.github.io/category/nothing/"/>
+    <category term="nothing" scheme="https://sigma.github.io/category/nothing/"/>
     
     
   </entry>
   
   <entry>
     <title>2021新疆省赛</title>
-    <link href="https://s1gma0.github.io/2021/12/12/2021%E6%96%B0%E7%96%86%E7%9C%81%E8%B5%9B/"/>
-    <id>https://s1gma0.github.io/2021/12/12/2021%E6%96%B0%E7%96%86%E7%9C%81%E8%B5%9B/</id>
+    <link href="https://sigma.github.io/2021/12/12/2021%E6%96%B0%E7%96%86%E7%9C%81%E8%B5%9B/"/>
+    <id>https://sigma.github.io/2021/12/12/2021%E6%96%B0%E7%96%86%E7%9C%81%E8%B5%9B/</id>
     <published>2021-12-12T12:55:37.000Z</published>
     <updated>2021-12-12T13:13:46.354Z</updated>
     
@@ -166,19 +166,19 @@
     
     
     
-    <category term="nothing" scheme="https://s1gma0.github.io/category/nothing/"/>
+    <category term="nothing" scheme="https://sigma.github.io/category/nothing/"/>
     
     
-    <category term="Thoughts" scheme="https://s1gma0.github.io/tag/Thoughts/"/>
+    <category term="Thoughts" scheme="https://sigma.github.io/tag/Thoughts/"/>
     
-    <category term="CTF" scheme="https://s1gma0.github.io/tag/CTF/"/>
+    <category term="CTF" scheme="https://sigma.github.io/tag/CTF/"/>
     
   </entry>
   
   <entry>
     <title>webshell</title>
-    <link href="https://s1gma0.github.io/2021/12/12/webshell/"/>
-    <id>https://s1gma0.github.io/2021/12/12/webshell/</id>
+    <link href="https://sigma.github.io/2021/12/12/webshell/"/>
+    <id>https://sigma.github.io/2021/12/12/webshell/</id>
     <published>2021-12-11T16:36:23.000Z</published>
     <updated>2022-02-01T09:54:06.510Z</updated>
     
@@ -194,23 +194,23 @@
     
     
     
-    <category term="CTF" scheme="https://s1gma0.github.io/category/CTF/"/>
+    <category term="CTF" scheme="https://sigma.github.io/category/CTF/"/>
     
     
-    <category term="WriteUp" scheme="https://s1gma0.github.io/tag/WriteUp/"/>
+    <category term="WriteUp" scheme="https://sigma.github.io/tag/WriteUp/"/>
     
-    <category term="Web" scheme="https://s1gma0.github.io/tag/Web/"/>
+    <category term="Web" scheme="https://sigma.github.io/tag/Web/"/>
     
-    <category term="adworld" scheme="https://s1gma0.github.io/tag/adworld/"/>
+    <category term="adworld" scheme="https://sigma.github.io/tag/adworld/"/>
     
-    <category term="webshell" scheme="https://s1gma0.github.io/tag/webshell/"/>
+    <category term="webshell" scheme="https://sigma.github.io/tag/webshell/"/>
     
   </entry>
   
   <entry>
     <title>xff_referer</title>
-    <link href="https://s1gma0.github.io/2021/12/09/xff-referer/"/>
-    <id>https://s1gma0.github.io/2021/12/09/xff-referer/</id>
+    <link href="https://sigma.github.io/2021/12/09/xff-referer/"/>
+    <id>https://sigma.github.io/2021/12/09/xff-referer/</id>
     <published>2021-12-09T13:01:38.000Z</published>
     <updated>2021-12-09T13:15:16.468Z</updated>
     
@@ -225,25 +225,25 @@
     
     
     
-    <category term="CTF" scheme="https://s1gma0.github.io/category/CTF/"/>
+    <category term="CTF" scheme="https://sigma.github.io/category/CTF/"/>
     
     
-    <category term="WriteUp" scheme="https://s1gma0.github.io/tag/WriteUp/"/>
+    <category term="WriteUp" scheme="https://sigma.github.io/tag/WriteUp/"/>
     
-    <category term="Web" scheme="https://s1gma0.github.io/tag/Web/"/>
+    <category term="Web" scheme="https://sigma.github.io/tag/Web/"/>
     
-    <category term="adworld" scheme="https://s1gma0.github.io/tag/adworld/"/>
+    <category term="adworld" scheme="https://sigma.github.io/tag/adworld/"/>
     
-    <category term="XFF" scheme="https://s1gma0.github.io/tag/XFF/"/>
+    <category term="XFF" scheme="https://sigma.github.io/tag/XFF/"/>
     
-    <category term="referer" scheme="https://s1gma0.github.io/tag/referer/"/>
+    <category term="referer" scheme="https://sigma.github.io/tag/referer/"/>
     
   </entry>
   
   <entry>
     <title>get&amp;post</title>
-    <link href="https://s1gma0.github.io/2021/12/05/wp&amp;get&amp;post/"/>
-    <id>https://s1gma0.github.io/2021/12/05/wp&amp;get&amp;post/</id>
+    <link href="https://sigma.github.io/2021/12/05/wp&amp;get&amp;post/"/>
+    <id>https://sigma.github.io/2021/12/05/wp&amp;get&amp;post/</id>
     <published>2021-12-05T13:40:13.000Z</published>
     <updated>2022-02-01T09:55:00.799Z</updated>
     
@@ -259,25 +259,25 @@
     
     
     
-    <category term="CTF" scheme="https://s1gma0.github.io/category/CTF/"/>
+    <category term="CTF" scheme="https://sigma.github.io/category/CTF/"/>
     
     
-    <category term="WriteUp" scheme="https://s1gma0.github.io/tag/WriteUp/"/>
+    <category term="WriteUp" scheme="https://sigma.github.io/tag/WriteUp/"/>
     
-    <category term="Web" scheme="https://s1gma0.github.io/tag/Web/"/>
+    <category term="Web" scheme="https://sigma.github.io/tag/Web/"/>
     
-    <category term="HTTP协议" scheme="https://s1gma0.github.io/tag/HTTP%E5%8D%8F%E8%AE%AE/"/>
+    <category term="HTTP协议" scheme="https://sigma.github.io/tag/HTTP%E5%8D%8F%E8%AE%AE/"/>
     
-    <category term="请求方式" scheme="https://s1gma0.github.io/tag/%E8%AF%B7%E6%B1%82%E6%96%B9%E5%BC%8F/"/>
+    <category term="请求方式" scheme="https://sigma.github.io/tag/%E8%AF%B7%E6%B1%82%E6%96%B9%E5%BC%8F/"/>
     
-    <category term="CTFHub" scheme="https://s1gma0.github.io/tag/CTFHub/"/>
+    <category term="CTFHub" scheme="https://sigma.github.io/tag/CTFHub/"/>
     
   </entry>
   
   <entry>
     <title>GET&amp;POST请求</title>
-    <link href="https://s1gma0.github.io/2021/12/05/get%E5%92%8Cpost%E8%AF%B7%E6%B1%82/"/>
-    <id>https://s1gma0.github.io/2021/12/05/get%E5%92%8Cpost%E8%AF%B7%E6%B1%82/</id>
+    <link href="https://sigma.github.io/2021/12/05/get%E5%92%8Cpost%E8%AF%B7%E6%B1%82/"/>
+    <id>https://sigma.github.io/2021/12/05/get%E5%92%8Cpost%E8%AF%B7%E6%B1%82/</id>
     <published>2021-12-05T12:46:39.000Z</published>
     <updated>2021-12-09T10:54:02.546Z</updated>
     
@@ -292,21 +292,21 @@
     
     
     
-    <category term="CTF" scheme="https://s1gma0.github.io/category/CTF/"/>
+    <category term="CTF" scheme="https://sigma.github.io/category/CTF/"/>
     
     
-    <category term="Web" scheme="https://s1gma0.github.io/tag/Web/"/>
+    <category term="Web" scheme="https://sigma.github.io/tag/Web/"/>
     
-    <category term="HTTP协议" scheme="https://s1gma0.github.io/tag/HTTP%E5%8D%8F%E8%AE%AE/"/>
+    <category term="HTTP协议" scheme="https://sigma.github.io/tag/HTTP%E5%8D%8F%E8%AE%AE/"/>
     
-    <category term="请求方式" scheme="https://s1gma0.github.io/tag/%E8%AF%B7%E6%B1%82%E6%96%B9%E5%BC%8F/"/>
+    <category term="请求方式" scheme="https://sigma.github.io/tag/%E8%AF%B7%E6%B1%82%E6%96%B9%E5%BC%8F/"/>
     
   </entry>
   
   <entry>
     <title>知识杂记</title>
-    <link href="https://s1gma0.github.io/2021/12/05/%E7%9F%A5%E8%AF%86%E6%9D%82%E8%AE%B0/"/>
-    <id>https://s1gma0.github.io/2021/12/05/%E7%9F%A5%E8%AF%86%E6%9D%82%E8%AE%B0/</id>
+    <link href="https://sigma.github.io/2021/12/05/%E7%9F%A5%E8%AF%86%E6%9D%82%E8%AE%B0/"/>
+    <id>https://sigma.github.io/2021/12/05/%E7%9F%A5%E8%AF%86%E6%9D%82%E8%AE%B0/</id>
     <published>2021-12-05T03:49:47.000Z</published>
     <updated>2022-02-01T09:57:45.188Z</updated>
     
@@ -320,17 +320,17 @@
     
     
     
-    <category term="CTF" scheme="https://s1gma0.github.io/category/CTF/"/>
+    <category term="CTF" scheme="https://sigma.github.io/category/CTF/"/>
     
     
-    <category term="CTF" scheme="https://s1gma0.github.io/tag/CTF/"/>
+    <category term="CTF" scheme="https://sigma.github.io/tag/CTF/"/>
     
   </entry>
   
   <entry>
     <title>XSSplatform</title>
-    <link href="https://s1gma0.github.io/2021/12/05/XSSplatform/"/>
-    <id>https://s1gma0.github.io/2021/12/05/XSSplatform/</id>
+    <link href="https://sigma.github.io/2021/12/05/XSSplatform/"/>
+    <id>https://sigma.github.io/2021/12/05/XSSplatform/</id>
     <published>2021-12-05T02:57:50.000Z</published>
     <updated>2022-02-01T09:56:24.840Z</updated>
     
@@ -345,19 +345,19 @@
     
     
     
-    <category term="CTF" scheme="https://s1gma0.github.io/category/CTF/"/>
+    <category term="CTF" scheme="https://sigma.github.io/category/CTF/"/>
     
     
-    <category term="Web" scheme="https://s1gma0.github.io/tag/Web/"/>
+    <category term="Web" scheme="https://sigma.github.io/tag/Web/"/>
     
-    <category term="XSS" scheme="https://s1gma0.github.io/tag/XSS/"/>
+    <category term="XSS" scheme="https://sigma.github.io/tag/XSS/"/>
     
   </entry>
   
   <entry>
     <title>反射型XSS</title>
-    <link href="https://s1gma0.github.io/2021/12/05/%E5%8F%8D%E5%B0%84%E5%9E%8BXSS/"/>
-    <id>https://s1gma0.github.io/2021/12/05/%E5%8F%8D%E5%B0%84%E5%9E%8BXSS/</id>
+    <link href="https://sigma.github.io/2021/12/05/%E5%8F%8D%E5%B0%84%E5%9E%8BXSS/"/>
+    <id>https://sigma.github.io/2021/12/05/%E5%8F%8D%E5%B0%84%E5%9E%8BXSS/</id>
     <published>2021-12-05T02:28:01.000Z</published>
     <updated>2022-02-01T09:57:14.029Z</updated>
     
@@ -372,23 +372,23 @@
     
     
     
-    <category term="CTF" scheme="https://s1gma0.github.io/category/CTF/"/>
+    <category term="CTF" scheme="https://sigma.github.io/category/CTF/"/>
     
     
-    <category term="WriteUp" scheme="https://s1gma0.github.io/tag/WriteUp/"/>
+    <category term="WriteUp" scheme="https://sigma.github.io/tag/WriteUp/"/>
     
-    <category term="Web" scheme="https://s1gma0.github.io/tag/Web/"/>
+    <category term="Web" scheme="https://sigma.github.io/tag/Web/"/>
     
-    <category term="XSS" scheme="https://s1gma0.github.io/tag/XSS/"/>
+    <category term="XSS" scheme="https://sigma.github.io/tag/XSS/"/>
     
-    <category term="CTFHub" scheme="https://s1gma0.github.io/tag/CTFHub/"/>
+    <category term="CTFHub" scheme="https://sigma.github.io/tag/CTFHub/"/>
     
   </entry>
   
   <entry>
     <title>Hexo部署时Error: Spawn failed的解决办法</title>
-    <link href="https://s1gma0.github.io/2021/12/02/Hexo%E9%83%A8%E7%BD%B2%E6%97%B6Error-Spawn-failed%E7%9A%84%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/"/>
-    <id>https://s1gma0.github.io/2021/12/02/Hexo%E9%83%A8%E7%BD%B2%E6%97%B6Error-Spawn-failed%E7%9A%84%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/</id>
+    <link href="https://sigma.github.io/2021/12/02/Hexo%E9%83%A8%E7%BD%B2%E6%97%B6Error-Spawn-failed%E7%9A%84%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/"/>
+    <id>https://sigma.github.io/2021/12/02/Hexo%E9%83%A8%E7%BD%B2%E6%97%B6Error-Spawn-failed%E7%9A%84%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/</id>
     <published>2021-12-02T13:22:32.000Z</published>
     <updated>2021-12-04T17:26:44.737Z</updated>
     
@@ -403,17 +403,17 @@
     
     
     
-    <category term="Hexo" scheme="https://s1gma0.github.io/category/Hexo/"/>
+    <category term="Hexo" scheme="https://sigma.github.io/category/Hexo/"/>
     
     
-    <category term="error" scheme="https://s1gma0.github.io/tag/error/"/>
+    <category term="error" scheme="https://sigma.github.io/tag/error/"/>
     
   </entry>
   
   <entry>
     <title>SQL注入</title>
-    <link href="https://s1gma0.github.io/2021/12/02/SQL%E6%B3%A8%E5%85%A5/"/>
-    <id>https://s1gma0.github.io/2021/12/02/SQL%E6%B3%A8%E5%85%A5/</id>
+    <link href="https://sigma.github.io/2021/12/02/SQL%E6%B3%A8%E5%85%A5/"/>
+    <id>https://sigma.github.io/2021/12/02/SQL%E6%B3%A8%E5%85%A5/</id>
     <published>2021-12-02T13:14:26.000Z</published>
     <updated>2021-12-04T18:16:07.414Z</updated>
     
@@ -427,19 +427,19 @@
     
     
     
-    <category term="CTF" scheme="https://s1gma0.github.io/category/CTF/"/>
+    <category term="CTF" scheme="https://sigma.github.io/category/CTF/"/>
     
     
-    <category term="SQL" scheme="https://s1gma0.github.io/tag/SQL/"/>
+    <category term="SQL" scheme="https://sigma.github.io/tag/SQL/"/>
     
-    <category term="Web" scheme="https://s1gma0.github.io/tag/Web/"/>
+    <category term="Web" scheme="https://sigma.github.io/tag/Web/"/>
     
   </entry>
   
   <entry>
     <title>jade6安装及PDF导入（SUCCESS）</title>
-    <link href="https://s1gma0.github.io/2021/11/25/jade6%E5%AE%89%E8%A3%85%E5%8F%8APDF%E5%AF%BC%E5%85%A5/"/>
-    <id>https://s1gma0.github.io/2021/11/25/jade6%E5%AE%89%E8%A3%85%E5%8F%8APDF%E5%AF%BC%E5%85%A5/</id>
+    <link href="https://sigma.github.io/2021/11/25/jade6%E5%AE%89%E8%A3%85%E5%8F%8APDF%E5%AF%BC%E5%85%A5/"/>
+    <id>https://sigma.github.io/2021/11/25/jade6%E5%AE%89%E8%A3%85%E5%8F%8APDF%E5%AF%BC%E5%85%A5/</id>
     <published>2021-11-25T14:44:28.000Z</published>
     <updated>2021-12-04T17:25:50.894Z</updated>
     
@@ -454,17 +454,17 @@
     
     
     
-    <category term="nothing" scheme="https://s1gma0.github.io/category/nothing/"/>
+    <category term="nothing" scheme="https://sigma.github.io/category/nothing/"/>
     
     
-    <category term="jade 6" scheme="https://s1gma0.github.io/tag/jade-6/"/>
+    <category term="jade 6" scheme="https://sigma.github.io/tag/jade-6/"/>
     
   </entry>
   
   <entry>
     <title>jade安装（注册表导入失败）无法使用</title>
-    <link href="https://s1gma0.github.io/2021/11/25/jade6%E5%AE%89%E8%A3%85%E6%96%B9%E6%B3%95_fail/"/>
-    <id>https://s1gma0.github.io/2021/11/25/jade6%E5%AE%89%E8%A3%85%E6%96%B9%E6%B3%95_fail/</id>
+    <link href="https://sigma.github.io/2021/11/25/jade6%E5%AE%89%E8%A3%85%E6%96%B9%E6%B3%95_fail/"/>
+    <id>https://sigma.github.io/2021/11/25/jade6%E5%AE%89%E8%A3%85%E6%96%B9%E6%B3%95_fail/</id>
     <published>2021-11-24T16:09:37.000Z</published>
     <updated>2021-12-05T03:22:24.108Z</updated>
     
@@ -478,17 +478,17 @@
     
     
     
-    <category term="nothing" scheme="https://s1gma0.github.io/category/nothing/"/>
+    <category term="nothing" scheme="https://sigma.github.io/category/nothing/"/>
     
     
-    <category term="jade 6" scheme="https://s1gma0.github.io/tag/jade-6/"/>
+    <category term="jade 6" scheme="https://sigma.github.io/tag/jade-6/"/>
     
   </entry>
   
   <entry>
     <title>First time to use this!</title>
-    <link href="https://s1gma0.github.io/2021/11/22/first-to/"/>
-    <id>https://s1gma0.github.io/2021/11/22/first-to/</id>
+    <link href="https://sigma.github.io/2021/11/22/first-to/"/>
+    <id>https://sigma.github.io/2021/11/22/first-to/</id>
     <published>2021-11-21T17:49:46.000Z</published>
     <updated>2021-12-04T16:49:07.968Z</updated>
     
@@ -502,15 +502,15 @@
     
     
     
-    <category term="Hexo" scheme="https://s1gma0.github.io/category/Hexo/"/>
+    <category term="Hexo" scheme="https://sigma.github.io/category/Hexo/"/>
     
     
   </entry>
   
   <entry>
     <title>2021XJU CTF新生赛WP</title>
-    <link href="https://s1gma0.github.io/2021/10/26/2021XJU-CTF%E6%96%B0%E7%94%9F%E8%B5%9BWP/"/>
-    <id>https://s1gma0.github.io/2021/10/26/2021XJU-CTF%E6%96%B0%E7%94%9F%E8%B5%9BWP/</id>
+    <link href="https://sigma.github.io/2021/10/26/2021XJU-CTF%E6%96%B0%E7%94%9F%E8%B5%9BWP/"/>
+    <id>https://sigma.github.io/2021/10/26/2021XJU-CTF%E6%96%B0%E7%94%9F%E8%B5%9BWP/</id>
     <published>2021-10-26T05:43:34.000Z</published>
     <updated>2022-02-01T09:34:46.344Z</updated>
     
@@ -524,10 +524,10 @@
     
     
     
-    <category term="CTF" scheme="https://s1gma0.github.io/category/CTF/"/>
+    <category term="CTF" scheme="https://sigma.github.io/category/CTF/"/>
     
     
-    <category term="WriteUp" scheme="https://s1gma0.github.io/tag/WriteUp/"/>
+    <category term="WriteUp" scheme="https://sigma.github.io/tag/WriteUp/"/>
     
   </entry>
   
