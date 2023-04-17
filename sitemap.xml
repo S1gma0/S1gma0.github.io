@@ -228,14 +228,7 @@
   </url>
   
   <url>
-    <loc>https://s1gma0.github.io/tag/Web/</loc>
-    <lastmod>2023-04-17</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://s1gma0.github.io/tag/XSS/</loc>
+    <loc>https://s1gma0.github.io/tag/JavaScript/</loc>
     <lastmod>2023-04-17</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -249,14 +242,14 @@
   </url>
   
   <url>
-    <loc>https://s1gma0.github.io/tag/JavaScript/</loc>
+    <loc>https://s1gma0.github.io/tag/Web/</loc>
     <lastmod>2023-04-17</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://s1gma0.github.io/tag/jade-6/</loc>
+    <loc>https://s1gma0.github.io/tag/XSS/</loc>
     <lastmod>2023-04-17</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -277,7 +270,28 @@
   </url>
   
   <url>
+    <loc>https://s1gma0.github.io/tag/jade-6/</loc>
+    <lastmod>2023-04-17</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://s1gma0.github.io/tag/adworld/</loc>
+    <lastmod>2023-04-17</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://s1gma0.github.io/tag/webshell/</loc>
+    <lastmod>2023-04-17</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://s1gma0.github.io/tag/CTFHub/</loc>
     <lastmod>2023-04-17</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -292,20 +306,6 @@
   
   <url>
     <loc>https://s1gma0.github.io/tag/referer/</loc>
-    <lastmod>2023-04-17</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://s1gma0.github.io/tag/CTFHub/</loc>
-    <lastmod>2023-04-17</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://s1gma0.github.io/tag/webshell/</loc>
     <lastmod>2023-04-17</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
