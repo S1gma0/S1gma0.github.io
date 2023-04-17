@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>S1gma0</title>
+  <title>S1gma</title>
   
   <subtitle>blog</subtitle>
   <link href="https://s1gma0.github.io/atom.xml" rel="self"/>
@@ -10,7 +10,7 @@
   <id>https://s1gma0.github.io/</id>
   
   <author>
-    <name>S1gma0</name>
+    <name>S1gma</name>
     
   </author>
   
@@ -430,9 +430,9 @@
     <category term="CTF" scheme="https://s1gma0.github.io/category/CTF/"/>
     
     
-    <category term="SQL" scheme="https://s1gma0.github.io/tag/SQL/"/>
-    
     <category term="Web" scheme="https://s1gma0.github.io/tag/Web/"/>
+    
+    <category term="SQL" scheme="https://s1gma0.github.io/tag/SQL/"/>
     
   </entry>
   
