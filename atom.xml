@@ -42,9 +42,9 @@
     <link href="https://s1gma0.github.io/2022/04/14/Red-Dragonfly/"/>
     <id>https://s1gma0.github.io/2022/04/14/Red-Dragonfly/</id>
     <published>2022-04-14T13:18:38.000Z</published>
-    <updated>2022-04-14T13:49:28.327Z</updated>
+    <updated>2023-04-19T15:55:53.174Z</updated>
     
-    <content type="html"><![CDATA[<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">POST /DragonFlyServ/Api/webserver/login HTTP/1.1</span><br><span class="line">Content-Type: application/x-www-form-urlencoded</span><br><span class="line">Connection: close</span><br><span class="line">Charset: UTF-8</span><br><span class="line">User-Agent: Dalvik/2.1.0 (Linux; U; Android 12; M2012K11AC Build/SKQ1.211006.001)</span><br><span class="line">Host: 218.195.237.156:8029</span><br><span class="line">Accept-Encoding: gzip, deflate</span><br><span class="line">Content-Length: 123</span><br><span class="line"></span><br></pre></td></tr></table></figure><p>![image-20220414213359081](C:\Users\Edward Lee\AppData\Roaming\Typora\typora-user-images\image-20220414213359081.png)</p><p>???????</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">HTTP/1.1 200 OK</span><br><span class="line">Content-Type: application/json; charset=utf-8</span><br><span class="line">Connection: close</span><br><span class="line">Server: Jetty(9.2.10.v20150310)</span><br><span class="line"></span><br><span class="line">&#123;&quot;r&quot;:&quot;1&quot;,&quot;m&quot;:&quot;1&quot;&#125;</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
+    <content type="html"><![CDATA[<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">POST /DragonFlyServ/Api/webserver/login HTTP/1.1</span><br><span class="line">Content-Type: application/x-www-form-urlencoded</span><br><span class="line">Connection: close</span><br><span class="line">Charset: UTF-8</span><br><span class="line">User-Agent: Dalvik/2.1.0 (Linux; U; Android 12; M2012K11AC Build/SKQ1.211006.001)</span><br><span class="line">Host: 218.195.237.156:8029</span><br><span class="line">Accept-Encoding: gzip, deflate</span><br><span class="line">Content-Length: 123</span><br><span class="line"></span><br></pre></td></tr></table></figure><p><img src="https://cdn.jsdelivr.net/gh/S1gma0/image/image-20220414213359081.png"></p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">HTTP/1.1 200 OK</span><br><span class="line">Content-Type: application/json; charset=utf-8</span><br><span class="line">Connection: close</span><br><span class="line">Server: Jetty(9.2.10.v20150310)</span><br><span class="line"></span><br><span class="line">&#123;&quot;r&quot;:&quot;1&quot;,&quot;m&quot;:&quot;1&quot;&#125;</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
     
     
       
@@ -430,9 +430,9 @@
     <category term="CTF" scheme="https://s1gma0.github.io/category/CTF/"/>
     
     
-    <category term="Web" scheme="https://s1gma0.github.io/tag/Web/"/>
-    
     <category term="SQL" scheme="https://s1gma0.github.io/tag/SQL/"/>
+    
+    <category term="Web" scheme="https://s1gma0.github.io/tag/Web/"/>
     
   </entry>
   
