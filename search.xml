@@ -4,31 +4,6 @@
   
     
     <entry>
-      <title>Java关键字</title>
-      <link href="/2023/05/07/Java%E5%85%B3%E9%94%AE%E5%AD%97/"/>
-      <url>/2023/05/07/Java%E5%85%B3%E9%94%AE%E5%AD%97/</url>
-      
-        <content type="html"><![CDATA[<p>Java关键字（50个）</p><p>abstract goto* switch boolean do  if package  nchronzed  break double implements  private this byte  else  import  protected  throw  throws  case  extends instanceof  public  transient catch int return char  final  interface short try class finally  long static void  const* float  native strictfp  volatile  continue for new  super  while assert enum </p><p> （ 注：带*好的关键字现在已不使用。）</p><p>​       Java中goto 和 const 没有任何意义。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> Java </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Java </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>Java笔记</title>
       <link href="/2023/05/07/Java/"/>
       <url>/2023/05/07/Java/</url>

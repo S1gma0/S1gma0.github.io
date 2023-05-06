@@ -6,7 +6,7 @@
   <link href="https://s1gma0.github.io/atom.xml" rel="self"/>
   
   <link href="https://s1gma0.github.io/"/>
-  <updated>2023-05-06T17:31:37.907Z</updated>
+  <updated>2023-05-06T17:46:38.693Z</updated>
   <id>https://s1gma0.github.io/</id>
   
   <author>
@@ -15,31 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>Java关键字</title>
-    <link href="https://s1gma0.github.io/2023/05/07/Java%E5%85%B3%E9%94%AE%E5%AD%97/"/>
-    <id>https://s1gma0.github.io/2023/05/07/Java%E5%85%B3%E9%94%AE%E5%AD%97/</id>
-    <published>2023-05-06T17:28:31.000Z</published>
-    <updated>2023-05-06T17:31:37.907Z</updated>
-    
-    <content type="html"><![CDATA[<p>Java关键字（50个）</p><p>abstract goto* switch boolean do  if package  nchronzed  break double implements  private this byte  else  import  protected  throw  throws  case  extends instanceof  public  transient catch int return char  final  interface short try class finally  long static void  const* float  native strictfp  volatile  continue for new  super  while assert enum </p><p> （ 注：带*好的关键字现在已不使用。）</p><p>​       Java中goto 和 const 没有任何意义。</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;Java关键字（50个）&lt;/p&gt;
-&lt;p&gt;abstract goto* switch boolean do  if package  nchronzed  break double implements  private this byte  else  import  pr</summary>
-      
-    
-    
-    
-    <category term="Java" scheme="https://s1gma0.github.io/category/Java/"/>
-    
-    
-    <category term="Java" scheme="https://s1gma0.github.io/tag/Java/"/>
-    
-  </entry>
   
   <entry>
     <title>Java笔记</title>
@@ -531,6 +506,28 @@
     
     
     <category term="jade 6" scheme="https://s1gma0.github.io/tag/jade-6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>First time to use this!</title>
+    <link href="https://s1gma0.github.io/2021/11/22/first-to/"/>
+    <id>https://s1gma0.github.io/2021/11/22/first-to/</id>
+    <published>2021-11-21T17:49:46.000Z</published>
+    <updated>2021-12-04T16:49:07.968Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="First-time-to-use-this"><a href="#First-time-to-use-this" class="headerlink" title="First time to use this!"></a>First time to use this!</h1><h2 id="一、上传文档操作步骤："><a href="#一、上传文档操作步骤：" class="headerlink" title="一、上传文档操作步骤："></a>一、上传文档操作步骤：</h2><p>首先把文件放在source里边，然后在Blog目录中打开Git Bush,然后依次执行下列操作。</p><p>清除：hexo clean</p><p>生成：hexo generate</p><p>上传：hexo deploy</p><p>PS：</p><p>上传完之后，在线网页用control+F5强制刷新一下；也可使用hexo s 打开离线网页</p><h2 id="二、创建新文档"><a href="#二、创建新文档" class="headerlink" title="二、创建新文档"></a>二、创建新文档</h2><p>hexo new “title”        </p><p>创建的文档应该默认是md文档</p><h2 id="三、命令行的使用"><a href="#三、命令行的使用" class="headerlink" title="三、命令行的使用"></a>三、命令行的使用</h2><p>ls列出当前所在目录，cd打开目录，运行程序是可以直接输入该文件的名称。</p><p>control+home，control+end分别将光标移动到最左边，最右边。</p><p>鼠标右键直接粘贴。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;First-time-to-use-this&quot;&gt;&lt;a href=&quot;#First-time-to-use-this&quot; class=&quot;headerlink&quot; title=&quot;First time to use this!&quot;&gt;&lt;/a&gt;First time to use t</summary>
+      
+    
+    
+    
+    <category term="Hexo" scheme="https://s1gma0.github.io/category/Hexo/"/>
+    
     
   </entry>
   
