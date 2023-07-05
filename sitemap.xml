@@ -242,6 +242,13 @@
   </url>
   
   <url>
+    <loc>https://s1gma0.github.io/tag/HTML/</loc>
+    <lastmod>2023-07-05</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://s1gma0.github.io/tag/error/</loc>
     <lastmod>2023-07-05</lastmod>
     <changefreq>daily</changefreq>
@@ -249,7 +256,7 @@
   </url>
   
   <url>
-    <loc>https://s1gma0.github.io/tag/JavaScript/</loc>
+    <loc>https://s1gma0.github.io/tag/Java/</loc>
     <lastmod>2023-07-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -270,7 +277,7 @@
   </url>
   
   <url>
-    <loc>https://s1gma0.github.io/tag/HTML/</loc>
+    <loc>https://s1gma0.github.io/tag/JavaScript/</loc>
     <lastmod>2023-07-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -278,34 +285,6 @@
   
   <url>
     <loc>https://s1gma0.github.io/tag/XSS/</loc>
-    <lastmod>2023-07-05</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://s1gma0.github.io/tag/Java/</loc>
-    <lastmod>2023-07-05</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://s1gma0.github.io/tag/adworld/</loc>
-    <lastmod>2023-07-05</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://s1gma0.github.io/tag/webshell/</loc>
-    <lastmod>2023-07-05</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://s1gma0.github.io/tag/jade-6/</loc>
     <lastmod>2023-07-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -326,7 +305,28 @@
   </url>
   
   <url>
+    <loc>https://s1gma0.github.io/tag/jade-6/</loc>
+    <lastmod>2023-07-05</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://s1gma0.github.io/tag/CTFHub/</loc>
+    <lastmod>2023-07-05</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://s1gma0.github.io/tag/adworld/</loc>
+    <lastmod>2023-07-05</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://s1gma0.github.io/tag/webshell/</loc>
     <lastmod>2023-07-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -363,20 +363,6 @@
   </url>
   
   <url>
-    <loc>https://s1gma0.github.io/category/Hexo/</loc>
-    <lastmod>2023-07-05</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://s1gma0.github.io/category/JavaScript/</loc>
-    <lastmod>2023-07-05</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://s1gma0.github.io/category/HTML/</loc>
     <lastmod>2023-07-05</lastmod>
     <changefreq>daily</changefreq>
@@ -384,7 +370,21 @@
   </url>
   
   <url>
+    <loc>https://s1gma0.github.io/category/Hexo/</loc>
+    <lastmod>2023-07-05</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://s1gma0.github.io/category/Java/</loc>
+    <lastmod>2023-07-05</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://s1gma0.github.io/category/JavaScript/</loc>
     <lastmod>2023-07-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
