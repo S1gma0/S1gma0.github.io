@@ -4,6 +4,58 @@
   
     
     <entry>
+      <title>SSH</title>
+      <link href="/2023/07/27/SSH/"/>
+      <url>/2023/07/27/SSH/</url>
+      
+        <content type="html"><![CDATA[<h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><p>SSH（Secure Shell）协议<strong>基于TCP协议，</strong>是一种用于在网络上安全传输数据的协议。</p><p>它是一种加密的协议，可用于在不安全的网络上进行远程登录、文件传输和命令执行等操作，以确保这些操作的机密性和完整性。</p><p><img src="https://cdn.jsdelivr.net/gh/S1gma0/image/202307270039964.png"></p><p>SSH 使用客户端-服务器（C/S）模型，<strong>默认端口是 22</strong>。SSH 是一个守护进程，负责实时监听客户端请求，并进行处理。</p><p>SSH协议分为两个主要版本：SSH1和SSH2。SSH1已经被认为是不安全的，现在已经被SSH2取代。SSH2协议是目前使用最广泛的版本，它提供了更好的安全性和可靠性。</p><h1 id="加密原理"><a href="#加密原理" class="headerlink" title="加密原理"></a>加密原理</h1><h2 id="对称加密"><a href="#对称加密" class="headerlink" title="对称加密"></a>对称加密</h2><h2 id="非对称加密"><a href="#非对称加密" class="headerlink" title="非对称加密"></a>非对称加密</h2><p>在使用SSH连接到远程计算机之前，用户必须生成一对密钥（公钥和私钥）。在建立SSH连接时，远程计算机会向用户发送一个随机数，并要求用户对该随机数进行加密。用户使用私钥对随机数进行加密后，将其发送回远程计算机。远程计算机使用用户的公钥对加密后的随机数进行解密，以验证用户的身份。</p><p>例：B有一对密钥，A想向B发消息，先发送一个请求。B收到请求后将公钥给A，A用公钥将传送的信息加密，B收到加密信息后用私钥解密。关键：使用私钥解密公钥。</p><p>注意：但是会遇到“<strong>中间人攻击</strong>”的问题，如下：</p><p>中间人C拦截A的请求，冒充B发送假公钥给A。A会把假公钥加密的信息传给C，C接收到信息并解密获取到信息。</p><h2 id="免密登录"><a href="#免密登录" class="headerlink" title="免密登录"></a>免密登录</h2><p><a href="https://blog.csdn.net/Azoner/article/details/123764052">https://blog.csdn.net/Azoner/article/details/123764052</a></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Telnet</title>
+      <link href="/2023/07/27/Telnet/"/>
+      <url>/2023/07/27/Telnet/</url>
+      
+        <content type="html"><![CDATA[<p>Telnet协议是一种在网络上远程登录到其他计算机的标准协议。</p><p>它基于<strong>TCP协议</strong>，用于通过一个终端登陆到其它服务器。</p><p><img src="https://cdn.jsdelivr.net/gh/S1gma0/image/202307270025967.png"></p><div align = "center">Telnet:远程登陆协议</div><p>由于telnet的通信过程采用<strong>明文传输</strong>(包括用户名和密码)，所以它的安全性较差，容易受到网络攻击。因此，现在很少使用Telnet协议进行远程登录，而更多地使用SSH（Secure Shell）协议，这是一种更安全的协议，它使用加密技术来保护通信过程中的数据安全。</p><p>这就是为什么如今很少使用 Telnet，而是使用一种称为 SSH 的非常安全的网络传输协议的主要原因。</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>FTP</title>
+      <link href="/2023/07/27/FTP/"/>
+      <url>/2023/07/27/FTP/</url>
+      
+        <content type="html"><![CDATA[<p>FTP（File Transfer Protocol，文件传输协议）是一种标准的网络协议。它<strong>基于TCP协议</strong>，是一种用于在计算机之间传输文件的协议，可以屏蔽操作系统和文件存储方式。它是最早开发的用于文件传输的协议之一，并且今天仍被广泛使用。</p><p>FTP采用客户端-服务器（C/S）模型，在客户端与 FTP 服务器之间建立<strong>两个</strong>连接。</p><p><img src="https://cdn.jsdelivr.net/gh/S1gma0/image/202307270012952.png"></p><p>FTP 的独特的优势同时也是与其它客户服务器程序最大的不同点就在于它在两台通信的主机之间使用了<strong>两条 TCP 连接</strong>（其它客户服务器应用程序一般只有一条 TCP 连接）：</p><ol><li>控制连接：用于传送控制信息（命令和响应）</li><li>数据连接：用于数据传送；</li></ol><p>这种将命令和数据分开传送的思想大大提高了 FTP 的效率。</p><p>注意 ⚠️：<strong>FTP 是一种不安全的协议</strong>，因为它在传输过程中不会对数据进行加密。因此，FTP 传输的文件可能会被窃听或篡改。建议在传输敏感数据时使用更安全的协议，如 SFTP（一种基于 SSH 协议的安全文件传输协议，用于在网络上安全地传输文件）。</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>FTP匿名身份验证</title>
+      <link href="/2023/07/20/FTP%E5%8C%BF%E5%90%8D%E8%BA%AB%E4%BB%BD%E9%AA%8C%E8%AF%81/"/>
+      <url>/2023/07/20/FTP%E5%8C%BF%E5%90%8D%E8%BA%AB%E4%BB%BD%E9%AA%8C%E8%AF%81/</url>
+      
+        <content type="html"><![CDATA[<p>s</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>115Readme</title>
       <link href="/2023/07/07/115Readme/"/>
       <url>/2023/07/07/115Readme/</url>
