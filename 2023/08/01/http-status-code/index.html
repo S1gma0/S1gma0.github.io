@@ -1,0 +1,238 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>HTTP状态码 | Sigma</title><meta name="author" content="Sigma"><meta name="copyright" content="Sigma"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="简介状态码（HTTP Status Code），是用以表示网页服务器超文本传输协议响应状态以3位数字组成的代码，当然你也可以称其为响应码。所有状态码的第一位数字代表了相应的物种状态之一：  1xx：表示临时响应并需要请求者继续执行操作的状态代码 2xx：表示成功处理了请求的状态代码 3xx：要完成请求，需要进一步操作（通常这些代码用来重定向） 4xx：表示请求可能出错，妨碍了服务器的处理 5xx：">
+<meta property="og:type" content="article">
+<meta property="og:title" content="HTTP状态码">
+<meta property="og:url" content="https://s1gma0.github.io/2023/08/01/http-status-code/index.html">
+<meta property="og:site_name" content="Sigma">
+<meta property="og:description" content="简介状态码（HTTP Status Code），是用以表示网页服务器超文本传输协议响应状态以3位数字组成的代码，当然你也可以称其为响应码。所有状态码的第一位数字代表了相应的物种状态之一：  1xx：表示临时响应并需要请求者继续执行操作的状态代码 2xx：表示成功处理了请求的状态代码 3xx：要完成请求，需要进一步操作（通常这些代码用来重定向） 4xx：表示请求可能出错，妨碍了服务器的处理 5xx：">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg">
+<meta property="article:published_time" content="2023-08-01T04:19:58.000Z">
+<meta property="article:modified_time" content="2023-08-01T04:26:47.793Z">
+<meta property="article:author" content="Sigma">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://s1gma0.github.io/2023/08/01/http-status-code/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//www.google-analytics.com" crossorigin=""/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-GCTE07PVVF"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-GCTE07PVVF');
+</script><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isanchor: true
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'HTTP状态码',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2023-08-01 12:26:47'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if (GLOBAL_CONFIG_SITE.isHome && /iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link rel="stylesheet" href="/css/touming.css"><meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="Sigma" type="application/atom+xml">
+</head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/./img/head.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archive/"><div class="headline">文章</div><div class="length-num">34</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tag/"><div class="headline">标签</div><div class="length-num">18</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/category/"><div class="headline">分类</div><div class="length-num">6</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fa fa-heartbeat"></i><span> 清单</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Sigma</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fa fa-heartbeat"></i><span> 清单</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">HTTP状态码</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-08-01T04:19:58.000Z" title="发表于 2023-08-01 12:19:58">2023-08-01</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-08-01T04:26:47.793Z" title="更新于 2023-08-01 12:26:47">2023-08-01</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="HTTP状态码"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><p>状态码（HTTP Status Code），是用以表示网页服务器超文本传输协议响应状态以3位数字组成的代码，当然你也可以称其为响应码。<br>所有状态码的第一位数字代表了相应的物种状态之一：</p>
+<ol>
+<li>1xx：表示<strong>临时响应</strong>并需要请求者继续执行操作的状态代码</li>
+<li>2xx：表示<strong>成功</strong>处理了请求的状态代码</li>
+<li>3xx：要完成请求，需要进一步操作（通常这些代码用来<strong>重定向</strong>）</li>
+<li>4xx：表示<strong>请求可能出错</strong>，妨碍了服务器的处理</li>
+<li>5xx：表示<strong>服务器</strong>在尝试处理请求时，发生内部错误（这些错误通常是服务器本身的错误，并不是由于请求出错，当然也有可能是访问者的故意为之，使服务器本身出现错误）</li>
+</ol>
+<h1 id="功能"><a href="#功能" class="headerlink" title="功能"></a>功能</h1><h3 id="常见状态码"><a href="#常见状态码" class="headerlink" title="常见状态码"></a>常见状态码</h3><ul>
+<li><code>200（成功）</code>：服务器已成功处理请求。一般这表示服务器正常处理了请求，并且正常返回了相应的页面</li>
+<li><code>403（禁止）</code>：服务器理解请求客户端的请求，拒绝请求</li>
+<li><code>404（未找到）</code>：服务器无法根据客户端请求找到资源</li>
+<li><code>405（方法禁用）</code>：禁用请求中指定的方法</li>
+<li><code>500（服务器内部错误）</code>：服务器遇到一个未预料到的状况，导致无法完成对请求的处理</li>
+<li><code>502（错误网关）</code>：服务器作为网关或者代理，从上游服务器收到无效响应</li>
+<li><code>503（服务不可用）</code>：服务器目前无法使用。例如：超载、停机维护…</li>
+<li><code>504（网关超时）</code>：服务器作为网关或代理，但未及时收到上游服务器的响应</li>
+</ul>
+<h3 id="1xx"><a href="#1xx" class="headerlink" title="1xx"></a>1xx</h3><blockquote>
+<p>该状态码表示<strong>临时响应</strong>并需要请求者继续执行操作</p>
+</blockquote>
+<ul>
+<li><code>100（继续）</code>：请求者应当继续提出请求。服务器已收到请求的第一部分，正在等待剩余部分</li>
+<li><code>101（切换协议）</code>：请求者要求服务器切换协议，服务器也已确认切换协议</li>
+</ul>
+<h3 id="2xx"><a href="#2xx" class="headerlink" title="2xx"></a>2xx</h3><blockquote>
+<p>该状态码表示<strong>成功</strong></p>
+</blockquote>
+<ul>
+<li><code>200（成功）</code>：服务器已成功处理请求。一般这表示服务器正常处理了请求，并且正常返回了相应的页面</li>
+<li><code>201（已创建）</code>：请求成功并且服务器成功创建新资源</li>
+<li><code>202（已接受）</code>：服务器已接收请求，但仍未处理</li>
+<li><code>203（非授权信息）</code>：服务器成功处理请求，但是返回的信息可能来自另外一来源</li>
+<li><code>204（无内容）</code>：服务器成功处理请求，但是没有返回任何内容</li>
+<li><code>205（重置内容）</code>：服务器成功处理请求，但没有返回任何内容</li>
+<li><code>206（部分内容）</code>：服务器成功处理了部分GET请求</li>
+</ul>
+<h3 id="3xx"><a href="#3xx" class="headerlink" title="3xx"></a>3xx</h3><blockquote>
+<p>该状态码表示要完成请求，需要进一步操作。通常这些状态码用来<strong>重定向</strong></p>
+</blockquote>
+<ul>
+<li><code>300（多钟选择）</code>：针对请求，服务器可以执行多种操作。服务器可以根据请求者的（user-agent）选择一项操作，或者提供操作列表供请求者选择</li>
+<li><code>301（永久移动）</code>：请求的网页已永久移动到新的位置。服务器返回该状态码时，会自动将请求者转到新位置</li>
+<li><code>302（临时移动）</code>：服务器目前从不同位置的网页响应请求，但请求者应继续使用原有位置进行后续的请求</li>
+<li><code>303（查看其它位置）</code>：请求者应当对不同的位置使用单独的GET请求来检索响应时，服务器返回此状态码</li>
+<li><code>304（未修改）</code>：自从上次请求后，请求的网页未修改过。服务器返回此状态码时，不会返回网页内容</li>
+<li><code>305（使用代理）</code>：请求者只能使用代理访问请求的网页</li>
+<li><code>307（临时重定向）</code>：服务器目前从不同位置的网页响应请求，但请求者应继续使用原有位置来进行后续请求</li>
+</ul>
+<h3 id="4xx"><a href="#4xx" class="headerlink" title="4xx"></a>4xx</h3><blockquote>
+<p>表示<strong>请求可能出错</strong>，妨碍了服务器的处理</p>
+</blockquote>
+<ul>
+<li><code>400（错误请求）</code>：表示客户端请求的语法错误，服务器无法理解。例如：url中含有非法字符，json格式出现问题…</li>
+<li><code>401（未授权）</code>：请求要求身份验证。一般需要登录的网站，服务器可能会返回此状态码</li>
+<li><code>402</code>：保留</li>
+<li><code>403（禁止）</code>：服务器理解请求客户端的请求，拒绝请求</li>
+<li><code>404（未找到）</code>：服务器无法根据客户端请求找到资源</li>
+<li><code>405（方法禁用）</code>：禁用请求中指定的方法</li>
+<li><code>406（不接受）</code>：无法使用请求的内容特性响应请求的网页</li>
+<li><code>407（需要代理授权）</code>：此状态码与<code>401</code>类似，但指定请求者应当授权使用代理</li>
+<li><code>408（请求超时）</code>：服务器等候请求时超时</li>
+<li><code>409（冲突）</code>：服务器在完成请求是发生冲突。服务器必须在响应中包含有关冲突的信息</li>
+<li><code>410（已删除）</code>：请求的资源已永久删除</li>
+<li><code>411（需要有效长度）</code>：服务器不接受不含有效内容长度标头字段的请求</li>
+<li><code>412（未满足前提条件）</code>：服务器未满足请求者在请求中设置的其中一个前提条件</li>
+<li><code>413（请求实体过大）</code>：相应实体过大。服务器拒绝处理当前请求，请求超过服务器所能处理和允许处理的最大值</li>
+<li><code>414（请求的url过长）</code>：请求的url过长，服务器无法处理</li>
+<li><code>415（不支持的媒体类型）</code>：请求的格式不受请求页面的支持</li>
+<li><code>416（请求范围不符合要求）</code>：如果页面无法提供请求的范围，服务器则会返回此状态码</li>
+<li><code>417（未满足期望值）</code>：在请求头<code>Expect</code>指定的预期内容无法被服务器满足</li>
+<li><code>422（不可处理的实体）</code>：请求格式正确，但由于含有语义错误，无法响应</li>
+</ul>
+<h3 id="5xx"><a href="#5xx" class="headerlink" title="5xx"></a>5xx</h3><blockquote>
+<p>表示<strong>服务器</strong>在尝试处理请求时发生内部错误。这些错误可能是服务器本身的错误，并不是请求出错，当然也有可能是请求者的故意为之，使服务器本身出现错误</p>
+</blockquote>
+<ul>
+<li><code>500（服务器内部错误）</code>：服务器遇到一个未预料到的状况，导致无法完成对请求的处理</li>
+<li><code>501（尚未实施）</code>：服务器不具备完成请求的功能。例如：服务器无法识别请求方法…</li>
+<li><code>502（错误网关）</code>：服务器作为网关或者代理，从上游服务器收到无效响应</li>
+<li><code>503（服务不可用）</code>：服务器目前无法使用。例如：超载、停机维护…</li>
+<li><code>504（网关超时）</code>：服务器作为网关或代理，但未及时收到上游服务器的响应</li>
+<li><code>505（HTTP版本不受支持）</code>：服务器不支持请求中所用的HTTP版本</li>
+</ul>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">Sigma</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://s1gma0.github.io/2023/08/01/http-status-code/">https://s1gma0.github.io/2023/08/01/http-status-code/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://s1gma0.github.io" target="_blank">Sigma</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2023/08/28/%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80/"><img class="prev-cover" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">网络基础</div></div></a></div><div class="next-post pull-right"><a href="/2023/08/01/SQL%E6%8B%BC%E6%8E%A5/"><img class="next-cover" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">SQL拼接</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/./img/head.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Sigma</div><div class="author-info__description">岁月易流逝，珍惜眼前人。</div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archive/"><div class="headline">文章</div><div class="length-num">34</div></a></div><div class="card-info-data-item is-center"><a href="/tag/"><div class="headline">标签</div><div class="length-num">18</div></a></div><div class="card-info-data-item is-center"><a href="/category/"><div class="headline">分类</div><div class="length-num">6</div></a></div></div><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/S1gma0" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:edward@txg2333.onmicrosoft.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content">不能再玩了，要学习啦。</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%AE%80%E4%BB%8B"><span class="toc-number">1.</span> <span class="toc-text">简介</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%8A%9F%E8%83%BD"><span class="toc-number">2.</span> <span class="toc-text">功能</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B8%B8%E8%A7%81%E7%8A%B6%E6%80%81%E7%A0%81"><span class="toc-number">2.0.1.</span> <span class="toc-text">常见状态码</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1xx"><span class="toc-number">2.0.2.</span> <span class="toc-text">1xx</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2xx"><span class="toc-number">2.0.3.</span> <span class="toc-text">2xx</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3xx"><span class="toc-number">2.0.4.</span> <span class="toc-text">3xx</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4xx"><span class="toc-number">2.0.5.</span> <span class="toc-text">4xx</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5xx"><span class="toc-number">2.0.6.</span> <span class="toc-text">5xx</span></a></li></ol></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新上传</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/08/31/IP/" title="IP">IP</a><time datetime="2023-08-31T03:08:11.000Z" title="发表于 2023-08-31 11:08:11">2023-08-31</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/08/28/%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80/" title="网络基础">网络基础</a><time datetime="2023-08-28T02:18:21.000Z" title="发表于 2023-08-28 10:18:21">2023-08-28</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/08/01/http-status-code/" title="HTTP状态码">HTTP状态码</a><time datetime="2023-08-01T04:19:58.000Z" title="发表于 2023-08-01 12:19:58">2023-08-01</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/08/01/SQL%E6%8B%BC%E6%8E%A5/" title="SQL拼接">SQL拼接</a><time datetime="2023-08-01T02:43:21.000Z" title="发表于 2023-08-01 10:43:21">2023-08-01</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/07/27/%E5%85%AC%E7%BD%91-%E7%A7%81%E7%BD%91/" title="公网&amp;私网、内网&amp;外网">公网&amp;私网、内网&amp;外网</a><time datetime="2023-07-27T01:58:55.000Z" title="发表于 2023-07-27 09:58:55">2023-07-27</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2021 - 2023 By Sigma</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div></div><hr/><div id="local-search-results"></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/search/local-search.js"></script><div class="js-pjax"></div><script src="/js/custom.js"></script><script id="canvas_nest" defer="defer" color="0,0,255" opacity="0.7" zIndex="-1" count="99" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-nest.min.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>

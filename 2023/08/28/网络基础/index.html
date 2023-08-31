@@ -1,0 +1,302 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>网络基础 | Sigma</title><meta name="author" content="Sigma"><meta name="copyright" content="Sigma"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="网络认知网络架构&amp;解决方案1.网络架构&amp;解决方案概述：了解传统网络架构及现阶段网络安全在传统网络架构中的位置 配置优化和冗余解决方案来提升网络性能  网络架构分层（接入层、汇聚层、核心层）是为了快速排查问题。 接入层：同一局域网中心 汇聚层：不同局域网中心 核心层：确保安全的同时保证网络中的所有&#x2F;部分人员访问外网 现阶段网络中最重要的因素： 1、优化。保证网络中的路径最优。 2、确">
+<meta property="og:type" content="article">
+<meta property="og:title" content="网络基础">
+<meta property="og:url" content="https://s1gma0.github.io/2023/08/28/%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80/index.html">
+<meta property="og:site_name" content="Sigma">
+<meta property="og:description" content="网络认知网络架构&amp;解决方案1.网络架构&amp;解决方案概述：了解传统网络架构及现阶段网络安全在传统网络架构中的位置 配置优化和冗余解决方案来提升网络性能  网络架构分层（接入层、汇聚层、核心层）是为了快速排查问题。 接入层：同一局域网中心 汇聚层：不同局域网中心 核心层：确保安全的同时保证网络中的所有&#x2F;部分人员访问外网 现阶段网络中最重要的因素： 1、优化。保证网络中的路径最优。 2、确">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg">
+<meta property="article:published_time" content="2023-08-28T02:18:21.000Z">
+<meta property="article:modified_time" content="2023-08-31T04:03:37.219Z">
+<meta property="article:author" content="Sigma">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://s1gma0.github.io/2023/08/28/%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//www.google-analytics.com" crossorigin=""/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-GCTE07PVVF"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-GCTE07PVVF');
+</script><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isanchor: true
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '网络基础',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2023-08-31 12:03:37'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if (GLOBAL_CONFIG_SITE.isHome && /iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link rel="stylesheet" href="/css/touming.css"><meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="Sigma" type="application/atom+xml">
+</head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/./img/head.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archive/"><div class="headline">文章</div><div class="length-num">34</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tag/"><div class="headline">标签</div><div class="length-num">18</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/category/"><div class="headline">分类</div><div class="length-num">6</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fa fa-heartbeat"></i><span> 清单</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Sigma</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fa fa-heartbeat"></i><span> 清单</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">网络基础</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-08-28T02:18:21.000Z" title="发表于 2023-08-28 10:18:21">2023-08-28</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-08-31T04:03:37.219Z" title="更新于 2023-08-31 12:03:37">2023-08-31</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="网络基础"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="网络认知"><a href="#网络认知" class="headerlink" title="网络认知"></a>网络认知</h1><h2 id="网络架构-amp-解决方案"><a href="#网络架构-amp-解决方案" class="headerlink" title="网络架构&amp;解决方案"></a>网络架构&amp;解决方案</h2><p>1.网络架构&amp;解决方案概述：了解传统网络架构及现阶段网络安全在传统网络架构中的<br>位置</p>
+<h3 id=""><a href="#" class="headerlink" title=""></a></h3><p>配置优化和冗余解决方案来提升网络性能 </p>
+<p>网络架构分层（接入层、汇聚层、核心层）是为了快速排查问题。</p>
+<p>接入层：同一局域网中心</p>
+<p>汇聚层：不同局域网中心</p>
+<p>核心层：确保安全的同时保证网络中的所有/部分人员访问外网</p>
+<p>现阶段网络中最重要的因素：</p>
+<p>1、优化。保证网络中的路径最优。</p>
+<p>2、确保网络可靠性，避免单点故障带来问题。</p>
+<p>3、网络安全。</p>
+<p>4、统一管理、运维。</p>
+<p>5、展望未来。下一代网络到云上。</p>
+<h2 id="网络模型-amp-网络安全"><a href="#网络模型-amp-网络安全" class="headerlink" title="网络模型&amp;网络安全"></a>网络模型&amp;网络安全</h2><p>2.网络模型&amp;网络安全: 掌传统OSI、TCPVP模型与网络安全之间的关系</p>
+<h3 id="OSI-amp-TCP-IP协议基础"><a href="#OSI-amp-TCP-IP协议基础" class="headerlink" title="OSI&amp;TCP/IP协议基础"></a>OSI&amp;TCP/IP协议基础</h3><h4 id="OSI七层模型"><a href="#OSI七层模型" class="headerlink" title="OSI七层模型"></a>OSI七层模型</h4><p><img src="https://cdn.jsdelivr.net/gh/S1gma0/image/202308281102245.png"></p>
+<p>上三层：</p>
+<p>7、应用层：提供应用程序</p>
+<p>6、表示层：处理数据格式、数据加密等</p>
+<p>5、会话层：建立、维护和管理会话</p>
+<p>下四层：主要是寻址和转发</p>
+<p>4、传输层：建立主机端到端连接</p>
+<p>3、网络层：寻址和路由选择</p>
+<p>2、数据链路层：提供介质访问、链路管理等</p>
+<p>1、物理层：比特流传输</p>
+<p>每一层利用下一层提供的服务与对等层（如HOST A的网络层利用数据链路层提供的服务与HOST B的网络层通信）通信。</p>
+<h4 id="网络数据流处理流程"><a href="#网络数据流处理流程" class="headerlink" title="网络数据流处理流程"></a>网络数据流处理流程</h4><div align = "center">网络数据流处理流程</div>
+
+<p>![](C:\Users\Edward Lee\桌面\nsfocus\pic\网络数据流处理流程.png)</p>
+<p>拆封装到网络层（<strong>寻址和路由选择</strong>），知道目的地址，就可以下一步传递。</p>
+<h4 id="TCP-IP和OSI的对应关系"><a href="#TCP-IP和OSI的对应关系" class="headerlink" title="TCP/IP和OSI的对应关系"></a>TCP/IP和OSI的对应关系</h4><p>TCP/IP协议栈具有简单的分层设计，与OSI模型有清晰的对应关系</p>
+<p>![](C:\Users\Edward Lee\桌面\nsfocus\pic\OSI对应TCPIP.png)</p>
+<h4 id="TCP-IP协议栈封装解封装过程"><a href="#TCP-IP协议栈封装解封装过程" class="headerlink" title="TCP/IP协议栈封装解封装过程"></a>TCP/IP协议栈封装解封装过程</h4><p>![](C:\Users\Edward Lee\桌面\nsfocus\pic\TCPIP封装解封装.png)</p>
+<h4 id="TCP-IP协议栈各层作用"><a href="#TCP-IP协议栈各层作用" class="headerlink" title="TCP/IP协议栈各层作用"></a>TCP/IP协议栈各层作用</h4><p>![](C:\Users\Edward Lee\桌面\nsfocus\pic\TCPIP协议栈各层作用.png)</p>
+<p>传输层以上的协议有端口号，以下无端口号。例如HTTP-80，Telnet-23，FTP-20（传输数据）-21（传输控制信息）</p>
+<p>TCP面向连接，可靠可控。UDP无面向连接，不可靠不可控。TCP连接需要三次握手，四次挥手，UDP单方面建立连接。</p>
+<h4 id="TCP三次握手，四次挥手"><a href="#TCP三次握手，四次挥手" class="headerlink" title="TCP三次握手，四次挥手"></a>TCP三次握手，四次挥手</h4><h3 id="TCP-IP协议安全"><a href="#TCP-IP协议安全" class="headerlink" title="TCP/IP协议安全"></a>TCP/IP协议安全</h3><h4 id="IPV4安全隐患"><a href="#IPV4安全隐患" class="headerlink" title="IPV4安全隐患"></a>IPV4安全隐患</h4><p>1、缺乏数据源验证机制</p>
+<p>2、缺乏完整性验证机制</p>
+<p>3、缺乏机密性保障机制</p>
+<h4 id="TCP-IP协议栈常见安全风险"><a href="#TCP-IP协议栈常见安全风险" class="headerlink" title="TCP/IP协议栈常见安全风险"></a>TCP/IP协议栈常见安全风险</h4><p>![](C:\Users\Edward Lee\桌面\nsfocus\pic\TCPIP协议栈常见安全风险.png)</p>
+<h3 id="常见网络攻击方式"><a href="#常见网络攻击方式" class="headerlink" title="常见网络攻击方式"></a>常见网络攻击方式</h3><p>主动攻击和被动攻击。</p>
+<p>主动攻击：窃取信息</p>
+<p>被动攻击：拒绝服务、假冒攻击（假冒部分+数据载荷）、篡改攻击（报文首部+篡改内容）</p>
+<h1 id="路由"><a href="#路由" class="headerlink" title="路由"></a>路由</h1><h3 id="网络编址"><a href="#网络编址" class="headerlink" title="网络编址"></a>网络编址</h3><h4 id="IP基础"><a href="#IP基础" class="headerlink" title="IP基础"></a>IP基础</h4><p>1、IP地址由32个二进制组成，通常用点分十进制形式表示。</p>
+<p>2、IP地址分为网络部分和主机部分。</p>
+<p>例如，192.168.1.1</p>
+<table>
+<thead>
+<tr>
+<th>进制</th>
+<th>网络位</th>
+<th>主机位</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>十进制</td>
+<td>192.168.1</td>
+<td>.1</td>
+</tr>
+<tr>
+<td>二进制</td>
+<td>11000000.10101000.00000001</td>
+<td>.00000001</td>
+</tr>
+</tbody></table>
+<p>192.168.1.0是第一个地址，代表网段（主机位二进制全为0，十进制为0），不能使用</p>
+<table>
+<thead>
+<tr>
+<th>网络位</th>
+<th>主机位</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>192.168.1</td>
+<td>.0</td>
+</tr>
+<tr>
+<td>11000000.10101000.00000001</td>
+<td>.0000000</td>
+</tr>
+</tbody></table>
+<p>192.168.1.255是最后一个地址，作为广播地址（主机位二进制全为1，十进制为255），不能使用</p>
+<table>
+<thead>
+<tr>
+<th>网络位</th>
+<th>主机位</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>192.168.1</td>
+<td>.255</td>
+</tr>
+<tr>
+<td>11000000.10101000.00000001</td>
+<td>.11111111</td>
+</tr>
+</tbody></table>
+<p>192.168.1.253作为网关，不可使用</p>
+<p>一般使用网段的第一个或最后一个可用地址作为网关。</p>
+<table>
+<thead>
+<tr>
+<th>网络位</th>
+<th>主机位</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>192.168.1</td>
+<td>.253</td>
+</tr>
+<tr>
+<td>11000000.10101000.00000001</td>
+<td>.11111101</td>
+</tr>
+</tbody></table>
+<p>网关的作用是转发来自不同网段之间的数据包。</p>
+<p>![](C:\Users\Edward Lee\桌面\nsfocus\pic\网关.png)</p>
+<p>同一局域网通信，二层通信（数据链路层通信）时不用网关，三层通信（网络层通信）时必须使用网关。</p>
+<p>同一网段通信(网络位相同)不需要依靠网关转发，<strong>不同网段通信必须依靠网关转发</strong>。 </p>
+<p>IP详细介绍见<a href="https://s1gma0.github.io/2023/07/27/IP">https://s1gma0.github.io/2023/07/27/IP</a></p>
+<h4 id="子网划分-amp-掩码聚合"><a href="#子网划分-amp-掩码聚合" class="headerlink" title="子网划分&amp;掩码聚合"></a>子网划分&amp;掩码聚合</h4><p>![](C:\Users\Edward Lee\桌面\nsfocus\pic\地址划分.png)</p>
+<h1 id="交换"><a href="#交换" class="headerlink" title="交换"></a>交换</h1><h2 id="VLAN原理和配置"><a href="#VLAN原理和配置" class="headerlink" title="VLAN原理和配置"></a>VLAN原理和配置</h2><h3 id="VLAN的起源"><a href="#VLAN的起源" class="headerlink" title="VLAN的起源"></a>VLAN的起源</h3><p>在传统局域网中，随着主机数量的增加，共享网络中的冲突会越来越严重，交换网络中的广播也会越来越多。</p>
+<p>VLAN能够隔离广播域。</p>
+<h3 id="VLAN的帧格式"><a href="#VLAN的帧格式" class="headerlink" title="VLAN的帧格式"></a>VLAN的帧格式</h3><p>![](C:\Users\Edward Lee\桌面\nsfocus\pic\VLAN帧格式.png)</p>
+<p><strong>通过tag区分不同VLAN</strong></p>
+<p>VLAN标签长4个字节，直接添加在以太网帧头中，IEEE802.1Q文档对VLAN标签作出了说明。<br>TPID: Tag Protocol Identifier.2字节，固定取值，0x8100，是IEEE定义的新类型，表明这是一个携带802.1Q标签的帧。如果不支持802.1Q的设备收到这样的帧，会将其丢弃。</p>
+<h3 id="常见链路类型"><a href="#常见链路类型" class="headerlink" title="常见链路类型"></a>常见链路类型</h3><p>用户主机和交换机之间的链路为接入链路（Access），交换机与交换机之间的链路为干道链路（Trunk）。</p>
+<h4 id="PVID"><a href="#PVID" class="headerlink" title="PVID"></a>PVID</h4><p>PVID表示端口在缺省情况下所属的VLAN</p>
+<p>PVID的作用是<strong>防止交换机把收到的一个裸帧（没有tag的帧，无VLAN ID）直接丢弃</strong></p>
+<p>缺省情况下，X7系列交换机每个端口的PVID都是1.</p>
+<p>![](C:\Users\Edward Lee\桌面\nsfocus\pic\PVID.png)</p>
+<h4 id="端口类型-Access"><a href="#端口类型-Access" class="headerlink" title="端口类型-Access"></a>端口类型-Access</h4><p>1、Access端口在收到数据后会添加VLAN Tag，VLAN ID和端口的PVID相同</p>
+<p>2、Access端口在转发数据前会移除VLAN Tag</p>
+<p>![](C:\Users\Edward Lee\桌面\nsfocus\pic\Access.png)</p>
+<h4 id="端口类型-Trunk"><a href="#端口类型-Trunk" class="headerlink" title="端口类型-Trunk"></a>端口类型-Trunk</h4><p>Trunk允许多个不同VLAN同时通过</p>
+<p>![](C:\Users\Edward Lee\桌面\nsfocus\pic\Trunk.png)</p>
+<p>1、当Trunk端口收到帧时，如果该帧不包含Tag，将添加上端口的PVID；如果该帧包含Tag，则不改变</p>
+<p>2、当Trunk端口发送帧时，该的VLANID在Trunk的允许发送列表中；若与端口的PVID相同时，则剥离Tag发送；若与端口的PVID不同时，则直接发送</p>
+<h3 id="VLAN的配置"><a href="#VLAN的配置" class="headerlink" title="VLAN的配置"></a>VLAN的配置</h3><p>1、创建VLAN</p>
+<p>2、修改接口类型</p>
+<p>3、设置接口允许通过的VLAN ID</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">system-view</span><br><span class="line">vlan batch 10 20</span><br><span class="line">display this</span><br><span class="line">interface GigabitEthernet 0/0/1</span><br><span class="line">port link-type access</span><br><span class="line">port default vlan 10</span><br><span class="line">Q</span><br><span class="line">interface GigabitEthernet 0/0/2</span><br><span class="line">port link-type access</span><br><span class="line">port default vlan 10</span><br><span class="line">Q</span><br><span class="line">interface GigabitEthernet 0/0/3</span><br><span class="line">port link-type trunk</span><br><span class="line">port trunk allow pass vlan 10 20</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">system-view</span><br><span class="line">vlan batch 10 20</span><br><span class="line">interface GigabitEthernet 0/0/</span><br><span class="line">port link-type access</span><br><span class="line">port default vlan </span><br><span class="line">Q</span><br><span class="line">interface GigabitEthernet 0/0/3</span><br><span class="line">port link-type access</span><br><span class="line">port link-type vlan 20</span><br><span class="line">Q</span><br><span class="line">port link-type trunk</span><br><span class="line">port link-type allow-pass vlan 10 20</span><br></pre></td></tr></table></figure>
+
+<p>![](C:\Users\Edward Lee\桌面\nsfocus\pic\VLAN配置.png)</p>
+<p>1、如果一个Trunk链路PVID是5，且端口下配置port trunk allow-pass vlan 2 3，那么哪些VLAN的流量可以通过该Trunk链路进行传输?</p>
+<p>VLAN 1 2 3都可以通过，因为Trunk接口允许VLAN 1通过</p>
+<p>2、PVID为2的Access端口收到一个不带标记的顿会采取什么样的动作作?</p>
+<p>收到数据后会添加VLAN Tag，VLAN ID和端口的PVID相同，即为2</p>
+<h1 id="整体总结"><a href="#整体总结" class="headerlink" title="整体总结"></a>整体总结</h1></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">Sigma</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://s1gma0.github.io/2023/08/28/%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80/">https://s1gma0.github.io/2023/08/28/%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://s1gma0.github.io" target="_blank">Sigma</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2023/08/31/IP/"><img class="prev-cover" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">IP</div></div></a></div><div class="next-post pull-right"><a href="/2023/08/01/http-status-code/"><img class="next-cover" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">HTTP状态码</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/./img/head.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Sigma</div><div class="author-info__description">岁月易流逝，珍惜眼前人。</div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archive/"><div class="headline">文章</div><div class="length-num">34</div></a></div><div class="card-info-data-item is-center"><a href="/tag/"><div class="headline">标签</div><div class="length-num">18</div></a></div><div class="card-info-data-item is-center"><a href="/category/"><div class="headline">分类</div><div class="length-num">6</div></a></div></div><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/S1gma0" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:edward@txg2333.onmicrosoft.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content">不能再玩了，要学习啦。</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%BD%91%E7%BB%9C%E8%AE%A4%E7%9F%A5"><span class="toc-number">1.</span> <span class="toc-text">网络认知</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BD%91%E7%BB%9C%E6%9E%B6%E6%9E%84-amp-%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88"><span class="toc-number">1.1.</span> <span class="toc-text">网络架构&amp;解决方案</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">1.1.1.</span> <span class="toc-text"></span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BD%91%E7%BB%9C%E6%A8%A1%E5%9E%8B-amp-%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8"><span class="toc-number">1.2.</span> <span class="toc-text">网络模型&amp;网络安全</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#OSI-amp-TCP-IP%E5%8D%8F%E8%AE%AE%E5%9F%BA%E7%A1%80"><span class="toc-number">1.2.1.</span> <span class="toc-text">OSI&amp;TCP&#x2F;IP协议基础</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#OSI%E4%B8%83%E5%B1%82%E6%A8%A1%E5%9E%8B"><span class="toc-number">1.2.1.1.</span> <span class="toc-text">OSI七层模型</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%BD%91%E7%BB%9C%E6%95%B0%E6%8D%AE%E6%B5%81%E5%A4%84%E7%90%86%E6%B5%81%E7%A8%8B"><span class="toc-number">1.2.1.2.</span> <span class="toc-text">网络数据流处理流程</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#TCP-IP%E5%92%8COSI%E7%9A%84%E5%AF%B9%E5%BA%94%E5%85%B3%E7%B3%BB"><span class="toc-number">1.2.1.3.</span> <span class="toc-text">TCP&#x2F;IP和OSI的对应关系</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#TCP-IP%E5%8D%8F%E8%AE%AE%E6%A0%88%E5%B0%81%E8%A3%85%E8%A7%A3%E5%B0%81%E8%A3%85%E8%BF%87%E7%A8%8B"><span class="toc-number">1.2.1.4.</span> <span class="toc-text">TCP&#x2F;IP协议栈封装解封装过程</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#TCP-IP%E5%8D%8F%E8%AE%AE%E6%A0%88%E5%90%84%E5%B1%82%E4%BD%9C%E7%94%A8"><span class="toc-number">1.2.1.5.</span> <span class="toc-text">TCP&#x2F;IP协议栈各层作用</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#TCP%E4%B8%89%E6%AC%A1%E6%8F%A1%E6%89%8B%EF%BC%8C%E5%9B%9B%E6%AC%A1%E6%8C%A5%E6%89%8B"><span class="toc-number">1.2.1.6.</span> <span class="toc-text">TCP三次握手，四次挥手</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#TCP-IP%E5%8D%8F%E8%AE%AE%E5%AE%89%E5%85%A8"><span class="toc-number">1.2.2.</span> <span class="toc-text">TCP&#x2F;IP协议安全</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#IPV4%E5%AE%89%E5%85%A8%E9%9A%90%E6%82%A3"><span class="toc-number">1.2.2.1.</span> <span class="toc-text">IPV4安全隐患</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#TCP-IP%E5%8D%8F%E8%AE%AE%E6%A0%88%E5%B8%B8%E8%A7%81%E5%AE%89%E5%85%A8%E9%A3%8E%E9%99%A9"><span class="toc-number">1.2.2.2.</span> <span class="toc-text">TCP&#x2F;IP协议栈常见安全风险</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B8%B8%E8%A7%81%E7%BD%91%E7%BB%9C%E6%94%BB%E5%87%BB%E6%96%B9%E5%BC%8F"><span class="toc-number">1.2.3.</span> <span class="toc-text">常见网络攻击方式</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%B7%AF%E7%94%B1"><span class="toc-number">2.</span> <span class="toc-text">路由</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BD%91%E7%BB%9C%E7%BC%96%E5%9D%80"><span class="toc-number">2.0.1.</span> <span class="toc-text">网络编址</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#IP%E5%9F%BA%E7%A1%80"><span class="toc-number">2.0.1.1.</span> <span class="toc-text">IP基础</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AD%90%E7%BD%91%E5%88%92%E5%88%86-amp-%E6%8E%A9%E7%A0%81%E8%81%9A%E5%90%88"><span class="toc-number">2.0.1.2.</span> <span class="toc-text">子网划分&amp;掩码聚合</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BA%A4%E6%8D%A2"><span class="toc-number">3.</span> <span class="toc-text">交换</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#VLAN%E5%8E%9F%E7%90%86%E5%92%8C%E9%85%8D%E7%BD%AE"><span class="toc-number">3.1.</span> <span class="toc-text">VLAN原理和配置</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#VLAN%E7%9A%84%E8%B5%B7%E6%BA%90"><span class="toc-number">3.1.1.</span> <span class="toc-text">VLAN的起源</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#VLAN%E7%9A%84%E5%B8%A7%E6%A0%BC%E5%BC%8F"><span class="toc-number">3.1.2.</span> <span class="toc-text">VLAN的帧格式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B8%B8%E8%A7%81%E9%93%BE%E8%B7%AF%E7%B1%BB%E5%9E%8B"><span class="toc-number">3.1.3.</span> <span class="toc-text">常见链路类型</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#PVID"><span class="toc-number">3.1.3.1.</span> <span class="toc-text">PVID</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%AB%AF%E5%8F%A3%E7%B1%BB%E5%9E%8B-Access"><span class="toc-number">3.1.3.2.</span> <span class="toc-text">端口类型-Access</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%AB%AF%E5%8F%A3%E7%B1%BB%E5%9E%8B-Trunk"><span class="toc-number">3.1.3.3.</span> <span class="toc-text">端口类型-Trunk</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#VLAN%E7%9A%84%E9%85%8D%E7%BD%AE"><span class="toc-number">3.1.4.</span> <span class="toc-text">VLAN的配置</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%95%B4%E4%BD%93%E6%80%BB%E7%BB%93"><span class="toc-number">4.</span> <span class="toc-text">整体总结</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新上传</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/08/31/IP/" title="IP">IP</a><time datetime="2023-08-31T03:08:11.000Z" title="发表于 2023-08-31 11:08:11">2023-08-31</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/08/28/%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80/" title="网络基础">网络基础</a><time datetime="2023-08-28T02:18:21.000Z" title="发表于 2023-08-28 10:18:21">2023-08-28</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/08/01/http-status-code/" title="HTTP状态码">HTTP状态码</a><time datetime="2023-08-01T04:19:58.000Z" title="发表于 2023-08-01 12:19:58">2023-08-01</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/08/01/SQL%E6%8B%BC%E6%8E%A5/" title="SQL拼接">SQL拼接</a><time datetime="2023-08-01T02:43:21.000Z" title="发表于 2023-08-01 10:43:21">2023-08-01</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/07/27/%E5%85%AC%E7%BD%91-%E7%A7%81%E7%BD%91/" title="公网&amp;私网、内网&amp;外网">公网&amp;私网、内网&amp;外网</a><time datetime="2023-07-27T01:58:55.000Z" title="发表于 2023-07-27 09:58:55">2023-07-27</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2021 - 2023 By Sigma</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div></div><hr/><div id="local-search-results"></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/search/local-search.js"></script><div class="js-pjax"></div><script src="/js/custom.js"></script><script id="canvas_nest" defer="defer" color="0,0,255" opacity="0.7" zIndex="-1" count="99" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-nest.min.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
