@@ -1,0 +1,190 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>learn | Sigma</title><meta name="author" content="Sigma"><meta name="copyright" content="Sigma"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="HDM管理口HDM管理口通常是一个特定的物理接口，用于连接HDM设备与管理控制台或网络管理系统。通过管理口，管理员可以进行设备的配置、监控和故障排除等管理操作。 通过HDM管理口，管理员可以通过管理工具或命令行界面（CLI）等方式对HDM设备进行配置、监控和故障排除。这样可以更方便地管理大规模网络环境中的设备，并及时响应和解决问题，提高网络的可靠性和可管理性。 光模块光模块（Optical Mod">
+<meta property="og:type" content="article">
+<meta property="og:title" content="learn">
+<meta property="og:url" content="https://s1gma0.github.io/2023/12/07/learn/index.html">
+<meta property="og:site_name" content="Sigma">
+<meta property="og:description" content="HDM管理口HDM管理口通常是一个特定的物理接口，用于连接HDM设备与管理控制台或网络管理系统。通过管理口，管理员可以进行设备的配置、监控和故障排除等管理操作。 通过HDM管理口，管理员可以通过管理工具或命令行界面（CLI）等方式对HDM设备进行配置、监控和故障排除。这样可以更方便地管理大规模网络环境中的设备，并及时响应和解决问题，提高网络的可靠性和可管理性。 光模块光模块（Optical Mod">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg">
+<meta property="article:published_time" content="2023-12-07T10:15:57.000Z">
+<meta property="article:modified_time" content="2023-12-07T10:33:03.819Z">
+<meta property="article:author" content="Sigma">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://s1gma0.github.io/2023/12/07/learn/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//www.google-analytics.com" crossorigin=""/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-GCTE07PVVF"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-GCTE07PVVF');
+</script><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isanchor: true
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'learn',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2023-12-07 18:33:03'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if (GLOBAL_CONFIG_SITE.isHome && /iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link rel="stylesheet" href="/css/touming.css"><meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="Sigma" type="application/atom+xml">
+</head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/./img/head.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archive/"><div class="headline">文章</div><div class="length-num">37</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tag/"><div class="headline">标签</div><div class="length-num">18</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/category/"><div class="headline">分类</div><div class="length-num">6</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fa fa-heartbeat"></i><span> 清单</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Sigma</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fa fa-heartbeat"></i><span> 清单</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">learn</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-12-07T10:15:57.000Z" title="发表于 2023-12-07 18:15:57">2023-12-07</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-12-07T10:33:03.819Z" title="更新于 2023-12-07 18:33:03">2023-12-07</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="learn"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h2 id="HDM管理口"><a href="#HDM管理口" class="headerlink" title="HDM管理口"></a>HDM管理口</h2><p>HDM管理口通常是一个特定的物理接口，用于连接HDM设备与管理控制台或网络管理系统。通过管理口，管理员可以进行设备的配置、监控和故障排除等管理操作。</p>
+<p>通过HDM管理口，管理员可以通过管理工具或命令行界面（CLI）等方式对HDM设备进行配置、监控和故障排除。这样可以更方便地管理大规模网络环境中的设备，并及时响应和解决问题，提高网络的可靠性和可管理性。</p>
+<h2 id="光模块"><a href="#光模块" class="headerlink" title="光模块"></a>光模块</h2><p>光模块（Optical Module）是一种<strong>用于光纤通信</strong>的设备，它<strong>将电信号转换为光信号，实现光纤之间的数据传输</strong>。</p>
+<p>光模块通常由光发射器（光源）和光接收器（光探测器）组成，它们可以分别将电信号转换为光信号和将光信号转换为电信号。光模块还包括一些其他组件，如光耦合器、驱动电路、接收电路、温度控制器等，以确保光信号的稳定传输和接收。</p>
+<p>光模块具有以下特点：</p>
+<ol>
+<li><p>标准化接口：光模块通常采用标准化的接口，如SFP（Small Form-factor Pluggable）、SFP+、QSFP（Quad Small Form-factor Pluggable）等。这些接口可以与光纤设备（如交换机、路由器）相连接，实现光纤之间的数据传输。</p>
+</li>
+<li><p>传输距离和速率：光模块可以支持不同的传输距离和速率。传输距离可以从几十米到几十公里不等，速率可以从几百Mbps到几百Gbps不等。根据不同的需求，可以选择适合的光模块进行数据传输。</p>
+</li>
+<li><p>光纤类型：光模块可以适配不同类型的光纤，如单模光纤（Single-mode Fiber）和多模光纤（Multi-mode Fiber）。不同类型的光纤具有不同的传输特性和传输距离，光模块需要与之匹配。</p>
+</li>
+<li><p>热插拔性：光模块通常支持热插拔，即可以在运行状态下插入或拔出。这样可以方便地更换或升级光模块，而无需停止整个系统的运行。</p>
+</li>
+</ol>
+<p>光模块在光纤通信中扮演着重要的角色，它们被广泛应用于数据中心、电信运营商、企业网络等领域。通过使用光模块，可以实现高速、稳定和远距离的数据传输，满足不同应用场景的需求。</p>
+<h2 id="UPS"><a href="#UPS" class="headerlink" title="UPS"></a>UPS</h2><p>UPS（Uninterruptible Power Supply）是一种用于提供电力备份和保护的设备。它可以<strong>在电源中断或电压异常时，提供持续的电力供应，以保证连接到其上的设备正常运行</strong>。</p>
+<p>UPS通常由以下几个部分组成：</p>
+<ol>
+<li><p>蓄电池：UPS内部配备了一组蓄电池，用于存储电能。当电网供电正常时，蓄电池会通过充电器进行充电，以备用电源。</p>
+</li>
+<li><p>逆变器：UPS内部还有一个逆变器，它将蓄电池中的直流电能转换为交流电能，以供连接到UPS上的设备使用。</p>
+</li>
+<li><p>稳压器：UPS还配备了稳压器，用于调整电压的稳定性。当电网供电电压不稳定时，稳压器可以提供稳定的输出电压，以保护设备免受电压波动的影响。</p>
+</li>
+</ol>
+<p>UPS的工作原理如下：</p>
+<ol>
+<li><p>正常供电：当电网供电正常时，UPS将电能传递给连接到其上的设备，同时通过充电器将电能存储到蓄电池中。</p>
+</li>
+<li><p>电网中断：当电网供电中断时，UPS会立即切换到蓄电池供电模式，通过逆变器将蓄电池中的直流电能转换为交流电能，以供设备使用。这样可以避免设备因为电源中断而停止工作。</p>
+</li>
+<li><p>电压异常：当电网供电电压异常（如过高或过低）时，UPS的稳压器会调整输出电压，以保持稳定的电压供应。这样可以防止设备受到电压波动的损害。</p>
+</li>
+</ol>
+<p>UPS广泛应用于各种场景，特别是对于对电力供应要求高的设备和系统，如计算机数据中心、网络设备、医疗设备、通信设备等。通过使用UPS，可以提供可靠的电力备份和保护，保证设备的正常运行，并防止因为电源问题而导致的数据丢失或设备损坏。</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">Sigma</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://s1gma0.github.io/2023/12/07/learn/">https://s1gma0.github.io/2023/12/07/learn/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://s1gma0.github.io" target="_blank">Sigma</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/2023/12/07/NAS%E3%80%81SAN%E3%80%81DAS/"><img class="next-cover" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">NAS、SAN、DAS</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/./img/head.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Sigma</div><div class="author-info__description">岁月易流逝，珍惜眼前人。</div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archive/"><div class="headline">文章</div><div class="length-num">37</div></a></div><div class="card-info-data-item is-center"><a href="/tag/"><div class="headline">标签</div><div class="length-num">18</div></a></div><div class="card-info-data-item is-center"><a href="/category/"><div class="headline">分类</div><div class="length-num">6</div></a></div></div><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/S1gma0" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:edward@txg2333.onmicrosoft.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content">不能再玩了，要学习啦。</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#HDM%E7%AE%A1%E7%90%86%E5%8F%A3"><span class="toc-number">1.</span> <span class="toc-text">HDM管理口</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%89%E6%A8%A1%E5%9D%97"><span class="toc-number">2.</span> <span class="toc-text">光模块</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#UPS"><span class="toc-number">3.</span> <span class="toc-text">UPS</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新上传</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/12/07/learn/" title="learn">learn</a><time datetime="2023-12-07T10:15:57.000Z" title="发表于 2023-12-07 18:15:57">2023-12-07</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/12/07/NAS%E3%80%81SAN%E3%80%81DAS/" title="NAS、SAN、DAS">NAS、SAN、DAS</a><time datetime="2023-12-07T09:06:35.000Z" title="发表于 2023-12-07 17:06:35">2023-12-07</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/12/04/Kylin/" title="Kylin">Kylin</a><time datetime="2023-12-04T04:45:38.000Z" title="发表于 2023-12-04 12:45:38">2023-12-04</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/08/31/IP/" title="IP">IP</a><time datetime="2023-08-31T03:08:11.000Z" title="发表于 2023-08-31 11:08:11">2023-08-31</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/08/28/%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80/" title="网络基础">网络基础</a><time datetime="2023-08-28T02:18:21.000Z" title="发表于 2023-08-28 10:18:21">2023-08-28</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2021 - 2023 By Sigma</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div></div><hr/><div id="local-search-results"></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/search/local-search.js"></script><div class="js-pjax"></div><script src="/js/custom.js"></script><script id="canvas_nest" defer="defer" color="0,0,255" opacity="0.7" zIndex="-1" count="99" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-nest.min.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
