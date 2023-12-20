@@ -312,13 +312,6 @@
 
   
   <url>
-    <loc>https://s1gma0.github.io/tag/WriteUp/</loc>
-    <lastmod>2023-12-20</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://s1gma0.github.io/tag/Thoughts/</loc>
     <lastmod>2023-12-20</lastmod>
     <changefreq>daily</changefreq>
@@ -327,6 +320,13 @@
   
   <url>
     <loc>https://s1gma0.github.io/tag/CTF/</loc>
+    <lastmod>2023-12-20</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://s1gma0.github.io/tag/WriteUp/</loc>
     <lastmod>2023-12-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -440,14 +440,14 @@
 
   
   <url>
-    <loc>https://s1gma0.github.io/category/CTF/</loc>
+    <loc>https://s1gma0.github.io/category/nothing/</loc>
     <lastmod>2023-12-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://s1gma0.github.io/category/nothing/</loc>
+    <loc>https://s1gma0.github.io/category/CTF/</loc>
     <lastmod>2023-12-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
