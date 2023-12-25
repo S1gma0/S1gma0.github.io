@@ -319,6 +319,13 @@
 
   
   <url>
+    <loc>https://s1gma0.github.io/tags/WriteUp/</loc>
+    <lastmod>2023-12-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://s1gma0.github.io/tags/Thoughts/</loc>
     <lastmod>2023-12-25</lastmod>
     <changefreq>daily</changefreq>
@@ -327,13 +334,6 @@
   
   <url>
     <loc>https://s1gma0.github.io/tags/CTF/</loc>
-    <lastmod>2023-12-25</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://s1gma0.github.io/tags/WriteUp/</loc>
     <lastmod>2023-12-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -354,14 +354,14 @@
   </url>
   
   <url>
-    <loc>https://s1gma0.github.io/tags/Java/</loc>
+    <loc>https://s1gma0.github.io/tags/JavaScript/</loc>
     <lastmod>2023-12-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://s1gma0.github.io/tags/JavaScript/</loc>
+    <loc>https://s1gma0.github.io/tags/Java/</loc>
     <lastmod>2023-12-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -424,6 +424,13 @@
   </url>
   
   <url>
+    <loc>https://s1gma0.github.io/tags/CTFHub/</loc>
+    <lastmod>2023-12-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://s1gma0.github.io/tags/XFF/</loc>
     <lastmod>2023-12-25</lastmod>
     <changefreq>daily</changefreq>
@@ -437,24 +444,17 @@
     <priority>0.6</priority>
   </url>
   
-  <url>
-    <loc>https://s1gma0.github.io/tags/CTFHub/</loc>
-    <lastmod>2023-12-25</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
 
   
   <url>
-    <loc>https://s1gma0.github.io/categories/nothing/</loc>
+    <loc>https://s1gma0.github.io/categories/CTF/</loc>
     <lastmod>2023-12-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://s1gma0.github.io/categories/CTF/</loc>
+    <loc>https://s1gma0.github.io/categories/nothing/</loc>
     <lastmod>2023-12-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -475,14 +475,14 @@
   </url>
   
   <url>
-    <loc>https://s1gma0.github.io/categories/Java/</loc>
+    <loc>https://s1gma0.github.io/categories/JavaScript/</loc>
     <lastmod>2023-12-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://s1gma0.github.io/categories/JavaScript/</loc>
+    <loc>https://s1gma0.github.io/categories/Java/</loc>
     <lastmod>2023-12-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
