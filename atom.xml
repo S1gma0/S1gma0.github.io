@@ -6,7 +6,7 @@
   <link href="https://s1gma0.github.io/atom.xml" rel="self"/>
   
   <link href="https://s1gma0.github.io/"/>
-  <updated>2023-12-21T09:28:11.627Z</updated>
+  <updated>2024-09-27T03:15:09.940Z</updated>
   <id>https://s1gma0.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>crypto</title>
+    <link href="https://s1gma0.github.io/2024/09/26/crypto/"/>
+    <id>https://s1gma0.github.io/2024/09/26/crypto/</id>
+    <published>2024-09-26T02:13:20.000Z</published>
+    <updated>2024-09-27T03:15:09.940Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="古典密码"><a href="#古典密码" class="headerlink" title="古典密码"></a>古典密码</h1><h2 id="凯撒密码"><a href="#凯撒密码" class="headerlink" title="凯撒密码"></a>凯撒密码</h2><p>凯撒(Caesar)密码是公元前一世纪在高卢战争时被使用的，它是将<strong>英文字母向前移动k位</strong>。</p><p>示例：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">明文flag&#123;genshin impact launch!&#125;</span><br><span class="line">当k=3时</span><br><span class="line">密文iodj&#123;jhqvklq lpsdfw odxqfk!&#125;</span><br></pre></td></tr></table></figure><h3 id="Rot5、13"><a href="#Rot5、13" class="headerlink" title="Rot5、13"></a>Rot5、13</h3><p>Rot是凯撒密码的<strong>特殊情况</strong>，即步长（k的值）是固定的。常见的步长为5、13、18、47。</p><h2 id="栏栅密码"><a href="#栏栅密码" class="headerlink" title="栏栅密码"></a>栏栅密码</h2><p>栏栅密码（也叫栅栏密码，英文称为Rail Fence Cipher）是一种古老的换位加密算法。它通过将明文字符按照<strong>Z字形</strong>在不同的栏栅（行）之间交错排列，再按照行的顺序读取出来形成密文。</p><p>示例：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">假设明文是 &quot;HELLOCTF&quot;，使用3栏栅（即栏栅为3）加密</span><br><span class="line">1、先使用Z字形排列明文，如下</span><br><span class="line">H       L       T</span><br><span class="line"> E   L   O   C   F</span><br><span class="line">  L       O</span><br><span class="line">2、然后按行读取字符</span><br><span class="line">第一行：HLT</span><br><span class="line">第二行：ELOCF</span><br><span class="line">第三行：LO</span><br><span class="line">3、将各行字符拼接，得到密文</span><br><span class="line">HLTELOCFLO</span><br></pre></td></tr></table></figure><h2 id="摩斯密码"><a href="#摩斯密码" class="headerlink" title="摩斯密码"></a>摩斯密码</h2><p>摩斯密码（Morse Code）是一种早期的电报通信方式，通过短音（点）和长音（划）来表示字母和数字。它可以用来将字母、数字甚至标点符号编码成一系列的点和划。</p><p>摩斯密码的基本规则：</p><ul><li><p><strong>点</strong>（.）表示短音，<strong>划</strong>（-）表示长音。</p></li><li><p>字母之间用空格隔开，单词之间用更长的空格隔开。</p><div align = "center">摩斯密码表</div></li></ul><table><thead><tr><th><strong>字符</strong></th><th><strong>电码符号</strong></th><th><strong>字符</strong></th><th><strong>电码符号</strong></th><th><strong>字符</strong></th><th><strong>电码符号</strong></th><th><strong>字符</strong></th><th><strong>电码符号</strong></th></tr></thead><tbody><tr><td>A</td><td>．━</td><td>B</td><td>━ ．．．</td><td>C</td><td>━ ．━ ．</td><td>D</td><td>━ ．．</td></tr><tr><td>E</td><td>．</td><td>F</td><td>．．━ ．</td><td>G</td><td>━ ━ ．</td><td>H</td><td>．．．．</td></tr><tr><td>I</td><td>．．</td><td>J</td><td>．━ ━ ━</td><td>K</td><td>━ ．━</td><td>L</td><td>．━ ．．</td></tr><tr><td>M</td><td>━ ━</td><td>N</td><td>━ ．</td><td>O</td><td>━ ━ ━</td><td>P</td><td>．━ ━ ．</td></tr><tr><td>Q</td><td>━ ━ ．━</td><td>R</td><td>．━ ．</td><td>S</td><td>．．．</td><td>T</td><td>━</td></tr><tr><td>U</td><td>．．━</td><td>V</td><td>．．．━</td><td>W</td><td>．━ ━</td><td>X</td><td>━ ．．━</td></tr><tr><td>Y</td><td>━ ．━ ━</td><td>Z</td><td>━ ━ ．．</td><td></td><td></td><td></td><td></td></tr><tr><td>0</td><td>━ ━ ━ ━ ━</td><td>1</td><td>．━ ━ ━ ━</td><td>2</td><td>．．━ ━ ━</td><td>3</td><td>．．．━ ━</td></tr><tr><td>4</td><td>．．．．━</td><td>5</td><td>．．．．．</td><td>6</td><td>━ ．．．．</td><td>7</td><td>━ ━ ．．．</td></tr><tr><td>8</td><td>━ ━ ━ ．．</td><td>9</td><td>━ ━ ━ ━ ．</td><td></td><td></td><td></td><td></td></tr><tr><td>.</td><td>．━ ．━ ．━</td><td>:</td><td>━ ━ ━ ．．．</td><td>,</td><td>━ ━ ．．━ ━</td><td>;</td><td>━ ．━ ．━ ．</td></tr><tr><td>?</td><td>．．━ ━ ．．</td><td>=</td><td>━ ．．．━</td><td>‘</td><td>．━ ━ ━ ━ ．</td><td>/</td><td>━ ．．━ ．</td></tr><tr><td>!</td><td>━ ．━ ．━ ━</td><td>━</td><td>━ ．．．．━</td><td>_</td><td>．．━ ━ ．━</td><td>“</td><td>．━ ．．━ ．</td></tr><tr><td>(</td><td>━ ．━ ━ ．</td><td>)</td><td>━ ．━ ━ ．━</td><td>$</td><td>．．．━ ．．━</td><td>&amp;</td><td>． ．．．</td></tr><tr><td>@</td><td>．━ ━ ．━ ．</td><td></td><td></td><td></td><td></td><td></td><td></td></tr></tbody></table><p>示例：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">密文</span><br><span class="line">--. . -. ... .... .. -. .. -- .--. .- -.-. - .-.. .- ..- -. -.-. .... </span><br><span class="line">明文</span><br><span class="line">GenshinImpactLaunch</span><br></pre></td></tr></table></figure><h1 id="非对称加密算法"><a href="#非对称加密算法" class="headerlink" title="非对称加密算法"></a>非对称加密算法</h1><h2 id="RSA算法"><a href="#RSA算法" class="headerlink" title="RSA算法"></a>RSA算法</h2><h1 id="编码与序列化"><a href="#编码与序列化" class="headerlink" title="编码与序列化"></a>编码与序列化</h1><h2 id="Quoted-printable编码"><a href="#Quoted-printable编码" class="headerlink" title="Quoted-printable编码"></a>Quoted-printable编码</h2><p><strong>Quoted-Printable</strong> 是一种编码方法，常用于电子邮件传输中，<strong>将二进制数据或非ASCII字符编码成纯ASCII格式</strong>。这种编码方式保证数据在传输时不会因为不同平台或传输协议的差异而出现问题，尤其是在电子邮件中处理非ASCII字符时特别有用。</p><h3 id="Quoted-Printable-编码规则："><a href="#Quoted-Printable-编码规则：" class="headerlink" title="Quoted-Printable 编码规则："></a>Quoted-Printable 编码规则：</h3><ol><li><strong>ASCII可打印字符</strong>（值在33到126之间，除去<code>=</code>号）的字节保持原样。</li><li>特殊字符（例如ASCII控制字符，值小于33，或非ASCII字符，值大于126）会被编码成<code>=</code>后跟随字符的十六进制表示（大写）。<ul><li>例如，空格的ASCII码是32，用Quoted-Printable编码表示为 <code>=20</code>。</li><li>等号 <code>=</code> 本身在Quoted-Printable编码中用 <code>=3D</code> 表示。</li></ul></li><li><strong>换行符</strong>：行末的换行符被编码为 <code>CRLF</code> （即回车+换行，<code>\r\n</code>），不会被编码成Quoted-Printable格式。</li><li><strong>行长度限制</strong>：编码后的每一行最多不超过76个字符。如果一行超出了76个字符，使用 <code>=</code> 作为软换行符，将长行分成多行。</li></ol><p>示例：BUU-Quoted-printable</p><p>密文</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">=E9=82=A3=E4=BD=A0=E4=B9=9F=E5=BE=88=E6=A3=92=E5=93=A6</span><br></pre></td></tr></table></figure><p>根据<a href="http://www.hiencode.com/quoted.html#:~:text=%E5%9C%A8%E7%BA%BFQuoted-p">在线Quoted-printable编解码网站</a>,解码后得到明文</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">那你也很棒哦</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;古典密码&quot;&gt;&lt;a href=&quot;#古典密码&quot; class=&quot;headerlink&quot; title=&quot;古典密码&quot;&gt;&lt;/a&gt;古典密码&lt;/h1&gt;&lt;h2 id=&quot;凯撒密码&quot;&gt;&lt;a href=&quot;#凯撒密码&quot; class=&quot;headerlink&quot; title=&quot;凯撒密码&quot;&gt;&lt;/a</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>Linux PV、VG、LV</title>
@@ -408,26 +428,6 @@
       
     <summary type="html">&lt;h1 id=&quot;一、编码解码网站&quot;&gt;&lt;a href=&quot;#一、编码解码网站&quot; class=&quot;headerlink&quot; title=&quot;一、编码解码网站&quot;&gt;&lt;/a&gt;一、编码解码网站&lt;/h1&gt;&lt;ul&gt;
 &lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://ctf.bugku.com/tools.</summary>
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Red Dragonfly</title>
-    <link href="https://s1gma0.github.io/2022/04/14/Red-Dragonfly/"/>
-    <id>https://s1gma0.github.io/2022/04/14/Red-Dragonfly/</id>
-    <published>2022-04-14T13:18:38.000Z</published>
-    <updated>2023-04-19T15:55:53.174Z</updated>
-    
-    <content type="html"><![CDATA[<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">POST /DragonFlyServ/Api/webserver/login HTTP/1.1</span><br><span class="line">Content-Type: application/x-www-form-urlencoded</span><br><span class="line">Connection: close</span><br><span class="line">Charset: UTF-8</span><br><span class="line">User-Agent: Dalvik/2.1.0 (Linux; U; Android 12; M2012K11AC Build/SKQ1.211006.001)</span><br><span class="line">Host: 218.195.237.156:8029</span><br><span class="line">Accept-Encoding: gzip, deflate</span><br><span class="line">Content-Length: 123</span><br><span class="line"></span><br></pre></td></tr></table></figure><p><img src="https://cdn.jsdelivr.net/gh/S1gma0/image/image-20220414213359081.png"></p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">HTTP/1.1 200 OK</span><br><span class="line">Content-Type: application/json; charset=utf-8</span><br><span class="line">Connection: close</span><br><span class="line">Server: Jetty(9.2.10.v20150310)</span><br><span class="line"></span><br><span class="line">&#123;&quot;r&quot;:&quot;1&quot;,&quot;m&quot;:&quot;1&quot;&#125;</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span c</summary>
       
     
     
