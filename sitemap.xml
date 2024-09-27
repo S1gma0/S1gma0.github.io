@@ -312,13 +312,6 @@
 
   
   <url>
-    <loc>https://s1gma0.github.io/tags/HTML/</loc>
-    <lastmod>2024-09-27</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://s1gma0.github.io/tags/error/</loc>
     <lastmod>2024-09-27</lastmod>
     <changefreq>daily</changefreq>
@@ -326,7 +319,7 @@
   </url>
   
   <url>
-    <loc>https://s1gma0.github.io/tags/Java/</loc>
+    <loc>https://s1gma0.github.io/tags/HTML/</loc>
     <lastmod>2024-09-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -334,6 +327,13 @@
   
   <url>
     <loc>https://s1gma0.github.io/tags/JavaScript/</loc>
+    <lastmod>2024-09-27</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://s1gma0.github.io/tags/Java/</loc>
     <lastmod>2024-09-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -348,6 +348,13 @@
   
   <url>
     <loc>https://s1gma0.github.io/tags/Web/</loc>
+    <lastmod>2024-09-27</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://s1gma0.github.io/tags/XSS/</loc>
     <lastmod>2024-09-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -369,13 +376,6 @@
   
   <url>
     <loc>https://s1gma0.github.io/tags/jade-6/</loc>
-    <lastmod>2024-09-27</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://s1gma0.github.io/tags/XSS/</loc>
     <lastmod>2024-09-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -433,13 +433,6 @@
 
   
   <url>
-    <loc>https://s1gma0.github.io/categories/HTML/</loc>
-    <lastmod>2024-09-27</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://s1gma0.github.io/categories/Hexo/</loc>
     <lastmod>2024-09-27</lastmod>
     <changefreq>daily</changefreq>
@@ -447,7 +440,7 @@
   </url>
   
   <url>
-    <loc>https://s1gma0.github.io/categories/Java/</loc>
+    <loc>https://s1gma0.github.io/categories/HTML/</loc>
     <lastmod>2024-09-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -455,6 +448,13 @@
   
   <url>
     <loc>https://s1gma0.github.io/categories/JavaScript/</loc>
+    <lastmod>2024-09-27</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://s1gma0.github.io/categories/Java/</loc>
     <lastmod>2024-09-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
