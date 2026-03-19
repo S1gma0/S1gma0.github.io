@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://s1gma0.github.io/2025/10/09/awd/</loc>
+    
+    <lastmod>2025-10-24</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://s1gma0.github.io/2025/08/13/buu-misc/</loc>
     
     <lastmod>2025-08-15</lastmod>
@@ -326,141 +333,141 @@
 
   <url>
     <loc>https://s1gma0.github.io/</loc>
-    <lastmod>2025-08-15</lastmod>
+    <lastmod>2026-03-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
   
   <url>
+    <loc>https://s1gma0.github.io/tags/error/</loc>
+    <lastmod>2026-03-19</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://s1gma0.github.io/tags/BUU/</loc>
-    <lastmod>2025-08-15</lastmod>
+    <lastmod>2026-03-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://s1gma0.github.io/tags/WriteUp/</loc>
-    <lastmod>2025-08-15</lastmod>
+    <lastmod>2026-03-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://s1gma0.github.io/tags/Crypto/</loc>
-    <lastmod>2025-08-15</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://s1gma0.github.io/tags/error/</loc>
-    <lastmod>2025-08-15</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://s1gma0.github.io/tags/JavaScript/</loc>
-    <lastmod>2025-08-15</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://s1gma0.github.io/tags/Java/</loc>
-    <lastmod>2025-08-15</lastmod>
+    <lastmod>2026-03-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://s1gma0.github.io/tags/HTML/</loc>
-    <lastmod>2025-08-15</lastmod>
+    <lastmod>2026-03-19</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://s1gma0.github.io/tags/JavaScript/</loc>
+    <lastmod>2026-03-19</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://s1gma0.github.io/tags/Java/</loc>
+    <lastmod>2026-03-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://s1gma0.github.io/tags/SQL/</loc>
-    <lastmod>2025-08-15</lastmod>
+    <lastmod>2026-03-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://s1gma0.github.io/tags/Web/</loc>
-    <lastmod>2025-08-15</lastmod>
+    <lastmod>2026-03-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://s1gma0.github.io/tags/XSS/</loc>
-    <lastmod>2025-08-15</lastmod>
+    <lastmod>2026-03-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://s1gma0.github.io/tags/HTTP%E5%8D%8F%E8%AE%AE/</loc>
-    <lastmod>2025-08-15</lastmod>
+    <lastmod>2026-03-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://s1gma0.github.io/tags/%E8%AF%B7%E6%B1%82%E6%96%B9%E5%BC%8F/</loc>
-    <lastmod>2025-08-15</lastmod>
+    <lastmod>2026-03-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://s1gma0.github.io/tags/jade-6/</loc>
-    <lastmod>2025-08-15</lastmod>
+    <lastmod>2026-03-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://s1gma0.github.io/tags/adworld/</loc>
-    <lastmod>2025-08-15</lastmod>
+    <lastmod>2026-03-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://s1gma0.github.io/tags/webshell/</loc>
-    <lastmod>2025-08-15</lastmod>
+    <lastmod>2026-03-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://s1gma0.github.io/tags/CTFHub/</loc>
-    <lastmod>2025-08-15</lastmod>
+    <lastmod>2026-03-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://s1gma0.github.io/tags/XFF/</loc>
-    <lastmod>2025-08-15</lastmod>
+    <lastmod>2026-03-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://s1gma0.github.io/tags/referer/</loc>
-    <lastmod>2025-08-15</lastmod>
+    <lastmod>2026-03-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://s1gma0.github.io/tags/CTF/</loc>
-    <lastmod>2025-08-15</lastmod>
+    <lastmod>2026-03-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -468,50 +475,50 @@
 
   
   <url>
-    <loc>https://s1gma0.github.io/categories/CTF/</loc>
-    <lastmod>2025-08-15</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://s1gma0.github.io/categories/Hexo/</loc>
-    <lastmod>2025-08-15</lastmod>
+    <lastmod>2026-03-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://s1gma0.github.io/categories/JavaScript/</loc>
-    <lastmod>2025-08-15</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://s1gma0.github.io/categories/Java/</loc>
-    <lastmod>2025-08-15</lastmod>
+    <loc>https://s1gma0.github.io/categories/CTF/</loc>
+    <lastmod>2026-03-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://s1gma0.github.io/categories/HTML/</loc>
-    <lastmod>2025-08-15</lastmod>
+    <lastmod>2026-03-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://s1gma0.github.io/categories/nothing/</loc>
-    <lastmod>2025-08-15</lastmod>
+    <loc>https://s1gma0.github.io/categories/JavaScript/</loc>
+    <lastmod>2026-03-19</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://s1gma0.github.io/categories/Java/</loc>
+    <lastmod>2026-03-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://s1gma0.github.io/categories/BUU-CTF-WriteUp/</loc>
-    <lastmod>2025-08-15</lastmod>
+    <lastmod>2026-03-19</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://s1gma0.github.io/categories/nothing/</loc>
+    <lastmod>2026-03-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
