@@ -1,3 +1,4 @@
+/* 背景透明设置 */
 #footer {
     background: 0 0;
   }
@@ -5,3 +6,12 @@
   #footer:before {
     background-color: rgba(0, 0, 0, 0);
   }
+
+/*固定 footer 字体颜色为黑色 */
+#footer,
+#footer a,
+#footer p,
+#footer span,
+#footer li {
+    color: #000000 !important;  /* 黑色字体 */
+}

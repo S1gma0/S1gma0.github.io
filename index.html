@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Sigma - blog</title><meta name="author" content="Sigma"><meta name="copyright" content="Sigma"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="nothing">
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>Sigma - blog</title><meta name="author" content="Sigma"><meta name="copyright" content="Sigma"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="nothing">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Sigma">
 <meta property="og:url" content="https://s1gma0.github.io/index.html">
@@ -8,20 +8,121 @@
 <meta property="og:image" content="https://s1gma0.github.io/img/head.JPEG">
 <meta property="article:author" content="Sigma">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://s1gma0.github.io/img/head.JPEG"><link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/S1gma0/image/202312081552332.png"><link rel="canonical" href="https://s1gma0.github.io/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//www.google-analytics.com" crossorigin=""/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-GCTE07PVVF"></script><script>window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'G-GCTE07PVVF');
-</script><script>const GLOBAL_CONFIG = { 
+<meta name="twitter:image" content="https://s1gma0.github.io/img/head.JPEG"><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Sigma",
+  "alternateName": [
+    "blog",
+    "s1gma0.github.io"
+  ],
+  "url": "https://s1gma0.github.io/"
+}</script><link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/S1gma0/image/202312081552332.png"><link rel="canonical" href="https://s1gma0.github.io/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//www.google-analytics.com" crossorigin=""/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=5.5.4"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.1.0/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-GCTE07PVVF"></script><script>window.dataLayer = window.dataLayer || []
+function gtag(){dataLayer.push(arguments)}
+gtag('js', new Date())
+gtag('config', 'G-GCTE07PVVF')
+btf.addGlobalFn('pjaxComplete', () => {
+  gtag('config', 'G-GCTE07PVVF', {'page_path': window.location.pathname})
+}, 'google_analytics')
+</script><script>const GLOBAL_CONFIG = {
   root: '/',
   algolia: undefined,
-  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  localSearch: {"path":"/search.xml","preload":false,"top_n_per_article":1,"unescape":false,"pagination":{"enable":false,"hitsPerPage":8},"languages":{"hits_empty":"未找到符合您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
   translate: undefined,
-  noticeOutdate: undefined,
-  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":true},
   copy: {
     success: '复制成功',
-    error: '复制错误',
+    error: '复制失败',
     noSupport: '浏览器不支持'
   },
   relativeDate: {
@@ -29,7 +130,7 @@ gtag('config', 'G-GCTE07PVVF');
     post: false
   },
   runtime: '天',
-  date_suffix: {
+  dateSuffix: {
     just: '刚刚',
     min: '分钟前',
     hour: '小时前',
@@ -37,361 +138,178 @@ gtag('config', 'G-GCTE07PVVF');
     month: '个月前'
   },
   copyright: undefined,
-  lightbox: 'fancybox',
+  lightbox: 'null',
   Snackbar: undefined,
-  source: {
-    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
-    justifiedGallery: {
-      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
-      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
-    },
-    fancybox: {
-      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
-      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
-    }
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.13.0/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
   },
   isPhotoFigcaption: false,
-  islazyload: false,
-  isanchor: false
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
 }</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
   title: 'Sigma',
-  isPost: false,
-  isHome: true,
   isHighlightShrink: false,
   isToc: false,
-  postUpdate: '2026-03-19 11:48:51'
-}</script><noscript><style type="text/css">
-  #nav {
-    opacity: 1
-  }
-  .justified-gallery img {
-    opacity: 1
-  }
+  pageType: 'home'
+}</script><link rel="stylesheet" href="/css/touming.css"><link rel="stylesheet" href="/css/footer.css"><meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="Sigma" type="application/atom+xml">
+</head><body><script>window.paceOptions = {
+  restartOnPushState: false
+}
 
-  #recent-posts time,
-  #post-meta time {
-    display: inline !important
-  }
-</style></noscript><script>(win=>{
-    win.saveToLocal = {
-      set: function setWithExpiry(key, value, ttl) {
-        if (ttl === 0) return
-        const now = new Date()
-        const expiryDay = ttl * 86400000
-        const item = {
-          value: value,
-          expiry: now.getTime() + expiryDay,
-        }
-        localStorage.setItem(key, JSON.stringify(item))
-      },
+btf.addGlobalFn('pjaxSend', () => {
+  Pace.restart()
+}, 'pace_restart')
 
-      get: function getWithExpiry(key) {
-        const itemStr = localStorage.getItem(key)
-
-        if (!itemStr) {
-          return undefined
-        }
-        const item = JSON.parse(itemStr)
-        const now = new Date()
-
-        if (now.getTime() > item.expiry) {
-          localStorage.removeItem(key)
-          return undefined
-        }
-        return item.value
-      }
-    }
+</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/themes/blue/pace-theme-minimal.min.css"/><script src="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/pace.min.js"></script><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/img/head.JPEG" onerror="this.onerror=null;this.src='https://cdn.jsdelivr.net/gh/S1gma0/image/202312081552301.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archive/"><div class="headline">文章</div><div class="length-num">41</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">19</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">7</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fa fa-heartbeat"></i><span> 清单</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/gallery/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header" style="background-image: url(https://cdn.jsdelivr.net/gh/S1gma0/image/202603211336364.jpg);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">Sigma</span></a></span><div id="menus"><div id="search-button"><span class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></span></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fa fa-heartbeat"></i><span> 清单</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/gallery/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="site-info"><h1 id="site-title">Sigma</h1><div id="site-subtitle"><span id="subtitle"></span></div><div id="site_social_icons"><a class="social-icon" href="https://github.com/S1gma0" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:edward@txg2333.onmicrosoft.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts nc" id="recent-posts"><div class="recent-post-items"><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2025/10/09/awd/" title="awd">awd</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2025-10-09T04:55:00.000Z" title="发表于 2025-10-09 12:55:00">2025-10-09</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2025-10-24T03:45:18.065Z" title="更新于 2025-10-24 11:45:18">2025-10-24</time></span></div><div class="content">ssh登录到服务器，直接修改密码 12passwd856413aSF!  用xftp连接到服务器，把html传输下来 123cd /tmpmkdir 111把look.so、zway.php以defense传输过去  启动看鸟 1234567同理没权限先加权限然后php zway.php --install /var/www/html然后设置waf密码http://服务器ip:端口/?zway=ui856413aSF!然后开启配置  启动文件监控 12345先看一下有没有执行权限ls -l没有执行权限就+xchmod +x ./defense./defense -file /var/www/html -backfile /tmp/7777 -kill    修改 mysql密码 mysql MySQL 5.7.6之后 12345678910mysql -h 远程服务器IP地址 -u 用户名 -p-- 语法：ALTER USER &#x27;用户名&#x27;@&#x27;允许登录的主机&#x27; IDENTIFIED BY &#x27;新密码&#x27;;ALTER USER ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2025/08/13/buu-misc/" title="buu_misc">buu_misc</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2025-08-13T07:41:41.000Z" title="发表于 2025-08-13 15:41:41">2025-08-13</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2025-08-15T07:19:00.849Z" title="更新于 2025-08-15 15:19:00">2025-08-15</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/BUU-CTF-WriteUp/">BUU,CTF,WriteUp</a></span></div><div class="content">wireshark题目 黑客通过wireshark抓到管理员登陆网站的一段流量包（管理员的密码即是答案) 注意：得到的 flag 请包上 flag{} 提交。 WriteUp 登录页面通常是 Web 应用，而 Web 应用的传输层协议几乎都是 HTTP（明文）或 HTTPS（加密）。 wireshark过滤一下HTTP协议，发现有POST /user.php?action=login&amp;do=login HTTP/1.1的数据流  追踪HTTP数据流如下 12345678910111213141516171819202122232425262728293031POST /user.php?action=login&amp;do=login HTTP/1.1Host: www.wooyun.orgUser-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:38.0) Gecko/20100101 Firefox/38.0Accept: text/html,application/xhtml+xml,application/xml;q=...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2025/08/13/BUU-%E8%BF%98%E5%8E%9F%E5%A4%A7%E5%B8%88/" title="BUU_还原大师">BUU_还原大师</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2025-08-13T02:46:57.000Z" title="发表于 2025-08-13 10:46:57">2025-08-13</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2025-08-13T07:29:15.053Z" title="更新于 2025-08-13 15:29:15">2025-08-13</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/CTF/">CTF</a></span></div><div class="content">题目描述我们得到了一串神秘字符串：TASC?O3RJMV?WDJKX?ZM,问号部分是未知大写字母，为了确定这个神秘字符串，我们通过了其他途径获得了这个字串的32位MD5码。但是我们获得它的32位MD5码也是残缺不全，E903???4DAB????08?????51?80??8A?,请猜出神秘字符串的原本模样，并且提交这个字串的32位MD5码作为答案。 注意：得到的 flag 请包上 flag&#123;&#125; 提交 WriteUp先穷举，共有26^3^种可能的字符串，然后进行MD5编码，将得到的MD5码和已知的残缺码比对，匹配成功就输出当前字符串及其MD5码。 具体步骤：  将模板字符串 TASC?O3RJMV?WDJKX?ZM 中的 ? 记录下来（共 3 个）。 枚举这 3 个位置的所有大写字母组合（263=17576263=17576 种）。 对每个候选字符串计算 MD5（128 bit → 32 位十六进制）。 用正则把已知的 MD5 片段 E903???4DAB????08?????51?80??8A? 匹配进去。匹配成功即得到答案。  使用GO编写穷举比对代码如...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/10/09/web/" title="web">web</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-10-09T02:05:22.000Z" title="发表于 2024-10-09 10:05:22">2024-10-09</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-10-09T02:25:05.520Z" title="更新于 2024-10-09 10:25:05">2024-10-09</time></span></div><div class="content">SQL注入SQL注入（SQL Injection, SQLi） 是一种网络安全漏洞，攻击者通过构造恶意的SQL语句将其注入到应用程序的输入中，进而操控数据库执行意料之外的操作。通过精心构造的输入参数，攻击者可以在相当大的范围内以数据库当前用户的权限执行SQL指令，读写数据库或者进行权限提升。 原理见绿盟科技CTF竞赛培训-基础班中的SQL注入原理 寻找、验证方法 表单提交，主要是POST请求，也包括GET请求。 URL参数提交，主要为GET请求参数。 Cookie参数提交。  HTTP请求头部可修改的值，比如: Referer、User_Agent等。  边缘的输入点，比如.mp3文件的一些文件信息等。  </div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/09/26/crypto/" title="Crypto">Crypto</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-09-26T02:13:20.000Z" title="发表于 2024-09-26 10:13:20">2024-09-26</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-10-09T11:03:58.583Z" title="更新于 2024-10-09 19:03:58">2024-10-09</time></span></div><div class="content">编码摩斯编码摩斯编码（Morse Code）是一种早期的电报通信方式，通过短音（点）和长音（划）来表示字母和数字。它可以用来将字母、数字甚至标点符号编码成一系列的点和划。 摩斯编码的基本规则：  点（.）表示短音，划（-）表示长音。  字母之间用空格隔开，单词之间用更长的空格隔开。 摩斯密码表     字符 电码符号 字符 电码符号 字符 电码符号 字符 电码符号    A ．━ B ━ ．．． C ━ ．━ ． D ━ ．．   E ． F ．．━ ． G ━ ━ ． H ．．．．   I ．． J ．━ ━ ━ K ━ ．━ L ．━ ．．   M ━ ━ N ━ ． O ━ ━ ━ P ．━ ━ ．   Q ━ ━ ．━ R ．━ ． S ．．． T ━   U ．．━ V ．．．━ W ．━ ━ X ━ ．．━   Y ━ ．━ ━ Z ━ ━ ．．       0 ━ ━ ━ ━ ━ 1 ．━ ━ ━ ━ 2 ．．━ ━ ━ 3 ．．．━ ━   4 ．．．．━ 5 ．．．．． 6 ━ ．．．． 7 ━ ━ ．．．   8 ━ ━ ━ ．． 9 ━ ━ ━ ━ ．   ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/12/21/Linux-PV%E3%80%81VG%E3%80%81LV/" title="Linux PV、VG、LV">Linux PV、VG、LV</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-12-21T04:34:28.000Z" title="发表于 2023-12-21 12:34:28">2023-12-21</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2025-07-30T09:52:48.383Z" title="更新于 2025-07-30 17:52:48">2025-07-30</time></span></div><div class="content">LVMLVM（Logical Volume Manager，逻辑卷管理器）是一种用于管理磁盘和存储的高级工具，它可以将多个物理磁盘组合成一个或多个逻辑卷，从而提供更灵活和可扩展的存储管理。LVM 由三个主要组件组成：物理卷（PV）、卷组（VG）和逻辑卷（LV）。 LVM 提供了以下优点：  灵活性：LVM 允许您动态地添加或删除物理卷和逻辑卷，以便调整存储空间的大小和分配。  可靠性：LVM 可以提高数据的可靠性，因为它可以在多个物理磁盘上创建冗余存储，从而避免单点故障。  性能：LVM 可以提高磁盘 I/O 性能，因为它可以将多个物理磁盘组合成一个逻辑卷，从而提高磁盘读写速度。  备份和恢复：LVM 允许您在不影响正在运行的系统的情况下备份和恢复数据。您可以在运行时备份逻辑卷，并在需要时恢复它们。   LVM 是一种强大的存储管理工具，它可以提高存储空间的利用率，提高数据的可靠性和性能，并提供更灵活的备份和恢复选项。   PV操作物理卷（Physical Volume，PV）是物理磁盘或分区，它们被标记为 LVM 物理卷，以便将其添加到卷组中。 以下是一些常用的操作物理卷的命令...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/12/07/learn/" title="learn">learn</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-12-07T10:15:57.000Z" title="发表于 2023-12-07 18:15:57">2023-12-07</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2025-08-13T07:56:32.493Z" title="更新于 2025-08-13 15:56:32">2025-08-13</time></span></div><div class="content">HDM管理口HDM管理口通常是一个特定的物理接口，用于连接HDM设备与管理控制台或网络管理系统。通过管理口，管理员可以进行设备的配置、监控和故障排除等管理操作。 通过HDM管理口，管理员可以通过管理工具或命令行界面（CLI）等方式对HDM设备进行配置、监控和故障排除。这样可以更方便地管理大规模网络环境中的设备，并及时响应和解决问题，提高网络的可靠性和可管理性。 光模块光模块（Optical Module）是一种用于光纤通信的设备，它将电信号转换为光信号，实现光纤之间的数据传输。 光模块通常由光发射器（光源）和光接收器（光探测器）组成，它们可以分别将电信号转换为光信号和将光信号转换为电信号。光模块还包括一些其他组件，如光耦合器、驱动电路、接收电路、温度控制器等，以确保光信号的稳定传输和接收。 光模块具有以下特点：  标准化接口：光模块通常采用标准化的接口，如SFP（Small Form-factor Pluggable）、SFP+、QSFP（Quad Small Form-factor Pluggable）等。这些接口可以与光纤设备（如交换机、路由器）相连接，实现光纤之间的数据传输...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/12/07/NAS%E3%80%81SAN%E3%80%81DAS/" title="NAS、SAN、DAS">NAS、SAN、DAS</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-12-07T09:06:35.000Z" title="发表于 2023-12-07 17:06:35">2023-12-07</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2025-07-30T09:04:20.084Z" title="更新于 2025-07-30 17:04:20">2025-07-30</time></span></div><div class="content">NASNAS（Network Attached Storage）是网络附加存储，也就是存储系统直接接入网络，通过网络交换机，将服务器与存储连接在一起，用户可以通过TCP/IP协议访问数据，并通过标准的业界文件共享协议，如CIFS、NFS来实现目录级的共享。 NAS设备是一种独立的存储设备，它具有自己的操作系统和文件系统，可以连接到网络中的其他设备，如计算机、服务器、智能手机等。它提供了一个中心化的存储解决方案，可以方便地共享和访问存储的数据。 SANSAN（Storage Area Network）是存储区域网络，通过交换机将磁盘阵列等存储设备与相关服务器连接起来的高速专用存储网络。 SAN通过专用的网络连接存储设备（如磁盘阵列、磁带库等）和服务器，将存储资源独立于服务器提供。它提供了一个中心化的存储架构，可以通过高速的网络传输大量的数据，并提供快速、可靠的存储访问。 存储光纤交换机存储光纤交换机（Storage Area Network Switch，简称 SAN Switch）是用于连接存储设备（如磁盘阵列）和服务器的光纤通道交换机。它是一个专门设计用于存储区域网络（SAN）...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/12/04/Kylin/" title="Kylin">Kylin</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-12-04T04:45:38.000Z" title="发表于 2023-12-04 12:45:38">2023-12-04</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-12-21T07:50:25.192Z" title="更新于 2023-12-21 15:50:25">2023-12-21</time></span></div><div class="content">root password银河麒麟系统（*#V10.1版本*） 切换为root 因为root密码会一直改变 123kylin@kylin:~/桌面$sudo -i [sudo]kylin的密码：此处输入普通用户kylin的密码856413ASFroot@kylin:~/桌面#  允许以root用户的身份登录到系统，并使用root的环境变量和家目录 apt-get指令管理安装包 123456sudo apt-get install XXXsudo apt-get remove XXX  卸载，值得注意的是，remove仅仅卸载软件，但是并不卸载配置文件sudo apt-get purge XXX   卸载指令，同时卸载相应的配置文件sudo apt-get autoremovesudo apt-get update     将所有包的来源更新，也就是提取最新的包信息sudo apt-get upgrade    一般执行在apt-get update之后，它的作用是将系统中旧版本的包升级成最新的，慎用！因为在linux下，由于大部分为非商业软件，所以稳定性并没有得到很好的验证  P...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/08/31/IP/" title="IP">IP</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-08-31T03:08:11.000Z" title="发表于 2023-08-31 11:08:11">2023-08-31</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-09-01T07:32:42.996Z" title="更新于 2023-09-01 15:32:42">2023-09-01</time></span></div><div class="content">IP分类 A类——网络号占1个字节，网络号的第一位固定为0 (1.0.0.0-126.0.0.0)（默认子网掩码：255.0.0.0或/8或 0xFF000000） 0*******       ********     ********     ******** 1—126 0—255 0—255 1—254 没有0.0.0.0是因为他是缺省地址，它代表了所有地址 （127去哪了？—回环网段，用来做测试，能ping通说明网卡协议没问题。） B类——网络号占2个字节，网络号的前两位固定为10 (128.0.0.0-191.255.0.0)（默认子网掩码：255.255.0.0或/16或0xFFFF0000） 10******         ********      ********      ******** 128—191 0—255 0—255 1—254 C类——网络号占3个字节，网络号的前三位固定位110 (192.0.0.0-223.255.255.0)（子网掩码：255.255.255.0或/24或 0xFFFFFF00） 110*****          **...</div></div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span><a class="page-number" href="/page/2/#content-inner">2</a><span class="space">&hellip;</span><a class="page-number" href="/page/5/#content-inner">5</a><a class="extend next" rel="next" href="/page/2/#content-inner"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/head.JPEG" onerror="this.onerror=null;this.src='https://cdn.jsdelivr.net/gh/S1gma0/image/202312081552301.gif'" alt="avatar"/></div><div class="author-info-name">Sigma</div><div class="author-info-description">nothing</div><div class="site-data"><a href="/archive/"><div class="headline">文章</div><div class="length-num">41</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">19</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">7</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/S1gma0"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons"><a class="social-icon" href="https://github.com/S1gma0" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:edward@txg2333.onmicrosoft.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div class="sticky_layout"><div class="card-widget card-archives">
+    <div class="item-headline">
+      <i class="fas fa-archive"></i>
+      <span>归档</span>
+      <a class="card-more-btn" href="/archive/"
+            title="查看更多">
+            <i class="fas fa-angle-right"></i>
+          </a>
+    </div>
   
-    win.getScript = url => new Promise((resolve, reject) => {
-      const script = document.createElement('script')
-      script.src = url
-      script.async = true
-      script.onerror = reject
-      script.onload = script.onreadystatechange = function() {
-        const loadState = this.readyState
-        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
-        script.onload = script.onreadystatechange = null
-        resolve()
-      }
-      document.head.appendChild(script)
-    })
-  
-      win.activateDarkMode = function () {
-        document.documentElement.setAttribute('data-theme', 'dark')
-        if (document.querySelector('meta[name="theme-color"]') !== null) {
-          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
-        }
-      }
-      win.activateLightMode = function () {
-        document.documentElement.setAttribute('data-theme', 'light')
-        if (document.querySelector('meta[name="theme-color"]') !== null) {
-          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
-        }
-      }
-      const t = saveToLocal.get('theme')
-    
-          if (t === 'dark') activateDarkMode()
-          else if (t === 'light') activateLightMode()
-        
-      const asideStatus = saveToLocal.get('aside-status')
-      if (asideStatus !== undefined) {
-        if (asideStatus === 'hide') {
-          document.documentElement.classList.add('hide-aside')
-        } else {
-          document.documentElement.classList.remove('hide-aside')
-        }
-      }
-    
-    const detectApple = () => {
-      if (GLOBAL_CONFIG_SITE.isHome && /iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
-        document.documentElement.classList.add('apple')
-      }
-    }
-    detectApple()
-    })(window)</script><link rel="stylesheet" href="/css/touming.css"><link rel="stylesheet" href="/css/footer.css"><meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="Sigma" type="application/atom+xml">
-</head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/head.JPEG" onerror="onerror=null;src='https://cdn.jsdelivr.net/gh/S1gma0/image/202312081552301.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archive/"><div class="headline">文章</div><div class="length-num">41</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">标签</div><div class="length-num">19</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">分类</div><div class="length-num">7</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fa fa-heartbeat"></i><span> 清单</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/gallery/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header" style="background-image: url('https://cdn.jsdelivr.net/gh/S1gma0/image/202312081535190.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Sigma</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fa fa-heartbeat"></i><span> 清单</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/gallery/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">Sigma</h1><div id="site-subtitle"><span id="subtitle"></span></div><div id="site_social_icons"><a class="social-icon" href="https://github.com/S1gma0" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:edward@txg2333.onmicrosoft.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2025/10/09/awd/" title="awd">awd</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2025-10-09T04:55:00.000Z" title="发表于 2025-10-09 12:55:00">2025-10-09</time><span class="article-meta__separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2025-10-24T03:45:18.065Z" title="更新于 2025-10-24 11:45:18">2025-10-24</time></span></div><div class="content">ssh登录到服务器，直接修改密码
-12passwd856413aSF!
-
-用xftp连接到服务器，把html传输下来
-123cd /tmpmkdir 111把look.so、zway.php以defense传输过去
-
-启动看鸟
-1234567同理没权限先加权限然后php zway.php --install /var/www/html然后设置waf密码http://服务器ip:端口/?zway=ui856413aSF!然后开启配置
-
-启动文件监控
-12345先看一下有没有执行权限ls -l没有执行权限就+xchmod +x ./defense./defense -file /var/www/html -backfile /tmp/7777 -kill
-
-
-
-修改 mysql密码
-mysql MySQL 5.7.6之后
-12345678910mysql -h 远程服务器IP地址 -u 用户名 -p-- 语法：ALTER USER &#x27;用户名&#x27;@&#x27;允许登录的主机&#x27; IDENTIFIED BY &#x27;新密码&#x27;;ALTER USER &#x ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2025/08/13/buu-misc/" title="buu_misc">buu_misc</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2025-08-13T07:41:41.000Z" title="发表于 2025-08-13 15:41:41">2025-08-13</time><span class="article-meta__separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2025-08-15T07:19:00.849Z" title="更新于 2025-08-15 15:19:00">2025-08-15</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/BUU-CTF-WriteUp/">BUU,CTF,WriteUp</a></span></div><div class="content">wireshark题目
-黑客通过wireshark抓到管理员登陆网站的一段流量包（管理员的密码即是答案) 注意：得到的 flag 请包上 flag{} 提交。
-WriteUp
-登录页面通常是 Web 应用，而 Web 应用的传输层协议几乎都是 HTTP（明文）或 HTTPS（加密）。
-wireshark过滤一下HTTP协议，发现有POST /user.php?action=login&amp;do=login HTTP/1.1的数据流
-
-追踪HTTP数据流如下
-12345678910111213141516171819202122232425262728293031POST /user.php?action=login&amp;do=login HTTP/1.1Host: www.wooyun.orgUser-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:38.0) Gecko/20100101 Firefox/38.0Accept: text/html,application/xhtml+xml,application/xml;q=0.9 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2025/08/13/BUU-%E8%BF%98%E5%8E%9F%E5%A4%A7%E5%B8%88/" title="BUU_还原大师">BUU_还原大师</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2025-08-13T02:46:57.000Z" title="发表于 2025-08-13 10:46:57">2025-08-13</time><span class="article-meta__separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2025-08-13T07:29:15.053Z" title="更新于 2025-08-13 15:29:15">2025-08-13</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/CTF/">CTF</a></span></div><div class="content">题目描述我们得到了一串神秘字符串：TASC?O3RJMV?WDJKX?ZM,问号部分是未知大写字母，为了确定这个神秘字符串，我们通过了其他途径获得了这个字串的32位MD5码。但是我们获得它的32位MD5码也是残缺不全，E903???4DAB????08?????51?80??8A?,请猜出神秘字符串的原本模样，并且提交这个字串的32位MD5码作为答案。 注意：得到的 flag 请包上 flag&#123;&#125; 提交
-WriteUp先穷举，共有26^3^种可能的字符串，然后进行MD5编码，将得到的MD5码和已知的残缺码比对，匹配成功就输出当前字符串及其MD5码。
-具体步骤：
-
-将模板字符串 TASC?O3RJMV?WDJKX?ZM 中的 ? 记录下来（共 3 个）。
-枚举这 3 个位置的所有大写字母组合（263=17576263=17576 种）。
-对每个候选字符串计算 MD5（128 bit → 32 位十六进制）。
-用正则把已知的 MD5 片段 E903???4DAB????08?????51?80??8A? 匹配进去。匹配成功即得到答案。
-
-使用GO编写穷举比对代码如下：
- ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/10/09/web/" title="web">web</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-10-09T02:05:22.000Z" title="发表于 2024-10-09 10:05:22">2024-10-09</time><span class="article-meta__separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-10-09T02:25:05.520Z" title="更新于 2024-10-09 10:25:05">2024-10-09</time></span></div><div class="content">SQL注入SQL注入（SQL Injection, SQLi） 是一种网络安全漏洞，攻击者通过构造恶意的SQL语句将其注入到应用程序的输入中，进而操控数据库执行意料之外的操作。通过精心构造的输入参数，攻击者可以在相当大的范围内以数据库当前用户的权限执行SQL指令，读写数据库或者进行权限提升。
-原理见绿盟科技CTF竞赛培训-基础班中的SQL注入原理
-寻找、验证方法
-表单提交，主要是POST请求，也包括GET请求。
-URL参数提交，主要为GET请求参数。
-Cookie参数提交。 
-HTTP请求头部可修改的值，比如: Referer、User_Agent等。
- 边缘的输入点，比如.mp3文件的一些文件信息等。
-
-</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/09/26/crypto/" title="Crypto">Crypto</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-09-26T02:13:20.000Z" title="发表于 2024-09-26 10:13:20">2024-09-26</time><span class="article-meta__separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-10-09T11:03:58.583Z" title="更新于 2024-10-09 19:03:58">2024-10-09</time></span></div><div class="content">编码摩斯编码摩斯编码（Morse Code）是一种早期的电报通信方式，通过短音（点）和长音（划）来表示字母和数字。它可以用来将字母、数字甚至标点符号编码成一系列的点和划。
-摩斯编码的基本规则：
-
-点（.）表示短音，划（-）表示长音。
-
-字母之间用空格隔开，单词之间用更长的空格隔开。
-摩斯密码表
-
-
-
-
-字符
-电码符号
-字符
-电码符号
-字符
-电码符号
-字符
-电码符号
-
-
-
-A
-．━
-B
-━ ．．．
-C
-━ ．━ ．
-D
-━ ．．
-
-
-E
-．
-F
-．．━ ．
-G
-━ ━ ．
-H
-．．．．
-
-
-I
-．．
-J
-．━ ━ ━
-K
-━ ．━
-L
-．━ ．．
-
-
-M
-━ ━
-N
-━ ．
-O
-━ ━ ━
-P
-．━ ━ ．
-
-
-Q
-━ ━ ．━
-R
-．━ ．
-S
-．．．
-T
-━
-
-
-U
-．．━
-V
-．．．━
-W
-．━ ━
-X
-━ ．．━
-
-
-Y
-━ ．━ ━
-Z
-━ ━ ．．
-
-
-
-
-
-
-0
-━ ━ ━ ━ ━
-1
-．━ ━ ━ ━
-2
-．．━ ━ ━
-3
-．．．━ ━
-
-
-4
-．．．．━
-5
-．．．．．
-6
-━ ．．．．
-7
-━ ━ ．．．
-
-
-8
-━ ━ ━ ．．
-9
-━ ━ ━ ━ ．
-
-
-
-
-
- ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/12/21/Linux-PV%E3%80%81VG%E3%80%81LV/" title="Linux PV、VG、LV">Linux PV、VG、LV</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-12-21T04:34:28.000Z" title="发表于 2023-12-21 12:34:28">2023-12-21</time><span class="article-meta__separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2025-07-30T09:52:48.383Z" title="更新于 2025-07-30 17:52:48">2025-07-30</time></span></div><div class="content">LVMLVM（Logical Volume Manager，逻辑卷管理器）是一种用于管理磁盘和存储的高级工具，它可以将多个物理磁盘组合成一个或多个逻辑卷，从而提供更灵活和可扩展的存储管理。LVM 由三个主要组件组成：物理卷（PV）、卷组（VG）和逻辑卷（LV）。
-LVM 提供了以下优点：
-
-灵活性：LVM 允许您动态地添加或删除物理卷和逻辑卷，以便调整存储空间的大小和分配。
-
-可靠性：LVM 可以提高数据的可靠性，因为它可以在多个物理磁盘上创建冗余存储，从而避免单点故障。
-
-性能：LVM 可以提高磁盘 I/O 性能，因为它可以将多个物理磁盘组合成一个逻辑卷，从而提高磁盘读写速度。
-
-备份和恢复：LVM 允许您在不影响正在运行的系统的情况下备份和恢复数据。您可以在运行时备份逻辑卷，并在需要时恢复它们。
-
-
-LVM 是一种强大的存储管理工具，它可以提高存储空间的利用率，提高数据的可靠性和性能，并提供更灵活的备份和恢复选项。
-
-
-PV操作物理卷（Physical Volume，PV）是物理磁盘或分区，它们被标记为 LVM 物理卷，以便将其添加到卷组中。
-以下是一些常用的操作物理卷的命令及其用 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/12/07/learn/" title="learn">learn</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-12-07T10:15:57.000Z" title="发表于 2023-12-07 18:15:57">2023-12-07</time><span class="article-meta__separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2025-08-13T07:56:32.493Z" title="更新于 2025-08-13 15:56:32">2025-08-13</time></span></div><div class="content">HDM管理口HDM管理口通常是一个特定的物理接口，用于连接HDM设备与管理控制台或网络管理系统。通过管理口，管理员可以进行设备的配置、监控和故障排除等管理操作。
-通过HDM管理口，管理员可以通过管理工具或命令行界面（CLI）等方式对HDM设备进行配置、监控和故障排除。这样可以更方便地管理大规模网络环境中的设备，并及时响应和解决问题，提高网络的可靠性和可管理性。
-光模块光模块（Optical Module）是一种用于光纤通信的设备，它将电信号转换为光信号，实现光纤之间的数据传输。
-光模块通常由光发射器（光源）和光接收器（光探测器）组成，它们可以分别将电信号转换为光信号和将光信号转换为电信号。光模块还包括一些其他组件，如光耦合器、驱动电路、接收电路、温度控制器等，以确保光信号的稳定传输和接收。
-光模块具有以下特点：
-
-标准化接口：光模块通常采用标准化的接口，如SFP（Small Form-factor Pluggable）、SFP+、QSFP（Quad Small Form-factor Pluggable）等。这些接口可以与光纤设备（如交换机、路由器）相连接，实现光纤之间的数据传输。
-
- ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/12/07/NAS%E3%80%81SAN%E3%80%81DAS/" title="NAS、SAN、DAS">NAS、SAN、DAS</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-12-07T09:06:35.000Z" title="发表于 2023-12-07 17:06:35">2023-12-07</time><span class="article-meta__separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2025-07-30T09:04:20.084Z" title="更新于 2025-07-30 17:04:20">2025-07-30</time></span></div><div class="content">NASNAS（Network Attached Storage）是网络附加存储，也就是存储系统直接接入网络，通过网络交换机，将服务器与存储连接在一起，用户可以通过TCP/IP协议访问数据，并通过标准的业界文件共享协议，如CIFS、NFS来实现目录级的共享。
-NAS设备是一种独立的存储设备，它具有自己的操作系统和文件系统，可以连接到网络中的其他设备，如计算机、服务器、智能手机等。它提供了一个中心化的存储解决方案，可以方便地共享和访问存储的数据。
-SANSAN（Storage Area Network）是存储区域网络，通过交换机将磁盘阵列等存储设备与相关服务器连接起来的高速专用存储网络。
-SAN通过专用的网络连接存储设备（如磁盘阵列、磁带库等）和服务器，将存储资源独立于服务器提供。它提供了一个中心化的存储架构，可以通过高速的网络传输大量的数据，并提供快速、可靠的存储访问。
-存储光纤交换机存储光纤交换机（Storage Area Network Switch，简称 SAN Switch）是用于连接存储设备（如磁盘阵列）和服务器的光纤通道交换机。它是一个专门设计用于存储区域网络（SAN）的网络 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/12/04/Kylin/" title="Kylin">Kylin</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-12-04T04:45:38.000Z" title="发表于 2023-12-04 12:45:38">2023-12-04</time><span class="article-meta__separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-12-21T07:50:25.192Z" title="更新于 2023-12-21 15:50:25">2023-12-21</time></span></div><div class="content">root password银河麒麟系统（*#V10.1版本*）
-切换为root
-因为root密码会一直改变
-123kylin@kylin:~/桌面$sudo -i [sudo]kylin的密码：此处输入普通用户kylin的密码856413ASFroot@kylin:~/桌面#
-
-允许以root用户的身份登录到系统，并使用root的环境变量和家目录
-apt-get指令管理安装包
-123456sudo apt-get install XXXsudo apt-get remove XXX  卸载，值得注意的是，remove仅仅卸载软件，但是并不卸载配置文件sudo apt-get purge XXX   卸载指令，同时卸载相应的配置文件sudo apt-get autoremovesudo apt-get update     将所有包的来源更新，也就是提取最新的包信息sudo apt-get upgrade    一般执行在apt-get update之后，它的作用是将系统中旧版本的包升级成最新的，慎用！因为在linux下，由于大部分为非商业软件，所以稳定性并没有得到很好的验证
-
-PS：
- ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/08/31/IP/" title="IP">IP</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-08-31T03:08:11.000Z" title="发表于 2023-08-31 11:08:11">2023-08-31</time><span class="article-meta__separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-09-01T07:32:42.996Z" title="更新于 2023-09-01 15:32:42">2023-09-01</time></span></div><div class="content">IP分类
-A类——网络号占1个字节，网络号的第一位固定为0
-(1.0.0.0-126.0.0.0)（默认子网掩码：255.0.0.0或/8或 0xFF000000）
-0*******       ********     ********     ********
-1—126 0—255 0—255 1—254
-没有0.0.0.0是因为他是缺省地址，它代表了所有地址
-（127去哪了？—回环网段，用来做测试，能ping通说明网卡协议没问题。）
-B类——网络号占2个字节，网络号的前两位固定为10
-(128.0.0.0-191.255.0.0)（默认子网掩码：255.255.0.0或/16或0xFFFF0000）
-10******         ********      ********      ********
-128—191 0—255 0—255 1—254
-C类——网络号占3个字节，网络号的前三位固定位110
-(192.0.0.0-223.255.255.0)（子网掩码：255.255.255.0或/24或 0xFFFFFF00）
-110*****          ***** ...</div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span><a class="page-number" href="/page/2/#content-inner">2</a><span class="space">&hellip;</span><a class="page-number" href="/page/5/#content-inner">5</a><a class="extend next" rel="next" href="/page/2/#content-inner"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/head.JPEG" onerror="this.onerror=null;this.src='https://cdn.jsdelivr.net/gh/S1gma0/image/202312081552301.gif'" alt="avatar"/></div><div class="author-info__name">Sigma</div><div class="author-info__description">岁月易流逝，珍惜眼前人。</div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archive/"><div class="headline">文章</div><div class="length-num">41</div></a></div><div class="card-info-data-item is-center"><a href="/tags/"><div class="headline">标签</div><div class="length-num">19</div></a></div><div class="card-info-data-item is-center"><a href="/categories/"><div class="headline">分类</div><div class="length-num">7</div></a></div></div><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/S1gma0" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:edward@txg2333.onmicrosoft.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div class="sticky_layout"><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span><a class="card-more-btn" href="/archive/" title="查看更多">
-    <i class="fas fa-angle-right"></i></a></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archive/2025/10/"><span class="card-archive-list-date">十月 2025</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archive/2025/08/"><span class="card-archive-list-date">八月 2025</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archive/2024/10/"><span class="card-archive-list-date">十月 2024</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archive/2024/09/"><span class="card-archive-list-date">九月 2024</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archive/2023/12/"><span class="card-archive-list-date">十二月 2023</span><span class="card-archive-list-count">4</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archive/2023/08/"><span class="card-archive-list-date">八月 2023</span><span class="card-archive-list-count">4</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archive/2023/07/"><span class="card-archive-list-date">七月 2023</span><span class="card-archive-list-count">6</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archive/2023/05/"><span class="card-archive-list-date">五月 2023</span><span class="card-archive-list-count">4</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章 :</div><div class="item-count">41</div></div><div class="webinfo-item"><div class="item-name">已运行时间 :</div><div class="item-count" id="runtimeshow" data-publishDate="2021-10-21T15:38:00.000Z"></div></div><div class="webinfo-item"><div class="item-name">本站总字数 :</div><div class="item-count">109k</div></div><div class="webinfo-item"><div class="item-name">访客 :</div><div class="item-count" id="busuanzi_value_site_uv"></div></div><div class="webinfo-item"><div class="item-name">浏览量 :</div><div class="item-count" id="busuanzi_value_site_pv"></div></div><div class="webinfo-item"><div class="item-name">最新推送 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2026-03-19T03:48:51.115Z"></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2021 - 2026 By Sigma</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div></div><hr/><div id="local-search-results"></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/search/local-search.js"></script><div class="js-pjax"><script>function subtitleType () {
-  fetch('https://v1.hitokoto.cn')
-    .then(response => response.json())
-    .then(data => {
-      if (true) {
-        var from = '出自 ' + data.from
-        var sub = "".length == 0 ? new Array() : "".split(',')
-        var both = sub.unshift(data.hitokoto, from)
-        var typed = new Typed('#subtitle', {
-          strings: sub,
-          startDelay: 300,
-          typeSpeed: 150,
-          loop: true,
-          backSpeed: 50,
-        })
+    <ul class="card-archive-list">
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archive/2025/10/">
+            <span class="card-archive-list-date">
+              十月 2025
+            </span>
+            <span class="card-archive-list-count">1</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archive/2025/08/">
+            <span class="card-archive-list-date">
+              八月 2025
+            </span>
+            <span class="card-archive-list-count">2</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archive/2024/10/">
+            <span class="card-archive-list-date">
+              十月 2024
+            </span>
+            <span class="card-archive-list-count">1</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archive/2024/09/">
+            <span class="card-archive-list-date">
+              九月 2024
+            </span>
+            <span class="card-archive-list-count">1</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archive/2023/12/">
+            <span class="card-archive-list-date">
+              十二月 2023
+            </span>
+            <span class="card-archive-list-count">4</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archive/2023/08/">
+            <span class="card-archive-list-date">
+              八月 2023
+            </span>
+            <span class="card-archive-list-count">4</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archive/2023/07/">
+            <span class="card-archive-list-date">
+              七月 2023
+            </span>
+            <span class="card-archive-list-count">6</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archive/2023/05/">
+            <span class="card-archive-list-date">
+              五月 2023
+            </span>
+            <span class="card-archive-list-count">4</span>
+          </a>
+        </li>
+      
+    </ul>
+  </div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站信息</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">41</div></div><div class="webinfo-item"><div class="item-name">运行时间 :</div><div class="item-count" id="runtimeshow" data-publishDate="2021-10-21T15:38:00.000Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总字数 :</div><div class="item-count">109k</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总浏览量 :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2026-03-21T06:03:27.199Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;&nbsp;2021 - 2026 By Sigma</span><span class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo 5.4.0</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly 5.5.4</a></span></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=5.5.4"></script><script src="/js/main.js?v=5.5.4"></script><div class="js-pjax"><script>window.typedJSFn = {
+  init: str => {
+    window.typed = new Typed('#subtitle', Object.assign({
+      strings: str,
+      startDelay: 300,
+      typeSpeed: 150,
+      loop: true,
+      backSpeed: 50,
+    }, null))
+  },
+  run: subtitleType => {
+    if (true) {
+      if (typeof Typed === 'function') {
+        subtitleType()
       } else {
-        document.getElementById('subtitle').innerHTML = data.hitokoto
+        btf.getScript('https://cdn.jsdelivr.net/npm/typed.js@3.0.0/dist/typed.umd.min.js').then(subtitleType)
+      }
+    } else {
+      subtitleType()
+    }
+  },
+  processSubtitle: (content, extraContents = []) => {
+    if (true) {
+      const sub = [].slice()
+
+      if (extraContents.length > 0) {
+        sub.unshift(...extraContents)
+      }
+
+      if (typeof content === 'string') {
+        sub.unshift(content)
+      } else if (Array.isArray(content)) {
+        sub.unshift(...content)
+      }
+
+      sub.length > 0 && typedJSFn.init(sub)
+    } else {
+      document.getElementById('subtitle').textContent = typeof content === 'string' ? content :
+        (Array.isArray(content) && content.length > 0 ? content[0] : '')
+    }
+  }
+}
+btf.addGlobalFn('pjaxSendOnce', () => { typed.destroy() }, 'typedDestroy')
+</script><script>function subtitleType () {
+  fetch('https://v.api.aa1.cn/api/yiyan/index.php')
+    .then(response => response.text())
+    .then(data => {
+      const reg = /<p>(.*?)<\/p>/g
+      const result = reg.exec(data)
+      if (result && result[1]) {
+        typedJSFn.processSubtitle(result[1])
+      } else {
+        throw new Error('Failed to parse the return value of the Yiyan API')
       }
     })
+    .catch(err => {
+      console.error('Failed to get the Yiyan API:', err)
+      typedJSFn.processSubtitle(0)
+    })
 }
-
-if (true) {
-  if (typeof Typed === 'function') {
-    subtitleType()
-  } else {
-    getScript('https://cdn.jsdelivr.net/npm/typed.js/lib/typed.min.js').then(subtitleType)
-  }
-} else {
-  subtitleType()
-}
-</script></div><script src="/js/custom.js"></script><script id="canvas_nest" defer="defer" color="0,0,255" opacity="0.7" zIndex="-1" count="99" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-nest.min.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><script src="/node_modules/hexo-helper-live2d./lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"./node_modules/hexo-helper-live2d","pluginJsPath":"./lib/","pluginModelPath":"../live2d_models/elaina","tagMode":false,"debug":true,"model":{"jsonPath":"/null"},"log":false});</script></body></html>
+typedJSFn.run(subtitleType)
+</script></div><script src="/js/custom.js"></script><script id="canvas_nest" defer="defer" color="0,0,255" opacity="0.7" zIndex="-1" count="99" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/dist/canvas-nest.min.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><i class="fas fa-spinner fa-pulse" id="loading-status" hidden="hidden"></i><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="text-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据加载中</span></div><div class="local-search-input"><input placeholder="搜索内容..." type="text"/></div><hr/><div id="local-search-results"></div><div class="ais-Pagination" id="local-search-pagination" style="display:none;"><ul class="ais-Pagination-list"></ul></div><div id="local-search-stats"></div></div><div id="search-mask"></div><script src="/js/search/local-search.js?v=5.5.4"></script></div></div></body></html>
