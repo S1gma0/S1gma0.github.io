@@ -368,7 +368,7 @@
   </url>
   
   <url>
-    <loc>https://s1gma0.github.io/tags/JavaScript/</loc>
+    <loc>https://s1gma0.github.io/tags/Java/</loc>
     <lastmod>2026-03-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -382,7 +382,7 @@
   </url>
   
   <url>
-    <loc>https://s1gma0.github.io/tags/Java/</loc>
+    <loc>https://s1gma0.github.io/tags/JavaScript/</loc>
     <lastmod>2026-03-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -431,13 +431,6 @@
   </url>
   
   <url>
-    <loc>https://s1gma0.github.io/tags/CTFHub/</loc>
-    <lastmod>2026-03-25</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://s1gma0.github.io/tags/adworld/</loc>
     <lastmod>2026-03-25</lastmod>
     <changefreq>daily</changefreq>
@@ -446,6 +439,13 @@
   
   <url>
     <loc>https://s1gma0.github.io/tags/webshell/</loc>
+    <lastmod>2026-03-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://s1gma0.github.io/tags/CTFHub/</loc>
     <lastmod>2026-03-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -489,7 +489,7 @@
   </url>
   
   <url>
-    <loc>https://s1gma0.github.io/categories/JavaScript/</loc>
+    <loc>https://s1gma0.github.io/categories/Java/</loc>
     <lastmod>2026-03-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -503,7 +503,7 @@
   </url>
   
   <url>
-    <loc>https://s1gma0.github.io/categories/Java/</loc>
+    <loc>https://s1gma0.github.io/categories/JavaScript/</loc>
     <lastmod>2026-03-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
