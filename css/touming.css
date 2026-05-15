@@ -1,11 +1,33 @@
-/* 文章页背景 */
-.layout_post>#post {
-    /* 以下代表透明度为0 可以自行修改*/
-    background: rgba(255,255,255,0);
+/* 全局卡片透明：文章卡片、侧边栏卡片、页面主体 */
+#recent-posts > .recent-post-item,
+#aside-content .card-widget,
+#aside_content .card-widget,
+.layout > div:first-child:not(.recent-posts),
+.layout_page > div:first-child:not(.recent-posts),
+.layout_post > #post,
+.layout_post > #page {
+  background: rgba(255, 255, 255, 0) !important;
+  box-shadow: none !important;
 }
 
-/* 所有页面背景 */
-#aside_content .card-widget, #recent-posts>.recent-post-item, .layout_page>div:first-child:not(.recent-posts), .layout_post>#page, .layout_post>#post, .read-mode .layout_post>#post{
-    /* 以下代表透明度为0.5 */
-    background: rgba(255,255,255,0);
+/* 首页分类/选项卡/分类条，如果你说的是首页选项卡 */
+#category-bar,
+.category-bar,
+#categoryBar,
+#category-bar .category-bar-item,
+.category-bar .category-bar-item,
+#categoryBar .category-bar-item {
+  background: rgba(255, 255, 255, 0) !important;
+  box-shadow: none !important;
+}
+
+/* Butterfly 新版常用变量兜底 */
+:root {
+  --card-bg: rgba(255, 255, 255, 0) !important;
+  --global-bg: transparent !important;
+}
+
+/* 夜间模式兜底 */
+[data-theme="dark"] {
+  --card-bg: rgba(18, 18, 18, 0) !important;
 }
